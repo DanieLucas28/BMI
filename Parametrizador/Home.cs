@@ -24,14 +24,23 @@ namespace Parametrizador
         {
 
         }
+        private void PictureCC_MouseEnter(object sender, EventArgs e)
+        {
+            PictureCC.Image = Properties.Resources.ccb;
+        }
+        private void PictureCC_MouseLeave(object sender, EventArgs e)
+        {
+           PictureCC.Image = Properties.Resources.cc;
+        }
+        private void PictureHS_MouseEnter(object sender, EventArgs e)
+        {
+            PictureCC.Image = Properties.Resources.hsb;
+        }
+        private void PictureHS_MouseLeave(object sender, EventArgs e)
+        {
+            PictureCC.Image = Properties.Resources.hs;
+        }
 
-        private void pictureBox1_MouseEnter(object sender, EventArgs e)
-        {
-            pictureBox1.Image = Properties.Resources.cookie;
-        }
-        private void pictureBox1_MouseLeave(object sender, EventArgs e)
-        {
-            pictureBox1.Image = Properties.Resources.ccicon;
-        }
+     
     }
 }

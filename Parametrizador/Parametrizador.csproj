@@ -57,6 +57,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Splash.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,14 +73,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Splash.resx">
       <DependentUpon>Splash.cs</DependentUpon>
     </EmbeddedResource>
@@ -94,10 +94,28 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\sdicon.png" />
-    <None Include="Resources\hsicon.png" />
+    <None Include="Resources\cc.png" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\cookie.png" />
-    <None Include="Resources\ccicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ccb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cookieb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hsb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sdb.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
