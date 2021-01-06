@@ -31,6 +31,11 @@ namespace Parametrizador
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.PanelMenu = new System.Windows.Forms.Panel();
+            this.BtnResfriamento = new FontAwesome.Sharp.IconButton();
+            this.BtnForneamento = new FontAwesome.Sharp.IconButton();
+            this.BtnFormação = new FontAwesome.Sharp.IconButton();
+            this.BtnMistura = new FontAwesome.Sharp.IconButton();
+            this.IconPanel = new System.Windows.Forms.Panel();
             this.panelTitleBar = new System.Windows.Forms.Panel();
             this.User = new System.Windows.Forms.Label();
             this.panelDesktop = new System.Windows.Forms.Panel();
@@ -42,7 +47,6 @@ namespace Parametrizador
             this.PictureHS = new System.Windows.Forms.PictureBox();
             this.creamcracker = new System.Windows.Forms.Label();
             this.shortdough = new System.Windows.Forms.Label();
-            this.IconPanel = new System.Windows.Forms.Panel();
             this.PanelMenu.SuspendLayout();
             this.panelTitleBar.SuspendLayout();
             this.panelDesktop.SuspendLayout();
@@ -55,12 +59,116 @@ namespace Parametrizador
             // PanelMenu
             // 
             this.PanelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.PanelMenu.Controls.Add(this.BtnResfriamento);
+            this.PanelMenu.Controls.Add(this.BtnForneamento);
+            this.PanelMenu.Controls.Add(this.BtnFormação);
+            this.PanelMenu.Controls.Add(this.BtnMistura);
             this.PanelMenu.Controls.Add(this.IconPanel);
             this.PanelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.PanelMenu.Location = new System.Drawing.Point(0, 0);
             this.PanelMenu.Name = "PanelMenu";
             this.PanelMenu.Size = new System.Drawing.Size(220, 543);
             this.PanelMenu.TabIndex = 2;
+            // 
+            // BtnResfriamento
+            // 
+            this.BtnResfriamento.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnResfriamento.FlatAppearance.BorderSize = 0;
+            this.BtnResfriamento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnResfriamento.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnResfriamento.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BtnResfriamento.IconChar = FontAwesome.Sharp.IconChar.TemperatureLow;
+            this.BtnResfriamento.IconColor = System.Drawing.Color.White;
+            this.BtnResfriamento.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnResfriamento.IconSize = 32;
+            this.BtnResfriamento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnResfriamento.Location = new System.Drawing.Point(0, 320);
+            this.BtnResfriamento.Name = "BtnResfriamento";
+            this.BtnResfriamento.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.BtnResfriamento.Size = new System.Drawing.Size(220, 60);
+            this.BtnResfriamento.TabIndex = 4;
+            this.BtnResfriamento.Text = "Resfriamento";
+            this.BtnResfriamento.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnResfriamento.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnResfriamento.UseVisualStyleBackColor = true;
+            this.BtnResfriamento.Click += new System.EventHandler(this.BtnResfriamento_Click);
+            // 
+            // BtnForneamento
+            // 
+            this.BtnForneamento.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnForneamento.FlatAppearance.BorderSize = 0;
+            this.BtnForneamento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnForneamento.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnForneamento.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BtnForneamento.IconChar = FontAwesome.Sharp.IconChar.DumpsterFire;
+            this.BtnForneamento.IconColor = System.Drawing.Color.White;
+            this.BtnForneamento.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnForneamento.IconSize = 32;
+            this.BtnForneamento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnForneamento.Location = new System.Drawing.Point(0, 260);
+            this.BtnForneamento.Name = "BtnForneamento";
+            this.BtnForneamento.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.BtnForneamento.Size = new System.Drawing.Size(220, 60);
+            this.BtnForneamento.TabIndex = 3;
+            this.BtnForneamento.Text = "Forneamento";
+            this.BtnForneamento.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnForneamento.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnForneamento.UseVisualStyleBackColor = true;
+            this.BtnForneamento.Click += new System.EventHandler(this.BtnForneamento_Click);
+            // 
+            // BtnFormação
+            // 
+            this.BtnFormação.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnFormação.FlatAppearance.BorderSize = 0;
+            this.BtnFormação.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnFormação.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnFormação.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BtnFormação.IconChar = FontAwesome.Sharp.IconChar.Xbox;
+            this.BtnFormação.IconColor = System.Drawing.Color.White;
+            this.BtnFormação.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnFormação.IconSize = 32;
+            this.BtnFormação.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnFormação.Location = new System.Drawing.Point(0, 200);
+            this.BtnFormação.Name = "BtnFormação";
+            this.BtnFormação.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.BtnFormação.Size = new System.Drawing.Size(220, 60);
+            this.BtnFormação.TabIndex = 2;
+            this.BtnFormação.Text = "Formação";
+            this.BtnFormação.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnFormação.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnFormação.UseVisualStyleBackColor = true;
+            this.BtnFormação.Click += new System.EventHandler(this.BtnFormação_Click);
+            // 
+            // BtnMistura
+            // 
+            this.BtnMistura.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnMistura.FlatAppearance.BorderSize = 0;
+            this.BtnMistura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMistura.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMistura.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BtnMistura.IconChar = FontAwesome.Sharp.IconChar.Blender;
+            this.BtnMistura.IconColor = System.Drawing.Color.White;
+            this.BtnMistura.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnMistura.IconSize = 32;
+            this.BtnMistura.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnMistura.Location = new System.Drawing.Point(0, 140);
+            this.BtnMistura.Name = "BtnMistura";
+            this.BtnMistura.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.BtnMistura.Size = new System.Drawing.Size(220, 60);
+            this.BtnMistura.TabIndex = 1;
+            this.BtnMistura.Text = "Mistura";
+            this.BtnMistura.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnMistura.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnMistura.UseVisualStyleBackColor = true;
+            this.BtnMistura.Click += new System.EventHandler(this.BtnMistura_Click);
+            // 
+            // IconPanel
+            // 
+            this.IconPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.IconPanel.Location = new System.Drawing.Point(0, 0);
+            this.IconPanel.Name = "IconPanel";
+            this.IconPanel.Size = new System.Drawing.Size(220, 140);
+            this.IconPanel.TabIndex = 0;
             // 
             // panelTitleBar
             // 
@@ -74,6 +182,7 @@ namespace Parametrizador
             // 
             // User
             // 
+            this.User.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.User.AutoSize = true;
             this.User.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.User.ForeColor = System.Drawing.SystemColors.ControlLightLight;
@@ -113,6 +222,7 @@ namespace Parametrizador
             // PictureCookies
             // 
             this.PictureCookies.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.PictureCookies.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PictureCookies.Image = ((System.Drawing.Image)(resources.GetObject("PictureCookies.Image")));
             this.PictureCookies.Location = new System.Drawing.Point(682, 182);
             this.PictureCookies.Name = "PictureCookies";
@@ -120,10 +230,13 @@ namespace Parametrizador
             this.PictureCookies.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.PictureCookies.TabIndex = 43;
             this.PictureCookies.TabStop = false;
+            this.PictureCookies.MouseEnter += new System.EventHandler(this.PictureCookies_MouseEnter);
+            this.PictureCookies.MouseLeave += new System.EventHandler(this.PictureCookies_MouseLeave);
             // 
             // PictureSD
             // 
             this.PictureSD.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.PictureSD.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PictureSD.Image = global::Parametrizador.Properties.Resources.sd;
             this.PictureSD.Location = new System.Drawing.Point(357, 182);
             this.PictureSD.Name = "PictureSD";
@@ -131,13 +244,15 @@ namespace Parametrizador
             this.PictureSD.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.PictureSD.TabIndex = 39;
             this.PictureSD.TabStop = false;
+            this.PictureSD.MouseEnter += new System.EventHandler(this.PictureSD_MouseEnter);
+            this.PictureSD.MouseLeave += new System.EventHandler(this.PictureSD_MouseLeave);
             // 
             // hardsweet
             // 
             this.hardsweet.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.hardsweet.AutoSize = true;
             this.hardsweet.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hardsweet.Location = new System.Drawing.Point(515, 269);
+            this.hardsweet.Location = new System.Drawing.Point(511, 269);
             this.hardsweet.Name = "hardsweet";
             this.hardsweet.Size = new System.Drawing.Size(101, 21);
             this.hardsweet.TabIndex = 42;
@@ -160,6 +275,7 @@ namespace Parametrizador
             // PictureHS
             // 
             this.PictureHS.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.PictureHS.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PictureHS.Image = global::Parametrizador.Properties.Resources.hs;
             this.PictureHS.Location = new System.Drawing.Point(519, 182);
             this.PictureHS.Name = "PictureHS";
@@ -167,6 +283,8 @@ namespace Parametrizador
             this.PictureHS.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.PictureHS.TabIndex = 41;
             this.PictureHS.TabStop = false;
+            this.PictureHS.MouseEnter += new System.EventHandler(this.PictureHS_MouseEnter);
+            this.PictureHS.MouseLeave += new System.EventHandler(this.PictureHS_MouseLeave);
             // 
             // creamcracker
             // 
@@ -189,14 +307,6 @@ namespace Parametrizador
             this.shortdough.Size = new System.Drawing.Size(107, 21);
             this.shortdough.TabIndex = 40;
             this.shortdough.Text = "Short Dough";
-            // 
-            // IconPanel
-            // 
-            this.IconPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.IconPanel.Location = new System.Drawing.Point(0, 0);
-            this.IconPanel.Name = "IconPanel";
-            this.IconPanel.Size = new System.Drawing.Size(220, 120);
-            this.IconPanel.TabIndex = 0;
             // 
             // Home
             // 
@@ -238,6 +348,10 @@ namespace Parametrizador
         private System.Windows.Forms.Label creamcracker;
         private System.Windows.Forms.Label shortdough;
         private System.Windows.Forms.Panel IconPanel;
+        private FontAwesome.Sharp.IconButton BtnResfriamento;
+        private FontAwesome.Sharp.IconButton BtnForneamento;
+        private FontAwesome.Sharp.IconButton BtnFormação;
+        private FontAwesome.Sharp.IconButton BtnMistura;
     }
 }
 
