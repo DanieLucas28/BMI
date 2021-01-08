@@ -49,6 +49,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormFormação.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFormação.Designer.cs">
+      <DependentUpon>FormFormação.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormForneamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormForneamento.Designer.cs">
+      <DependentUpon>FormForneamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMistura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMistura.Designer.cs">
+      <DependentUpon>FormMistura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormResfriamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormResfriamento.Designer.cs">
+      <DependentUpon>FormResfriamento.cs</DependentUpon>
+    </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -37,8 +37,12 @@ namespace Parametrizador
             this.BtnMistura = new FontAwesome.Sharp.IconButton();
             this.IconPanel = new System.Windows.Forms.Panel();
             this.panelTitleBar = new System.Windows.Forms.Panel();
+            this.MaximizeButton = new FontAwesome.Sharp.IconButton();
+            this.MinimizeButton = new FontAwesome.Sharp.IconButton();
+            this.CloseButton = new FontAwesome.Sharp.IconButton();
             this.User = new System.Windows.Forms.Label();
             this.panelDesktop = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.Cookies = new System.Windows.Forms.Label();
             this.PictureCookies = new System.Windows.Forms.PictureBox();
             this.PictureSD = new System.Windows.Forms.PictureBox();
@@ -173,12 +177,72 @@ namespace Parametrizador
             // panelTitleBar
             // 
             this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.panelTitleBar.Controls.Add(this.MaximizeButton);
+            this.panelTitleBar.Controls.Add(this.MinimizeButton);
+            this.panelTitleBar.Controls.Add(this.CloseButton);
             this.panelTitleBar.Controls.Add(this.User);
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitleBar.Location = new System.Drawing.Point(220, 0);
             this.panelTitleBar.Name = "panelTitleBar";
             this.panelTitleBar.Size = new System.Drawing.Size(948, 75);
             this.panelTitleBar.TabIndex = 3;
+            this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
+            // 
+            // MaximizeButton
+            // 
+            this.MaximizeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.MaximizeButton.AutoSize = true;
+            this.MaximizeButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.MaximizeButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.MaximizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MaximizeButton.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize;
+            this.MaximizeButton.IconColor = System.Drawing.Color.White;
+            this.MaximizeButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.MaximizeButton.IconSize = 20;
+            this.MaximizeButton.Location = new System.Drawing.Point(893, 0);
+            this.MaximizeButton.Name = "MaximizeButton";
+            this.MaximizeButton.Size = new System.Drawing.Size(28, 28);
+            this.MaximizeButton.TabIndex = 3;
+            this.MaximizeButton.UseVisualStyleBackColor = false;
+            this.MaximizeButton.Click += new System.EventHandler(this.MaximizeButton_Click);
+            // 
+            // MinimizeButton
+            // 
+            this.MinimizeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.MinimizeButton.AutoSize = true;
+            this.MinimizeButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.MinimizeButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.MinimizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MinimizeButton.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
+            this.MinimizeButton.IconColor = System.Drawing.Color.White;
+            this.MinimizeButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.MinimizeButton.IconSize = 20;
+            this.MinimizeButton.Location = new System.Drawing.Point(866, 0);
+            this.MinimizeButton.Name = "MinimizeButton";
+            this.MinimizeButton.Size = new System.Drawing.Size(28, 28);
+            this.MinimizeButton.TabIndex = 2;
+            this.MinimizeButton.UseVisualStyleBackColor = false;
+            this.MinimizeButton.Click += new System.EventHandler(this.MinimizeButton_Click);
+            // 
+            // CloseButton
+            // 
+            this.CloseButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.CloseButton.AutoSize = true;
+            this.CloseButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.CloseButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CloseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CloseButton.IconChar = FontAwesome.Sharp.IconChar.Times;
+            this.CloseButton.IconColor = System.Drawing.Color.White;
+            this.CloseButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.CloseButton.IconSize = 20;
+            this.CloseButton.Location = new System.Drawing.Point(920, 0);
+            this.CloseButton.Name = "CloseButton";
+            this.CloseButton.Size = new System.Drawing.Size(28, 28);
+            this.CloseButton.TabIndex = 1;
+            this.CloseButton.UseVisualStyleBackColor = false;
+            this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
+            this.CloseButton.MouseEnter += new System.EventHandler(this.CloseButton_MouseEnter);
+            this.CloseButton.MouseLeave += new System.EventHandler(this.CloseButton_MouseLeave);
             // 
             // User
             // 
@@ -186,7 +250,7 @@ namespace Parametrizador
             this.User.AutoSize = true;
             this.User.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.User.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.User.Location = new System.Drawing.Point(852, 31);
+            this.User.Location = new System.Drawing.Point(894, 54);
             this.User.Name = "User";
             this.User.Size = new System.Drawing.Size(42, 21);
             this.User.TabIndex = 0;
@@ -194,6 +258,7 @@ namespace Parametrizador
             // 
             // panelDesktop
             // 
+            this.panelDesktop.Controls.Add(this.panel1);
             this.panelDesktop.Controls.Add(this.Cookies);
             this.panelDesktop.Controls.Add(this.PictureCookies);
             this.panelDesktop.Controls.Add(this.PictureSD);
@@ -207,6 +272,15 @@ namespace Parametrizador
             this.panelDesktop.Name = "panelDesktop";
             this.panelDesktop.Size = new System.Drawing.Size(948, 468);
             this.panelDesktop.TabIndex = 4;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(24)))), ((int)(((byte)(58)))));
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(948, 8);
+            this.panel1.TabIndex = 45;
             // 
             // Cookies
             // 
@@ -352,6 +426,10 @@ namespace Parametrizador
         private FontAwesome.Sharp.IconButton BtnForneamento;
         private FontAwesome.Sharp.IconButton BtnFormação;
         private FontAwesome.Sharp.IconButton BtnMistura;
+        private System.Windows.Forms.Panel panel1;
+        private FontAwesome.Sharp.IconButton MaximizeButton;
+        private FontAwesome.Sharp.IconButton MinimizeButton;
+        private FontAwesome.Sharp.IconButton CloseButton;
     }
 }
 
