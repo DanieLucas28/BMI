@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Parametrizador
 {
-    public partial class FormForneamento : Form
+    public partial class FormForneamentoHS : Form
     {
-        public FormForneamento()
+        public FormForneamentoHS()
         {
             InitializeComponent();
         }

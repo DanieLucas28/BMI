@@ -1,7 +1,7 @@
 ﻿
 namespace Parametrizador
 {
-    partial class FormFormação
+    partial class FormFormaçãoHS
     {
         /// <summary>
         /// Required designer variable.
@@ -29,10 +29,18 @@ namespace Parametrizador
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // FormFormação
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(87)))), ((int)(((byte)(152)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Name = "FormFormação";
             this.Text = "FormFormação";
+            this.ResumeLayout(false);
+
         }
 
         #endregion

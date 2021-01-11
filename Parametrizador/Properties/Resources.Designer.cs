@@ -83,6 +83,16 @@ namespace Parametrizador.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ccw {
+            get {
+                object obj = ResourceManager.GetObject("ccw", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cookie {
             get {
                 object obj = ResourceManager.GetObject("cookie", resourceCulture);
@@ -96,6 +106,16 @@ namespace Parametrizador.Properties {
         internal static System.Drawing.Bitmap cookieb {
             get {
                 object obj = ResourceManager.GetObject("cookieb", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cookiew {
+            get {
+                object obj = ResourceManager.GetObject("cookiew", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,6 +143,26 @@ namespace Parametrizador.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap hsw {
+            get {
+                object obj = ResourceManager.GetObject("hsw", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo {
+            get {
+                object obj = ResourceManager.GetObject("logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap sd {
             get {
                 object obj = ResourceManager.GetObject("sd", resourceCulture);
@@ -136,6 +176,26 @@ namespace Parametrizador.Properties {
         internal static System.Drawing.Bitmap sdb {
             get {
                 object obj = ResourceManager.GetObject("sdb", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sdw {
+            get {
+                object obj = ResourceManager.GetObject("sdw", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sem_Título_1 {
+            get {
+                object obj = ResourceManager.GetObject("Sem_Título_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

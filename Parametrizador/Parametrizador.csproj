@@ -49,29 +49,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormFormação.cs">
+    <Compile Include="Inicial.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormFormação.Designer.cs">
-      <DependentUpon>FormFormação.cs</DependentUpon>
+    <Compile Include="Inicial.Designer.cs">
+      <DependentUpon>Inicial.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormForneamento.cs">
+    <Compile Include="Hard Sweet\FormFormaçãoHS.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormForneamento.Designer.cs">
-      <DependentUpon>FormForneamento.cs</DependentUpon>
+    <Compile Include="Hard Sweet\FormFormaçãoHS.Designer.cs">
+      <DependentUpon>FormFormaçãoHS.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormMistura.cs">
+    <Compile Include="Hard Sweet\FormForneamentoHS.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMistura.Designer.cs">
-      <DependentUpon>FormMistura.cs</DependentUpon>
+    <Compile Include="Hard Sweet\FormForneamentoHS.Designer.cs">
+      <DependentUpon>FormForneamentoHS.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormResfriamento.cs">
+    <Compile Include="Hard Sweet\FormMisturaHS.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormResfriamento.Designer.cs">
-      <DependentUpon>FormResfriamento.cs</DependentUpon>
+    <Compile Include="Hard Sweet\FormMisturaHS.Designer.cs">
+      <DependentUpon>FormMisturaHS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hard Sweet\FormResfriamentoHS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hard Sweet\FormResfriamentoHS.Designer.cs">
+      <DependentUpon>FormResfriamentoHS.cs</DependentUpon>
     </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
@@ -92,6 +98,21 @@
     <Compile Include="Splash.Designer.cs">
       <DependentUpon>Splash.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Hard Sweet\FormFormaçãoHS.resx">
+      <DependentUpon>FormFormaçãoHS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hard Sweet\FormForneamentoHS.resx">
+      <DependentUpon>FormForneamentoHS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hard Sweet\FormMisturaHS.resx">
+      <DependentUpon>FormMisturaHS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hard Sweet\FormResfriamentoHS.resx">
+      <DependentUpon>FormResfriamentoHS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicial.resx">
+      <DependentUpon>Inicial.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
@@ -140,6 +161,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\sdb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ccw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cookiew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hsw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sdw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sem Título-1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

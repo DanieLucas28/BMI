@@ -38,21 +38,21 @@ namespace Parametrizador
 
         //Structs
         private struct RGBColors
-        { 
-             public static Color color1 = Color.FromArgb(249, 118, 176);
-             public static Color color2 = Color.FromArgb(255, 69, 0);
-             public static Color color3 = Color.FromArgb(95, 77, 221);
-             public static Color color4 = Color.FromArgb(172, 126, 241);
+        {
+            public static Color color1 = Color.FromArgb(249, 118, 176);
+            public static Color color2 = Color.FromArgb(255, 69, 0);
+            public static Color color3 = Color.FromArgb(95, 77, 221);
+            public static Color color4 = Color.FromArgb(172, 126, 241);
         }
 
         //Meth
         private void ActivateButton(object senderBtn, Color color)
-        { 
+        {
             if (senderBtn != null)
             {
                 DisableButton();
                 currentBtn = (IconButton)senderBtn;
-                currentBtn.BackColor = Color.FromArgb(37, 36, 81);
+                currentBtn.BackColor = Color.FromArgb(7, 87,152);
                 currentBtn.ForeColor = color;
                 currentBtn.TextAlign = ContentAlignment.MiddleCenter;
                 currentBtn.IconColor = color;
@@ -67,10 +67,10 @@ namespace Parametrizador
         }
 
         private void DisableButton()
-        { 
+        {
             if (currentBtn != null)
             {
-                currentBtn.BackColor = Color.FromArgb(31, 30, 68);
+                currentBtn.BackColor = Color.FromArgb(6, 77, 135);
                 currentBtn.ForeColor = Color.White;
                 currentBtn.TextAlign = ContentAlignment.MiddleLeft;
                 currentBtn.IconColor = Color.White;
@@ -96,46 +96,21 @@ namespace Parametrizador
             childForm.Show();
         }
 
+        private void visiblefalse()
+        {
+            BtnMisturaHS.Visible =false;
+            BtnResfriamentoHS.Visible=false;
+            BtnForneamentoHS.Visible=false;
+            BtnFormaçãoHS.Visible=false;
+
+        }
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
-        private void PictureCC_MouseEnter(object sender, EventArgs e)
-        {
-            PictureCC.Image = Properties.Resources.ccb;
-        }
-        private void PictureCC_MouseLeave(object sender, EventArgs e)
-        {
-            PictureCC.Image = Properties.Resources.cc;
-        }
-        private void PictureHS_MouseEnter(object sender, EventArgs e)
-        {
-            PictureHS.Image = Properties.Resources.hsb;
-        }
-        private void PictureHS_MouseLeave(object sender, EventArgs e)
-        {
-            PictureHS.Image = Properties.Resources.hs;
-        }
-
-        private void PictureSD_MouseEnter(object sender, EventArgs e)
-        {
-            PictureSD.Image = Properties.Resources.sdb;
-        }
-        private void PictureSD_MouseLeave(object sender, EventArgs e)
-        {
-            PictureSD.Image = Properties.Resources.sd;
-
-        }
-        private void PictureCookies_MouseEnter(object sender, EventArgs e)
-        {
-            PictureCookies.Image = Properties.Resources.cookieb;
-        }
-        private void PictureCookies_MouseLeave(object sender, EventArgs e)
-        {
-            PictureCookies.Image = Properties.Resources.cookie;
-
-        }
+       
 
         private void BtnMistura_Click(object sender, EventArgs e)
         {
@@ -146,13 +121,13 @@ namespace Parametrizador
         private void BtnFormação_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
-            OpenChildForm(new FormFormação());
+            OpenChildForm(new FormFormaçãoHS());
         }
 
         private void BtnForneamento_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
-            OpenChildForm(new FormForneamento());
+            OpenChildForm(new FormForneamentoHS());
         }
 
         private void BtnResfriamento_Click(object sender, EventArgs e)
@@ -204,6 +179,23 @@ namespace Parametrizador
         private void MinimizeButton_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
+        }
+
+        private void HSbutton_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FormFormaçãoHS());
+            BtnMisturaHS.Visible = true;
+            BtnResfriamentoHS.Visible = true;
+            BtnForneamentoHS.Visible = true;
+            BtnFormaçãoHS.Visible = true;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            visiblefalse();
+            DisableButton();
+            leftBorderBtn.Visible = false;
+            OpenChildForm(new Inicial());
         }
     }
 
