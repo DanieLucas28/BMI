@@ -39,10 +39,10 @@ namespace Parametrizador
         //Structs
         private struct RGBColors
         {
-            public static Color color1 = Color.FromArgb(249, 118, 176);
-            public static Color color2 = Color.FromArgb(255, 69, 0);
-            public static Color color3 = Color.FromArgb(95, 77, 221);
-            public static Color color4 = Color.FromArgb(172, 126, 241);
+            public static Color color1 = Color.FromArgb(249, 118, 176); //rosa
+            public static Color color2 = Color.FromArgb(255, 69, 0); //laranja
+            public static Color color3 = Color.FromArgb(176, 0, 0); //vermelho escuro
+            public static Color color4 = Color.FromArgb(255, 255, 0); 
         }
 
         //Meth
