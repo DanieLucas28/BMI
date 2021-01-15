@@ -15,6 +15,9 @@ namespace Parametrizador
         public FormMistura()
         {
             InitializeComponent();
+
+            this.dataGridView1.Rows.Add("40 a 42", "40 a 42", "Máx. 36", "39 a 42") ;
+
         }
     }
 }

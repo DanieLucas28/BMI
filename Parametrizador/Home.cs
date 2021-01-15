@@ -116,6 +116,8 @@ namespace Parametrizador
         {
             ActivateButton(sender, RGBColors.color1);
             OpenChildForm(new FormMistura());
+            if (WindowState == FormWindowState.Normal)
+                WindowState = FormWindowState.Maximized;
         }
 
         private void BtnFormação_Click(object sender, EventArgs e)
@@ -184,10 +186,12 @@ namespace Parametrizador
         private void HSbutton_Click(object sender, EventArgs e)
         {
             OpenChildForm(new FormFormaçãoHS());
-            BtnMisturaHS.Visible = true;
+                              
             BtnResfriamentoHS.Visible = true;
             BtnForneamentoHS.Visible = true;
             BtnFormaçãoHS.Visible = true;
+            BtnMisturaHS.Visible = true;
+           
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
