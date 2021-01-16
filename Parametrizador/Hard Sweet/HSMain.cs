@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Parametrizador
+namespace Parametrizador.Hard_Sweet
 {
-    public partial class Inicial : Form
+    public partial class HSMain : Form
     {
-        public Inicial()
+        public HSMain()
         {
             InitializeComponent();
         }

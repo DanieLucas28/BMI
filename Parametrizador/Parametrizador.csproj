@@ -36,13 +36,6 @@
     <Reference Include="FontAwesome.Sharp, Version=5.15.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\FontAwesome.Sharp.5.15.3\lib\net472\FontAwesome.Sharp.dll</HintPath>
     </Reference>
-    <Reference Include="Syncfusion.Core.WinForms, Version=18.2460.0.44, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
-    <Reference Include="Syncfusion.Data.WinForms, Version=18.2460.0.44, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-    <Reference Include="Syncfusion.GridCommon.WinForms, Version=18.2460.0.44, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-    <Reference Include="Syncfusion.SfDataGrid.WinForms, Version=18.2460.0.44, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
-    <Reference Include="Syncfusion.SfInput.WinForms, Version=18.2460.0.44, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-    <Reference Include="Syncfusion.SfListView.WinForms, Version=18.2460.0.44, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
-    <Reference Include="Syncfusion.Shared.Base, Version=18.2460.0.44, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -59,11 +52,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Inicial.cs">
+    <Compile Include="Hard Sweet\HSMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Inicial.Designer.cs">
-      <DependentUpon>Inicial.cs</DependentUpon>
+    <Compile Include="Hard Sweet\HSMain.Designer.cs">
+      <DependentUpon>HSMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Hard Sweet\FormFormaçãoHS.cs">
       <SubType>Form</SubType>
@@ -120,8 +113,8 @@
     <EmbeddedResource Include="Hard Sweet\FormResfriamentoHS.resx">
       <DependentUpon>FormResfriamentoHS.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Inicial.resx">
-      <DependentUpon>Inicial.cs</DependentUpon>
+    <EmbeddedResource Include="Hard Sweet\HSMain.resx">
+      <DependentUpon>HSMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
@@ -189,6 +182,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Sem Título-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hstext.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maizena.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maizena.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

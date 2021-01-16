@@ -141,6 +141,17 @@ namespace Parametrizador.Properties {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a “Hard-sweet cookies” (pela tradução: biscoitos doces-duros): são biscoitos doces cuja massa possui alta formação de glúten, e, por isso, são extensíveis, porém pouco elásticos devido a adição de gordura e açúcar nas suas formulações. São também denominados de laminados doces. 
+        ///
+        ///A massa, após passar pelo processo de laminação por meio de rolos redutores até atingir a espessura de uma lâmina, segue para a etapa de estampagem por cortadores rotativos. Podem ser diferenciados por sabor, como laminado doce ou  [o restante da cadeia de caracteres foi truncado]&quot;;.
+        /// </summary>
+        internal static string hstext {
+            get {
+                return ResourceManager.GetString("hstext", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap hsw {
@@ -156,6 +167,16 @@ namespace Parametrizador.Properties {
         internal static System.Drawing.Bitmap logo {
             get {
                 object obj = ResourceManager.GetObject("logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap maizena {
+            get {
+                object obj = ResourceManager.GetObject("maizena", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

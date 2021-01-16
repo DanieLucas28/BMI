@@ -15,6 +15,7 @@ namespace Parametrizador
 {
     public partial class Home : Form
     {
+
         //Fields
         private IconButton currentBtn;
         private Panel leftBorderBtn;
@@ -25,8 +26,10 @@ namespace Parametrizador
         {
             InitializeComponent();
             User.Text = Environment.UserName;
-            leftBorderBtn = new Panel();
-            leftBorderBtn.Size = new Size(7, 60);
+            leftBorderBtn = new Panel
+            {
+                Size = new Size(7, 60)
+            };
             PanelMenu.Controls.Add(leftBorderBtn);
             //Form
             this.Text = string.Empty;
@@ -79,13 +82,13 @@ namespace Parametrizador
             }
         }
 
-        private void OpenChildForm(Form childForm)
+        public void OpenChildForm(Form childForm)
         {
-            if (currentChildForm != null)
-            {
+            //if (currentChildForm != null)
+            //{
                 //open only 1 form
-                currentChildForm.Close();
-            }
+                //currentChildForm.Close();
+            //}
             currentChildForm = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
@@ -96,7 +99,7 @@ namespace Parametrizador
             childForm.Show();
         }
 
-        private void visiblefalse()
+        private void Visiblefalse()
         {
             BtnMisturaHS.Visible =false;
             BtnResfriamentoHS.Visible=false;
@@ -185,8 +188,9 @@ namespace Parametrizador
 
         private void HSbutton_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FormFormaçãoHS());
-                              
+            OpenChildForm(new Hard_Sweet.HSMain());
+            choicebutton.Visible = true;
+            choicebutton.Text = "Hard Sweet";
             BtnResfriamentoHS.Visible = true;
             BtnForneamentoHS.Visible = true;
             BtnFormaçãoHS.Visible = true;
@@ -196,10 +200,10 @@ namespace Parametrizador
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            visiblefalse();
+            Visiblefalse();
             DisableButton();
             leftBorderBtn.Visible = false;
-            OpenChildForm(new Inicial());
+            currentChildForm.Close();
         }
     }
 
