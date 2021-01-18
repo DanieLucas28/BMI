@@ -48,7 +48,7 @@ namespace Parametrizador
                     this.linktempmassa.Text = "Temperatura de acordo apenas com Moretto. Atenção para a estrutura da massa: laminados doces possuem massa caracterizada como macia, ou seja, uma massa com bastante ''liga''. Baixas temperaturas não favorecem a formação desse tipo de estrutura da massa. ";
                     this.linktempmassa.Links.Add(33, 7, "#");
                 }
-                else if (Convert.ToInt32(Tempmassa.Text.Trim()) <= 30)
+                else if (Convert.ToInt32(Tempmassa.Text.Trim()) < 30)
                 {
                     this.linktempmassa.LinkArea = new LinkArea(0,0);
                     this.linktempmassa.UseMnemonic = false;
