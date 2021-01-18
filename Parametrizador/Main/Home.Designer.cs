@@ -46,10 +46,13 @@ namespace Parametrizador
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.arquivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.novoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.creamCrackerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.shortDoughToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hardSweetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cookieToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.abrirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.salvarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salvarcomoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.imprimirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.visualizarImpressãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -95,7 +98,7 @@ namespace Parametrizador
             this.PanelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.PanelMenu.Location = new System.Drawing.Point(0, 0);
             this.PanelMenu.Name = "PanelMenu";
-            this.PanelMenu.Size = new System.Drawing.Size(220, 509);
+            this.PanelMenu.Size = new System.Drawing.Size(220, 511);
             this.PanelMenu.TabIndex = 2;
             // 
             // BtnResfriamentoHS
@@ -227,7 +230,7 @@ namespace Parametrizador
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitleBar.Location = new System.Drawing.Point(220, 0);
             this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(703, 105);
+            this.panelTitleBar.Size = new System.Drawing.Size(704, 105);
             this.panelTitleBar.TabIndex = 3;
             this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
             // 
@@ -237,7 +240,7 @@ namespace Parametrizador
             this.choicebutton.FlatAppearance.BorderSize = 0;
             this.choicebutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.choicebutton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.choicebutton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.choicebutton.ForeColor = System.Drawing.SystemColors.Window;
             this.choicebutton.IconChar = FontAwesome.Sharp.IconChar.Check;
             this.choicebutton.IconColor = System.Drawing.Color.White;
             this.choicebutton.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -265,7 +268,7 @@ namespace Parametrizador
             this.MaximizeButton.IconColor = System.Drawing.Color.White;
             this.MaximizeButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.MaximizeButton.IconSize = 20;
-            this.MaximizeButton.Location = new System.Drawing.Point(648, 0);
+            this.MaximizeButton.Location = new System.Drawing.Point(649, 0);
             this.MaximizeButton.Name = "MaximizeButton";
             this.MaximizeButton.Size = new System.Drawing.Size(28, 28);
             this.MaximizeButton.TabIndex = 3;
@@ -281,9 +284,9 @@ namespace Parametrizador
             this.MinimizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.MinimizeButton.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
             this.MinimizeButton.IconColor = System.Drawing.Color.White;
-            this.MinimizeButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.MinimizeButton.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.MinimizeButton.IconSize = 20;
-            this.MinimizeButton.Location = new System.Drawing.Point(621, 0);
+            this.MinimizeButton.Location = new System.Drawing.Point(622, 0);
             this.MinimizeButton.Name = "MinimizeButton";
             this.MinimizeButton.Size = new System.Drawing.Size(28, 28);
             this.MinimizeButton.TabIndex = 2;
@@ -301,7 +304,7 @@ namespace Parametrizador
             this.CloseButton.IconColor = System.Drawing.Color.White;
             this.CloseButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.CloseButton.IconSize = 20;
-            this.CloseButton.Location = new System.Drawing.Point(675, 0);
+            this.CloseButton.Location = new System.Drawing.Point(676, 0);
             this.CloseButton.Name = "CloseButton";
             this.CloseButton.Size = new System.Drawing.Size(28, 28);
             this.CloseButton.TabIndex = 1;
@@ -316,7 +319,7 @@ namespace Parametrizador
             this.User.AutoSize = true;
             this.User.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.User.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.User.Location = new System.Drawing.Point(625, 81);
+            this.User.Location = new System.Drawing.Point(626, 81);
             this.User.Name = "User";
             this.User.Size = new System.Drawing.Size(75, 21);
             this.User.TabIndex = 0;
@@ -332,7 +335,7 @@ namespace Parametrizador
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.menuStrip1.Size = new System.Drawing.Size(703, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(704, 28);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -343,7 +346,6 @@ namespace Parametrizador
             this.abrirToolStripMenuItem,
             this.toolStripSeparator,
             this.salvarToolStripMenuItem,
-            this.salvarcomoToolStripMenuItem,
             this.toolStripSeparator1,
             this.imprimirToolStripMenuItem,
             this.visualizarImpressãoToolStripMenuItem,
@@ -355,12 +357,41 @@ namespace Parametrizador
             // 
             // novoToolStripMenuItem
             // 
+            this.novoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.creamCrackerToolStripMenuItem,
+            this.shortDoughToolStripMenuItem,
+            this.hardSweetToolStripMenuItem,
+            this.cookieToolStripMenuItem});
             this.novoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("novoToolStripMenuItem.Image")));
             this.novoToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.novoToolStripMenuItem.Name = "novoToolStripMenuItem";
             this.novoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.novoToolStripMenuItem.Size = new System.Drawing.Size(223, 24);
-            this.novoToolStripMenuItem.Text = "&Novo";
+            this.novoToolStripMenuItem.Size = new System.Drawing.Size(228, 24);
+            this.novoToolStripMenuItem.Text = "&Nova análise";
+            // 
+            // creamCrackerToolStripMenuItem
+            // 
+            this.creamCrackerToolStripMenuItem.Name = "creamCrackerToolStripMenuItem";
+            this.creamCrackerToolStripMenuItem.Size = new System.Drawing.Size(192, 24);
+            this.creamCrackerToolStripMenuItem.Text = "Cream Cracker";
+            // 
+            // shortDoughToolStripMenuItem
+            // 
+            this.shortDoughToolStripMenuItem.Name = "shortDoughToolStripMenuItem";
+            this.shortDoughToolStripMenuItem.Size = new System.Drawing.Size(192, 24);
+            this.shortDoughToolStripMenuItem.Text = "Short Dough";
+            // 
+            // hardSweetToolStripMenuItem
+            // 
+            this.hardSweetToolStripMenuItem.Name = "hardSweetToolStripMenuItem";
+            this.hardSweetToolStripMenuItem.Size = new System.Drawing.Size(192, 24);
+            this.hardSweetToolStripMenuItem.Text = "Hard Sweet";
+            // 
+            // cookieToolStripMenuItem
+            // 
+            this.cookieToolStripMenuItem.Name = "cookieToolStripMenuItem";
+            this.cookieToolStripMenuItem.Size = new System.Drawing.Size(192, 24);
+            this.cookieToolStripMenuItem.Text = "Cookie";
             // 
             // abrirToolStripMenuItem
             // 
@@ -368,13 +399,13 @@ namespace Parametrizador
             this.abrirToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.abrirToolStripMenuItem.Name = "abrirToolStripMenuItem";
             this.abrirToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(223, 24);
+            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(228, 24);
             this.abrirToolStripMenuItem.Text = "&Abrir";
             // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(220, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(225, 6);
             // 
             // salvarToolStripMenuItem
             // 
@@ -382,19 +413,13 @@ namespace Parametrizador
             this.salvarToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.salvarToolStripMenuItem.Name = "salvarToolStripMenuItem";
             this.salvarToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.salvarToolStripMenuItem.Size = new System.Drawing.Size(223, 24);
+            this.salvarToolStripMenuItem.Size = new System.Drawing.Size(228, 24);
             this.salvarToolStripMenuItem.Text = "&Salvar";
-            // 
-            // salvarcomoToolStripMenuItem
-            // 
-            this.salvarcomoToolStripMenuItem.Name = "salvarcomoToolStripMenuItem";
-            this.salvarcomoToolStripMenuItem.Size = new System.Drawing.Size(223, 24);
-            this.salvarcomoToolStripMenuItem.Text = "Salvar &como";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(220, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(225, 6);
             // 
             // imprimirToolStripMenuItem
             // 
@@ -402,7 +427,7 @@ namespace Parametrizador
             this.imprimirToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.imprimirToolStripMenuItem.Name = "imprimirToolStripMenuItem";
             this.imprimirToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.imprimirToolStripMenuItem.Size = new System.Drawing.Size(223, 24);
+            this.imprimirToolStripMenuItem.Size = new System.Drawing.Size(228, 24);
             this.imprimirToolStripMenuItem.Text = "&Imprimir";
             // 
             // visualizarImpressãoToolStripMenuItem
@@ -410,19 +435,20 @@ namespace Parametrizador
             this.visualizarImpressãoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("visualizarImpressãoToolStripMenuItem.Image")));
             this.visualizarImpressãoToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.visualizarImpressãoToolStripMenuItem.Name = "visualizarImpressãoToolStripMenuItem";
-            this.visualizarImpressãoToolStripMenuItem.Size = new System.Drawing.Size(223, 24);
+            this.visualizarImpressãoToolStripMenuItem.Size = new System.Drawing.Size(228, 24);
             this.visualizarImpressãoToolStripMenuItem.Text = "Visuali&zar Impressão";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(220, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(225, 6);
             // 
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(223, 24);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(228, 24);
             this.sairToolStripMenuItem.Text = "Sai&r";
+            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
             // ajudaToolStripMenuItem
             // 
@@ -439,30 +465,31 @@ namespace Parametrizador
             // conteúdoToolStripMenuItem
             // 
             this.conteúdoToolStripMenuItem.Name = "conteúdoToolStripMenuItem";
-            this.conteúdoToolStripMenuItem.Size = new System.Drawing.Size(153, 24);
-            this.conteúdoToolStripMenuItem.Text = "&Conteúdo";
+            this.conteúdoToolStripMenuItem.Size = new System.Drawing.Size(165, 24);
+            this.conteúdoToolStripMenuItem.Text = "&Referências";
+            this.conteúdoToolStripMenuItem.Click += new System.EventHandler(this.conteúdoToolStripMenuItem_Click);
             // 
             // índiceToolStripMenuItem
             // 
             this.índiceToolStripMenuItem.Name = "índiceToolStripMenuItem";
-            this.índiceToolStripMenuItem.Size = new System.Drawing.Size(153, 24);
+            this.índiceToolStripMenuItem.Size = new System.Drawing.Size(165, 24);
             this.índiceToolStripMenuItem.Text = "Í&ndice";
             // 
             // pesquisarToolStripMenuItem
             // 
             this.pesquisarToolStripMenuItem.Name = "pesquisarToolStripMenuItem";
-            this.pesquisarToolStripMenuItem.Size = new System.Drawing.Size(153, 24);
+            this.pesquisarToolStripMenuItem.Size = new System.Drawing.Size(165, 24);
             this.pesquisarToolStripMenuItem.Text = "&Pesquisar";
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(150, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(162, 6);
             // 
             // sobreToolStripMenuItem
             // 
             this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
-            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(153, 24);
+            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(165, 24);
             this.sobreToolStripMenuItem.Text = "&Sobre...";
             // 
             // panelDesktop
@@ -476,7 +503,7 @@ namespace Parametrizador
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(220, 105);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(703, 404);
+            this.panelDesktop.Size = new System.Drawing.Size(704, 406);
             this.panelDesktop.TabIndex = 4;
             // 
             // CookieButton
@@ -489,7 +516,7 @@ namespace Parametrizador
             this.CookieButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.CookieButton.Image = global::Parametrizador.Properties.Resources.cookiew;
             this.CookieButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.CookieButton.Location = new System.Drawing.Point(382, 218);
+            this.CookieButton.Location = new System.Drawing.Point(383, 219);
             this.CookieButton.Name = "CookieButton";
             this.CookieButton.Size = new System.Drawing.Size(247, 146);
             this.CookieButton.TabIndex = 49;
@@ -507,7 +534,7 @@ namespace Parametrizador
             this.HSbutton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.HSbutton.Image = global::Parametrizador.Properties.Resources.hsw;
             this.HSbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.HSbutton.Location = new System.Drawing.Point(84, 218);
+            this.HSbutton.Location = new System.Drawing.Point(85, 219);
             this.HSbutton.Name = "HSbutton";
             this.HSbutton.Size = new System.Drawing.Size(247, 146);
             this.HSbutton.TabIndex = 48;
@@ -526,13 +553,14 @@ namespace Parametrizador
             this.SDbutton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.SDbutton.Image = global::Parametrizador.Properties.Resources.sdw;
             this.SDbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.SDbutton.Location = new System.Drawing.Point(382, 38);
+            this.SDbutton.Location = new System.Drawing.Point(383, 39);
             this.SDbutton.Name = "SDbutton";
             this.SDbutton.Size = new System.Drawing.Size(247, 146);
             this.SDbutton.TabIndex = 47;
             this.SDbutton.Text = "Short Dough";
             this.SDbutton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.SDbutton.UseVisualStyleBackColor = false;
+            this.SDbutton.Click += new System.EventHandler(this.SDbutton_Click);
             // 
             // CCbutton
             // 
@@ -544,7 +572,7 @@ namespace Parametrizador
             this.CCbutton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.CCbutton.Image = global::Parametrizador.Properties.Resources.ccw;
             this.CCbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.CCbutton.Location = new System.Drawing.Point(84, 38);
+            this.CCbutton.Location = new System.Drawing.Point(85, 39);
             this.CCbutton.Name = "CCbutton";
             this.CCbutton.Size = new System.Drawing.Size(247, 146);
             this.CCbutton.TabIndex = 46;
@@ -626,7 +654,7 @@ namespace Parametrizador
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(923, 509);
+            this.ClientSize = new System.Drawing.Size(924, 511);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.PanelMenu);
@@ -671,7 +699,6 @@ namespace Parametrizador
         private System.Windows.Forms.ToolStripMenuItem abrirToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator;
         private System.Windows.Forms.ToolStripMenuItem salvarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem salvarcomoToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem imprimirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem visualizarImpressãoToolStripMenuItem;
@@ -694,6 +721,10 @@ namespace Parametrizador
         private System.Windows.Forms.ToolStripMenuItem personalizarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem opçõesToolStripMenuItem;
         private FontAwesome.Sharp.IconButton choicebutton;
+        private System.Windows.Forms.ToolStripMenuItem creamCrackerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem shortDoughToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem hardSweetToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cookieToolStripMenuItem;
     }
 }
 

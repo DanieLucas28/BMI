@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
 using System.Runtime.InteropServices;
-
+using Parametrizador.Main;
 
 namespace Parametrizador
 {
@@ -20,6 +20,7 @@ namespace Parametrizador
         private IconButton currentBtn;
         private Panel leftBorderBtn;
         private Form currentChildForm;
+       
 
         //Constructor
         public Home()
@@ -45,7 +46,15 @@ namespace Parametrizador
             public static Color color1 = Color.FromArgb(249, 118, 176); //rosa
             public static Color color2 = Color.FromArgb(255, 69, 0); //laranja
             public static Color color3 = Color.FromArgb(176, 0, 0); //vermelho escuro
-            public static Color color4 = Color.FromArgb(255, 255, 0); 
+            public static Color color4 = Color.FromArgb(255, 255, 0);
+            public static Color branco = Color.FromArgb(255, 255, 255); //branco
+        }
+
+        public void Toppa(string s, IconChar d, bool f)
+        {
+            choicebutton.Text = s;
+            choicebutton.IconChar = d;
+            choicebutton.Visible = f;
         }
 
         //Meth
@@ -97,6 +106,12 @@ namespace Parametrizador
             panelDesktop.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
+
+            if (currentChildForm.Name != "Fonte")
+            {
+                Toppa("Referências", IconChar.Search, true); 
+            }
+            
         }
 
         private void Visiblefalse()
@@ -121,24 +136,28 @@ namespace Parametrizador
             OpenChildForm(new FormMistura());
             if (WindowState == FormWindowState.Normal)
                 WindowState = FormWindowState.Maximized;
+            choicebutton.Visible = false;
         }
 
         private void BtnFormação_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
             OpenChildForm(new FormFormaçãoHS());
+            choicebutton.Visible = false;
         }
 
         private void BtnForneamento_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
             OpenChildForm(new FormForneamentoHS());
+            choicebutton.Visible = false;
         }
 
         private void BtnResfriamento_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color4);
             OpenChildForm(new FormResfriamento());
+            choicebutton.Visible = false;
         }
 
         //drag form
@@ -186,6 +205,9 @@ namespace Parametrizador
             WindowState = FormWindowState.Minimized;
         }
 
+        // funções dos botões centrais
+
+
         private void HSbutton_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Hard_Sweet.HSMain());
@@ -198,6 +220,13 @@ namespace Parametrizador
            
         }
 
+        private void SDbutton_Click(object sender, EventArgs e)
+        {
+            Toppa("Teste", IconChar.AccessibleIcon, true);
+        }
+
+        // botão home
+
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             Visiblefalse();
@@ -205,6 +234,26 @@ namespace Parametrizador
             leftBorderBtn.Visible = false;
             currentChildForm.Close();
         }
+
+        // menu
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void conteúdoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Fontes());
+        }
+
+      
+
+        
+            
+
+        
+
+
     }
 
 }

@@ -164,6 +164,46 @@ namespace Parametrizador.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap imgbertolino {
+            get {
+                object obj = ResourceManager.GetObject("imgbertolino", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap imgdavidson {
+            get {
+                object obj = ResourceManager.GetObject("imgdavidson", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap imgmanley {
+            get {
+                object obj = ResourceManager.GetObject("imgmanley", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap imgmoretto {
+            get {
+                object obj = ResourceManager.GetObject("imgmoretto", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logo {
             get {
                 object obj = ResourceManager.GetObject("logo", resourceCulture);
@@ -177,6 +217,16 @@ namespace Parametrizador.Properties {
         internal static System.Drawing.Bitmap maizena {
             get {
                 object obj = ResourceManager.GetObject("maizena", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap maria01_1 {
+            get {
+                object obj = ResourceManager.GetObject("maria01_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
