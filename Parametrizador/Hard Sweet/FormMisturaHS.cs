@@ -52,7 +52,7 @@ namespace Parametrizador
                 {
                     this.linktempmassa.LinkArea = new LinkArea(0,0);
                     this.linktempmassa.UseMnemonic = false;
-                    this.linktempmassa.Text = "Baixa temperatura. Massa para laminados doces deve caracterizar-se como macia, ou seja, com bastante 'liga'. Baixas temperaturas não favorecem a formação desse tipo de estrutura da massa."                    
+                    this.linktempmassa.Text = "Baixa temperatura. Massa para laminados doces deve caracterizar-se como macia, ou seja, com bastante 'liga'. Baixas temperaturas não favorecem a formação desse tipo de estrutura da massa.";                  
                 }
             }
             else

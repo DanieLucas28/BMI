@@ -41,7 +41,7 @@ namespace Parametrizador.Hard_Sweet
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(688, 10);
+            this.panel1.Size = new System.Drawing.Size(688, 23);
             this.panel1.TabIndex = 1;
             // 
             // pictureBox1
@@ -49,9 +49,10 @@ namespace Parametrizador.Hard_Sweet
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox1.Image = global::Parametrizador.Properties.Resources.maria01_1;
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(219, 179);
+            this.pictureBox1.Location = new System.Drawing.Point(109, 179);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(276, 278);
+            this.pictureBox1.Size = new System.Drawing.Size(469, 293);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
@@ -60,7 +61,7 @@ namespace Parametrizador.Hard_Sweet
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(0, 10);
+            this.label1.Location = new System.Drawing.Point(0, 23);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(688, 191);
             this.label1.TabIndex = 5;

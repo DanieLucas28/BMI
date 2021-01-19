@@ -46,11 +46,11 @@ namespace Parametrizador.Cookies
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox1.Image = global::Parametrizador.Properties.Resources.maria01_1;
+            this.pictureBox1.Image = global::Parametrizador.Properties.Resources.rosquinha;
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(219, 179);
+            this.pictureBox1.Location = new System.Drawing.Point(50, 168);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(276, 278);
+            this.pictureBox1.Size = new System.Drawing.Size(580, 278);
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
@@ -61,7 +61,7 @@ namespace Parametrizador.Cookies
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(0, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(688, 191);
+            this.label1.Size = new System.Drawing.Size(688, 155);
             this.label1.TabIndex = 5;
             this.label1.Text = resources.GetString("label1.Text");
             // 
@@ -70,7 +70,7 @@ namespace Parametrizador.Cookies
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(87)))), ((int)(((byte)(152)))));
-            this.ClientSize = new System.Drawing.Size(688, 366);
+            this.ClientSize = new System.Drawing.Size(688, 381);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);

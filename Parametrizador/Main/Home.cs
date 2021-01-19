@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using FontAwesome.Sharp;
-using System.Runtime.InteropServices;
+﻿using FontAwesome.Sharp;
 using Parametrizador.Main;
+using System;
+using System.Drawing;
+using System.Runtime.InteropServices;
+using System.Windows.Forms;
 
 namespace Parametrizador
 {
@@ -20,7 +14,7 @@ namespace Parametrizador
         private IconButton currentBtn;
         private Panel leftBorderBtn;
         private Form currentChildForm;
-       
+
 
         //Constructor
         public Home()
@@ -50,11 +44,12 @@ namespace Parametrizador
             public static Color branco = Color.FromArgb(255, 255, 255); //branco
         }
 
-        public void Toppa(string s, IconChar d, bool f)
+        public void Toppa(string s, Image d)
         {
-            choicebutton.Text = s;
-            choicebutton.IconChar = d;
-            choicebutton.Visible = f;
+            currentimg.Visible = true;
+            currentlabel.Visible = true;
+            currentlabel.Text = s;
+            currentimg.Image = d;
         }
 
         //Meth
@@ -64,7 +59,7 @@ namespace Parametrizador
             {
                 DisableButton();
                 currentBtn = (IconButton)senderBtn;
-                currentBtn.BackColor = Color.FromArgb(7, 87,152);
+                currentBtn.BackColor = Color.FromArgb(7, 87, 152);
                 currentBtn.ForeColor = color;
                 currentBtn.TextAlign = ContentAlignment.MiddleCenter;
                 currentBtn.IconColor = color;
@@ -93,11 +88,11 @@ namespace Parametrizador
 
         public void OpenChildForm(Form childForm)
         {
-            //if (currentChildForm != null)
-            //{
-                //open only 1 form
-                //currentChildForm.Close();
-            //}
+            if (currentChildForm != null)
+            {
+            //open only 1 form
+            currentChildForm.Close();
+            }
             currentChildForm = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
@@ -107,19 +102,24 @@ namespace Parametrizador
             childForm.BringToFront();
             childForm.Show();
 
-            if (currentChildForm.Name != "Fonte")
-            {
-                Toppa("Referências", IconChar.Search, true); 
-            }
-            
+            if (String.Equals(currentChildForm.Name, "Fontes"))
+             {
+                Toppa("Referências", Parametrizador.Properties.Resources.hsw);
+                Visiblefalse();
+             }
+
         }
 
         private void Visiblefalse()
         {
-            BtnMisturaHS.Visible =false;
-            BtnResfriamentoHS.Visible=false;
-            BtnForneamentoHS.Visible=false;
-            BtnFormaçãoHS.Visible=false;
+            BtnMisturaHS.Visible = false;
+            BtnResfriamentoHS.Visible = false;
+            BtnForneamentoHS.Visible = false;
+            BtnFormaçãoHS.Visible = false;
+            BtnResfriamentoCookie.Visible = false;
+            BtnForneamentoCookie.Visible = false;
+            BtnFormaçãoCookie.Visible = false;
+            BtnMisturaCookie.Visible = false;
 
         }
 
@@ -128,7 +128,7 @@ namespace Parametrizador
         {
 
         }
-       
+
 
         private void BtnMistura_Click(object sender, EventArgs e)
         {
@@ -136,28 +136,28 @@ namespace Parametrizador
             OpenChildForm(new FormMistura());
             if (WindowState == FormWindowState.Normal)
                 WindowState = FormWindowState.Maximized;
-            choicebutton.Visible = false;
+            
         }
 
         private void BtnFormação_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
             OpenChildForm(new FormFormaçãoHS());
-            choicebutton.Visible = false;
+            
         }
 
         private void BtnForneamento_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
             OpenChildForm(new FormForneamentoHS());
-            choicebutton.Visible = false;
+            
         }
 
         private void BtnResfriamento_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color4);
             OpenChildForm(new FormResfriamento());
-            choicebutton.Visible = false;
+            
         }
 
         //drag form
@@ -211,18 +211,28 @@ namespace Parametrizador
         private void HSbutton_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Hard_Sweet.HSMain());
-            choicebutton.Visible = true;
-            choicebutton.Text = "Hard Sweet";
+            Toppa("Hard Sweet", Parametrizador.Properties.Resources.hsw);
             BtnResfriamentoHS.Visible = true;
             BtnForneamentoHS.Visible = true;
             BtnFormaçãoHS.Visible = true;
             BtnMisturaHS.Visible = true;
            
+
         }
+
+        private void CookieButton_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Cookies.CookieMain());
+            BtnResfriamentoCookie.Visible = true;
+            BtnForneamentoCookie.Visible = true;
+            BtnFormaçãoCookie.Visible = true;
+            BtnMisturaCookie.Visible = true;
+        }
+
 
         private void SDbutton_Click(object sender, EventArgs e)
         {
-            Toppa("Teste", IconChar.AccessibleIcon, true);
+            Toppa("Teste", Parametrizador.Properties.Resources.hsw);
         }
 
         // botão home
@@ -231,6 +241,7 @@ namespace Parametrizador
         {
             Visiblefalse();
             DisableButton();
+            
             leftBorderBtn.Visible = false;
             currentChildForm.Close();
         }
@@ -245,13 +256,6 @@ namespace Parametrizador
         {
             OpenChildForm(new Fontes());
         }
-
-      
-
-        
-            
-
-        
 
 
     }

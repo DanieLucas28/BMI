@@ -12,7 +12,7 @@ namespace Parametrizador.Cookies
 {
     public partial class CookieMain : Form
     {
-        public HSMain()
+        public CookieMain()
         {
             InitializeComponent();
         }

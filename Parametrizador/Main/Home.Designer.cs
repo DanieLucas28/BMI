@@ -31,6 +31,10 @@ namespace Parametrizador
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.PanelMenu = new System.Windows.Forms.Panel();
+            this.BtnResfriamentoCookie = new FontAwesome.Sharp.IconButton();
+            this.BtnForneamentoCookie = new FontAwesome.Sharp.IconButton();
+            this.BtnFormaçãoCookie = new FontAwesome.Sharp.IconButton();
+            this.BtnMisturaCookie = new FontAwesome.Sharp.IconButton();
             this.BtnResfriamentoHS = new FontAwesome.Sharp.IconButton();
             this.BtnForneamentoHS = new FontAwesome.Sharp.IconButton();
             this.BtnFormaçãoHS = new FontAwesome.Sharp.IconButton();
@@ -38,7 +42,6 @@ namespace Parametrizador
             this.IconPanel = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelTitleBar = new System.Windows.Forms.Panel();
-            this.choicebutton = new FontAwesome.Sharp.IconButton();
             this.MaximizeButton = new FontAwesome.Sharp.IconButton();
             this.MinimizeButton = new FontAwesome.Sharp.IconButton();
             this.CloseButton = new FontAwesome.Sharp.IconButton();
@@ -79,17 +82,24 @@ namespace Parametrizador
             this.selecionarTudoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.personalizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.opçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.currentimg = new System.Windows.Forms.PictureBox();
+            this.currentlabel = new System.Windows.Forms.Label();
             this.PanelMenu.SuspendLayout();
             this.IconPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelTitleBar.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.panelDesktop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.currentimg)).BeginInit();
             this.SuspendLayout();
             // 
             // PanelMenu
             // 
             this.PanelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(77)))), ((int)(((byte)(135)))));
+            this.PanelMenu.Controls.Add(this.BtnResfriamentoCookie);
+            this.PanelMenu.Controls.Add(this.BtnForneamentoCookie);
+            this.PanelMenu.Controls.Add(this.BtnFormaçãoCookie);
+            this.PanelMenu.Controls.Add(this.BtnMisturaCookie);
             this.PanelMenu.Controls.Add(this.BtnResfriamentoHS);
             this.PanelMenu.Controls.Add(this.BtnForneamentoHS);
             this.PanelMenu.Controls.Add(this.BtnFormaçãoHS);
@@ -100,6 +110,98 @@ namespace Parametrizador
             this.PanelMenu.Name = "PanelMenu";
             this.PanelMenu.Size = new System.Drawing.Size(220, 511);
             this.PanelMenu.TabIndex = 2;
+            // 
+            // BtnResfriamentoCookie
+            // 
+            this.BtnResfriamentoCookie.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnResfriamentoCookie.FlatAppearance.BorderSize = 0;
+            this.BtnResfriamentoCookie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnResfriamentoCookie.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnResfriamentoCookie.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BtnResfriamentoCookie.IconChar = FontAwesome.Sharp.IconChar.TemperatureLow;
+            this.BtnResfriamentoCookie.IconColor = System.Drawing.Color.White;
+            this.BtnResfriamentoCookie.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnResfriamentoCookie.IconSize = 32;
+            this.BtnResfriamentoCookie.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnResfriamentoCookie.Location = new System.Drawing.Point(0, 537);
+            this.BtnResfriamentoCookie.Name = "BtnResfriamentoCookie";
+            this.BtnResfriamentoCookie.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.BtnResfriamentoCookie.Size = new System.Drawing.Size(220, 60);
+            this.BtnResfriamentoCookie.TabIndex = 8;
+            this.BtnResfriamentoCookie.Text = "Resfriamento";
+            this.BtnResfriamentoCookie.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnResfriamentoCookie.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnResfriamentoCookie.UseVisualStyleBackColor = true;
+            this.BtnResfriamentoCookie.Visible = false;
+            // 
+            // BtnForneamentoCookie
+            // 
+            this.BtnForneamentoCookie.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnForneamentoCookie.FlatAppearance.BorderSize = 0;
+            this.BtnForneamentoCookie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnForneamentoCookie.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnForneamentoCookie.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BtnForneamentoCookie.IconChar = FontAwesome.Sharp.IconChar.DumpsterFire;
+            this.BtnForneamentoCookie.IconColor = System.Drawing.Color.White;
+            this.BtnForneamentoCookie.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnForneamentoCookie.IconSize = 32;
+            this.BtnForneamentoCookie.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnForneamentoCookie.Location = new System.Drawing.Point(0, 477);
+            this.BtnForneamentoCookie.Name = "BtnForneamentoCookie";
+            this.BtnForneamentoCookie.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.BtnForneamentoCookie.Size = new System.Drawing.Size(220, 60);
+            this.BtnForneamentoCookie.TabIndex = 7;
+            this.BtnForneamentoCookie.Text = "Forneamento";
+            this.BtnForneamentoCookie.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnForneamentoCookie.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnForneamentoCookie.UseVisualStyleBackColor = true;
+            this.BtnForneamentoCookie.Visible = false;
+            // 
+            // BtnFormaçãoCookie
+            // 
+            this.BtnFormaçãoCookie.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnFormaçãoCookie.FlatAppearance.BorderSize = 0;
+            this.BtnFormaçãoCookie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnFormaçãoCookie.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnFormaçãoCookie.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BtnFormaçãoCookie.IconChar = FontAwesome.Sharp.IconChar.Xbox;
+            this.BtnFormaçãoCookie.IconColor = System.Drawing.Color.White;
+            this.BtnFormaçãoCookie.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnFormaçãoCookie.IconSize = 32;
+            this.BtnFormaçãoCookie.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnFormaçãoCookie.Location = new System.Drawing.Point(0, 417);
+            this.BtnFormaçãoCookie.Name = "BtnFormaçãoCookie";
+            this.BtnFormaçãoCookie.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.BtnFormaçãoCookie.Size = new System.Drawing.Size(220, 60);
+            this.BtnFormaçãoCookie.TabIndex = 6;
+            this.BtnFormaçãoCookie.Text = "Formação";
+            this.BtnFormaçãoCookie.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnFormaçãoCookie.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnFormaçãoCookie.UseVisualStyleBackColor = true;
+            this.BtnFormaçãoCookie.Visible = false;
+            // 
+            // BtnMisturaCookie
+            // 
+            this.BtnMisturaCookie.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnMisturaCookie.FlatAppearance.BorderSize = 0;
+            this.BtnMisturaCookie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMisturaCookie.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMisturaCookie.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BtnMisturaCookie.IconChar = FontAwesome.Sharp.IconChar.Blender;
+            this.BtnMisturaCookie.IconColor = System.Drawing.Color.White;
+            this.BtnMisturaCookie.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnMisturaCookie.IconSize = 32;
+            this.BtnMisturaCookie.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnMisturaCookie.Location = new System.Drawing.Point(0, 357);
+            this.BtnMisturaCookie.Name = "BtnMisturaCookie";
+            this.BtnMisturaCookie.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.BtnMisturaCookie.Size = new System.Drawing.Size(220, 60);
+            this.BtnMisturaCookie.TabIndex = 5;
+            this.BtnMisturaCookie.Text = "Mistura";
+            this.BtnMisturaCookie.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnMisturaCookie.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnMisturaCookie.UseVisualStyleBackColor = true;
+            this.BtnMisturaCookie.Visible = false;
             // 
             // BtnResfriamentoHS
             // 
@@ -221,11 +323,12 @@ namespace Parametrizador
             // panelTitleBar
             // 
             this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(77)))), ((int)(((byte)(135)))));
-            this.panelTitleBar.Controls.Add(this.choicebutton);
+            this.panelTitleBar.Controls.Add(this.User);
             this.panelTitleBar.Controls.Add(this.MaximizeButton);
             this.panelTitleBar.Controls.Add(this.MinimizeButton);
+            this.panelTitleBar.Controls.Add(this.currentlabel);
+            this.panelTitleBar.Controls.Add(this.currentimg);
             this.panelTitleBar.Controls.Add(this.CloseButton);
-            this.panelTitleBar.Controls.Add(this.User);
             this.panelTitleBar.Controls.Add(this.menuStrip1);
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitleBar.Location = new System.Drawing.Point(220, 0);
@@ -233,29 +336,6 @@ namespace Parametrizador
             this.panelTitleBar.Size = new System.Drawing.Size(704, 105);
             this.panelTitleBar.TabIndex = 3;
             this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
-            // 
-            // choicebutton
-            // 
-            this.choicebutton.Enabled = false;
-            this.choicebutton.FlatAppearance.BorderSize = 0;
-            this.choicebutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.choicebutton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.choicebutton.ForeColor = System.Drawing.SystemColors.Window;
-            this.choicebutton.IconChar = FontAwesome.Sharp.IconChar.Check;
-            this.choicebutton.IconColor = System.Drawing.Color.White;
-            this.choicebutton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.choicebutton.IconSize = 32;
-            this.choicebutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.choicebutton.Location = new System.Drawing.Point(2, 67);
-            this.choicebutton.Name = "choicebutton";
-            this.choicebutton.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.choicebutton.Size = new System.Drawing.Size(193, 37);
-            this.choicebutton.TabIndex = 5;
-            this.choicebutton.Text = "Mistura";
-            this.choicebutton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.choicebutton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.choicebutton.UseVisualStyleBackColor = true;
-            this.choicebutton.Visible = false;
             // 
             // MaximizeButton
             // 
@@ -319,7 +399,7 @@ namespace Parametrizador
             this.User.AutoSize = true;
             this.User.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.User.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.User.Location = new System.Drawing.Point(626, 81);
+            this.User.Location = new System.Drawing.Point(626, 80);
             this.User.Name = "User";
             this.User.Size = new System.Drawing.Size(75, 21);
             this.User.TabIndex = 0;
@@ -520,9 +600,10 @@ namespace Parametrizador
             this.CookieButton.Name = "CookieButton";
             this.CookieButton.Size = new System.Drawing.Size(247, 146);
             this.CookieButton.TabIndex = 49;
-            this.CookieButton.Text = "Cookie";
+            this.CookieButton.Text = "Soft Dough";
             this.CookieButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.CookieButton.UseVisualStyleBackColor = false;
+            this.CookieButton.Click += new System.EventHandler(this.CookieButton_Click);
             // 
             // HSbutton
             // 
@@ -649,6 +730,31 @@ namespace Parametrizador
             this.opçõesToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
             this.opçõesToolStripMenuItem.Text = "&Opções";
             // 
+            // currentimg
+            // 
+            this.currentimg.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.currentimg.Image = global::Parametrizador.Properties.Resources.hsw;
+            this.currentimg.Location = new System.Drawing.Point(254, 66);
+            this.currentimg.Name = "currentimg";
+            this.currentimg.Size = new System.Drawing.Size(41, 39);
+            this.currentimg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.currentimg.TabIndex = 6;
+            this.currentimg.TabStop = false;
+            this.currentimg.Visible = false;
+            // 
+            // currentlabel
+            // 
+            this.currentlabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.currentlabel.AutoSize = true;
+            this.currentlabel.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.currentlabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.currentlabel.Location = new System.Drawing.Point(290, 72);
+            this.currentlabel.Name = "currentlabel";
+            this.currentlabel.Size = new System.Drawing.Size(147, 30);
+            this.currentlabel.TabIndex = 7;
+            this.currentlabel.Text = "Hard Sweet";
+            this.currentlabel.Visible = false;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -671,6 +777,7 @@ namespace Parametrizador
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panelDesktop.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.currentimg)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -720,11 +827,16 @@ namespace Parametrizador
         private System.Windows.Forms.ToolStripMenuItem selecionarTudoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem personalizarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem opçõesToolStripMenuItem;
-        private FontAwesome.Sharp.IconButton choicebutton;
         private System.Windows.Forms.ToolStripMenuItem creamCrackerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem shortDoughToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem hardSweetToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cookieToolStripMenuItem;
+        private FontAwesome.Sharp.IconButton BtnResfriamentoCookie;
+        private FontAwesome.Sharp.IconButton BtnForneamentoCookie;
+        private FontAwesome.Sharp.IconButton BtnFormaçãoCookie;
+        private FontAwesome.Sharp.IconButton BtnMisturaCookie;
+        private System.Windows.Forms.PictureBox currentimg;
+        private System.Windows.Forms.Label currentlabel;
     }
 }
 
