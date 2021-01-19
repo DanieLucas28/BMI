@@ -133,6 +133,7 @@ namespace Parametrizador
             this.BtnResfriamentoCookie.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnResfriamentoCookie.UseVisualStyleBackColor = true;
             this.BtnResfriamentoCookie.Visible = false;
+            this.BtnResfriamentoCookie.Click += new System.EventHandler(this.BtnResfriamentoCookie_Click);
             // 
             // BtnForneamentoCookie
             // 
@@ -156,6 +157,7 @@ namespace Parametrizador
             this.BtnForneamentoCookie.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnForneamentoCookie.UseVisualStyleBackColor = true;
             this.BtnForneamentoCookie.Visible = false;
+            this.BtnForneamentoCookie.Click += new System.EventHandler(this.BtnForneamentoCookie_Click);
             // 
             // BtnFormaçãoCookie
             // 
@@ -179,6 +181,7 @@ namespace Parametrizador
             this.BtnFormaçãoCookie.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnFormaçãoCookie.UseVisualStyleBackColor = true;
             this.BtnFormaçãoCookie.Visible = false;
+            this.BtnFormaçãoCookie.Click += new System.EventHandler(this.BtnFormaçãoCookie_Click);
             // 
             // BtnMisturaCookie
             // 
@@ -202,6 +205,7 @@ namespace Parametrizador
             this.BtnMisturaCookie.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnMisturaCookie.UseVisualStyleBackColor = true;
             this.BtnMisturaCookie.Visible = false;
+            this.BtnMisturaCookie.Click += new System.EventHandler(this.BtnMisturaCookie_Click);
             // 
             // BtnResfriamentoHS
             // 

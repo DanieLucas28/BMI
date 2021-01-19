@@ -130,35 +130,6 @@ namespace Parametrizador
         }
 
 
-        private void BtnMistura_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColors.color1);
-            OpenChildForm(new FormMistura());
-            if (WindowState == FormWindowState.Normal)
-                WindowState = FormWindowState.Maximized;
-            
-        }
-
-        private void BtnFormação_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColors.color3);
-            OpenChildForm(new FormFormaçãoHS());
-            
-        }
-
-        private void BtnForneamento_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColors.color2);
-            OpenChildForm(new FormForneamentoHS());
-            
-        }
-
-        private void BtnResfriamento_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender, RGBColors.color4);
-            OpenChildForm(new FormResfriamento());
-            
-        }
 
         //drag form
 
@@ -257,7 +228,58 @@ namespace Parametrizador
             OpenChildForm(new Fontes());
         }
 
+        // funções dos botões laterais
 
-    }
+        private void BtnMistura_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new FormMistura());
+            if (WindowState == FormWindowState.Normal)
+                WindowState = FormWindowState.Maximized;
+
+        }
+
+        private void BtnFormação_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color3);
+            OpenChildForm(new FormFormaçãoHS());
+
+        }
+
+        private void BtnForneamento_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color2);
+            OpenChildForm(new FormForneamentoHS());
+
+        }
+
+        private void BtnResfriamento_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color4);
+            OpenChildForm(new FormResfriamento());
+
+        }
+
+        private void BtnFormaçãoCookie_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color1);
+        }
+
+        private void BtnMisturaCookie_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color1);
+        }
+
+        private void BtnForneamentoCookie_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color1);
+        }
+
+        private void BtnResfriamentoCookie_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color1);
+        }
+    }   
+
 
 }
