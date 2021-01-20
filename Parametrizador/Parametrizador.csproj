@@ -76,6 +76,30 @@
     <Compile Include="Cookies\CookieMain.Designer.cs">
       <DependentUpon>CookieMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cookies\FormFormaçãoCookie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cookies\FormFormaçãoCookie.Designer.cs">
+      <DependentUpon>FormFormaçãoCookie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cookies\FormForneamentoCookie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cookies\FormForneamentoCookie.Designer.cs">
+      <DependentUpon>FormForneamentoCookie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cookies\FormMisturaCookie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cookies\FormMisturaCookie.Designer.cs">
+      <DependentUpon>FormMisturaCookie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cookies\FormResfriamentoCookie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cookies\FormResfriamentoCookie.Designer.cs">
+      <DependentUpon>FormResfriamentoCookie.cs</DependentUpon>
+    </Compile>
     <Compile Include="Hard Sweet\HSMain.cs">
       <SubType>Form</SubType>
     </Compile>

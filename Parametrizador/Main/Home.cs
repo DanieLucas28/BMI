@@ -1,4 +1,5 @@
 ﻿using FontAwesome.Sharp;
+using Parametrizador.Cookies;
 using Parametrizador.Main;
 using System;
 using System.Drawing;
@@ -263,21 +264,25 @@ namespace Parametrizador
         private void BtnFormaçãoCookie_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new FormFormaçãoCookie());
         }
 
         private void BtnMisturaCookie_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new FormMisturaCookie());
         }
 
         private void BtnForneamentoCookie_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new FormForneamentoCookie());
         }
 
         private void BtnResfriamentoCookie_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new FormResfriamentoCookie());
         }
     }   
 
