@@ -16,8 +16,6 @@ namespace Parametrizador.Short_Dough
         {
             InitializeComponent();
 
-            //this.dataGridView1.Rows.Add("40 a 42", "40 a 42", "Máx. 36", "39 a 42") ;
-
         }
 
         private void Tempmassa_TextChanged(object sender, EventArgs e)
@@ -25,40 +23,31 @@ namespace Parametrizador.Short_Dough
             if (Int32.TryParse(Tempmassa.Text.Trim(), out _))
             {
 
-                if (Convert.ToInt32(Tempmassa.Text.Trim()) >= 40 && (Convert.ToInt32(Tempmassa.Text.Trim()) <= 42))
+                if (Convert.ToInt32(Tempmassa.Text.Trim()) >= 18 && (Convert.ToInt32(Tempmassa.Text.Trim()) <= 22))
                 {
                     this.linktempmassa.LinkArea = new LinkArea(0, 0);
                     this.linktempmassa.UseMnemonic = false;
-                    this.linktempmassa.Text = "A temperatura indicada está dentro dos critérios estabelecidos por Manley, Davidson e Bertolino & Braga.";
+                    this.linktempmassa.Text = "A temperatura indicada está dentro dos critérios estabelecidos por Manley e Davidson.";
                     this.linktempmassa.Links.Add(67, 6, "#");
-                    this.linktempmassa.Links.Add(75, 8, "#");
-                    this.linktempmassa.Links.Add(86, 17, "#");
+                    this.linktempmassa.Links.Add(76, 8, "#");                  
                 }
-                else if (Convert.ToInt32(Tempmassa.Text.Trim()) >= 42)
+                else if (Convert.ToInt32(Tempmassa.Text.Trim()) > 22)
                 {
                     this.linktempmassa.LinkArea = new LinkArea(0, 0);
                     this.linktempmassa.UseMnemonic = false;
-                    this.linktempmassa.Text = "A temperatura está acima do previsto pelos autores. Quanto mais alta for a temperatura, mais macia e amolecida é a massa. Ou seja, altas temperaturas podem ocasionar modificações na estrutura da massa desejada e torná-la mais difícil de ser manuseada. Temperaturas elevadas podem ocasionar uma massa escaldada.";
+                    this.linktempmassa.Text = "A temperatura está acima do previsto pelos autores. O elevado aumento de temperatura favorece a formação da rede de glúten. Esse tipo de biscoito possui uma massa com característica de farofa, ou seja, com pouca formação de glúten. Elevadas temperaturas podem ocasionar uma formação indesejada à massa e dificultar a etapa subjacente do processo. Além disso, pode ocorrer a volatização de importantes matérias primas como o bicarbonato de amônio, utilizado como fermento químico, que deve somente ser dissociado em alta velocidade durante a etapa de forneamento.";
 
                 }
-                else if (Convert.ToInt32(Tempmassa.Text.Trim()) >= 30 && (Convert.ToInt32(Tempmassa.Text.Trim()) <= 36))
+                else if (Convert.ToInt32(Tempmassa.Text.Trim()) < 18))
                 {
                     this.linktempmassa.LinkArea = new LinkArea(0, 0);
                     this.linktempmassa.UseMnemonic = false;
-                    this.linktempmassa.Text = "Temperatura de acordo apenas com Moretto. Atenção para a estrutura da massa: laminados doces possuem massa caracterizada como macia, ou seja, uma massa com bastante ''liga''. Baixas temperaturas não favorecem a formação desse tipo de estrutura da massa. ";
-                    this.linktempmassa.Links.Add(33, 7, "#");
-                }
-                else if (Convert.ToInt32(Tempmassa.Text.Trim()) < 30)
-                {
-                    this.linktempmassa.LinkArea = new LinkArea(0,0);
-                    this.linktempmassa.UseMnemonic = false;
-                    this.linktempmassa.Text = "Baixa temperatura. Massa para laminados doces deve caracterizar-se como macia, ou seja, com bastante 'liga'. Baixas temperaturas não favorecem a formação desse tipo de estrutura da massa.";                  
+                    this.linktempmassa.Text = "Baixa temperatura. Baixas temperaturas podem não fornecer a estrutura de rede de glúten necessária, deve-se obeservar o desempenho da massa na etapa de formação.";
                 }
             }
             else
             {
                 this.linktempmassa.Text = "Digite um valor válido para a temperatura.";
-
             }
         }
 
