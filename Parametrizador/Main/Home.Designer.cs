@@ -108,7 +108,7 @@ namespace Parametrizador
             this.PanelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.PanelMenu.Location = new System.Drawing.Point(0, 0);
             this.PanelMenu.Name = "PanelMenu";
-            this.PanelMenu.Size = new System.Drawing.Size(220, 511);
+            this.PanelMenu.Size = new System.Drawing.Size(220, 721);
             this.PanelMenu.TabIndex = 2;
             // 
             // BtnResfriamentoCookie
@@ -612,7 +612,7 @@ namespace Parametrizador
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(220, 105);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(704, 406);
+            this.panelDesktop.Size = new System.Drawing.Size(704, 616);
             this.panelDesktop.TabIndex = 4;
             // 
             // CookieButton
@@ -625,7 +625,7 @@ namespace Parametrizador
             this.CookieButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.CookieButton.Image = global::Parametrizador.Properties.Resources.cookiew;
             this.CookieButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.CookieButton.Location = new System.Drawing.Point(383, 219);
+            this.CookieButton.Location = new System.Drawing.Point(383, 324);
             this.CookieButton.Name = "CookieButton";
             this.CookieButton.Size = new System.Drawing.Size(247, 146);
             this.CookieButton.TabIndex = 49;
@@ -644,7 +644,7 @@ namespace Parametrizador
             this.HSbutton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.HSbutton.Image = global::Parametrizador.Properties.Resources.hsw;
             this.HSbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.HSbutton.Location = new System.Drawing.Point(85, 219);
+            this.HSbutton.Location = new System.Drawing.Point(85, 324);
             this.HSbutton.Name = "HSbutton";
             this.HSbutton.Size = new System.Drawing.Size(247, 146);
             this.HSbutton.TabIndex = 48;
@@ -663,7 +663,7 @@ namespace Parametrizador
             this.SDbutton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.SDbutton.Image = global::Parametrizador.Properties.Resources.sdw;
             this.SDbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.SDbutton.Location = new System.Drawing.Point(383, 39);
+            this.SDbutton.Location = new System.Drawing.Point(383, 144);
             this.SDbutton.Name = "SDbutton";
             this.SDbutton.Size = new System.Drawing.Size(247, 146);
             this.SDbutton.TabIndex = 47;
@@ -682,7 +682,7 @@ namespace Parametrizador
             this.CCbutton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.CCbutton.Image = global::Parametrizador.Properties.Resources.ccw;
             this.CCbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.CCbutton.Location = new System.Drawing.Point(85, 39);
+            this.CCbutton.Location = new System.Drawing.Point(85, 144);
             this.CCbutton.Name = "CCbutton";
             this.CCbutton.Size = new System.Drawing.Size(247, 146);
             this.CCbutton.TabIndex = 46;
@@ -765,7 +765,7 @@ namespace Parametrizador
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(924, 511);
+            this.ClientSize = new System.Drawing.Size(924, 721);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.PanelMenu);
