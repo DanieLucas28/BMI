@@ -100,6 +100,42 @@
     <Compile Include="Cookies\FormResfriamentoCookie.Designer.cs">
       <DependentUpon>FormResfriamentoCookie.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cream Cracker\CCMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cream Cracker\CCMain.Designer.cs">
+      <DependentUpon>CCMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cream Cracker\FormFermentaçãoCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cream Cracker\FormFermentaçãoCC.Designer.cs">
+      <DependentUpon>FormFermentaçãoCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cream Cracker\FormFormaçãoCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cream Cracker\FormFormaçãoCC.Designer.cs">
+      <DependentUpon>FormFormaçãoCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cream Cracker\FormForneamentoCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cream Cracker\FormForneamentoCC.Designer.cs">
+      <DependentUpon>FormForneamentoCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cream Cracker\FormMisturaCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cream Cracker\FormMisturaCC.Designer.cs">
+      <DependentUpon>FormMisturaCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cream Cracker\FormResfriamentoCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cream Cracker\FormResfriamentoCC.Designer.cs">
+      <DependentUpon>FormResfriamentoCC.cs</DependentUpon>
+    </Compile>
     <Compile Include="Hard Sweet\HSMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,8 +191,62 @@
     <Compile Include="Main\Splash.Designer.cs">
       <DependentUpon>Splash.cs</DependentUpon>
     </Compile>
+    <Compile Include="Short Dough\FormFormaçãoSD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Short Dough\FormFormaçãoSD.Designer.cs">
+      <DependentUpon>FormFormaçãoSD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Short Dough\FormForneamentoSD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Short Dough\FormForneamentoSD.Designer.cs">
+      <DependentUpon>FormForneamentoSD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Short Dough\FormMisturaSD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Short Dough\FormMisturaSD.Designer.cs">
+      <DependentUpon>FormMisturaSD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Short Dough\FormRecheioSD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Short Dough\FormRecheioSD.Designer.cs">
+      <DependentUpon>FormRecheioSD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Short Dough\FormResfriamentoSD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Short Dough\FormResfriamentoSD.Designer.cs">
+      <DependentUpon>FormResfriamentoSD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Short Dough\SDMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Short Dough\SDMain.Designer.cs">
+      <DependentUpon>SDMain.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Cookies\CookieMain.resx">
       <DependentUpon>CookieMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cream Cracker\CCMain.resx">
+      <DependentUpon>CCMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cream Cracker\FormFermentaçãoCC.resx">
+      <DependentUpon>FormFermentaçãoCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cream Cracker\FormFormaçãoCC.resx">
+      <DependentUpon>FormFormaçãoCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cream Cracker\FormForneamentoCC.resx">
+      <DependentUpon>FormForneamentoCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cream Cracker\FormMisturaCC.resx">
+      <DependentUpon>FormMisturaCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cream Cracker\FormResfriamentoCC.resx">
+      <DependentUpon>FormResfriamentoCC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Hard Sweet\FormFormaçãoHS.resx">
       <DependentUpon>FormFormaçãoHS.cs</DependentUpon>
@@ -186,6 +276,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Main\Splash.resx">
       <DependentUpon>Splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Short Dough\FormFormaçãoSD.resx">
+      <DependentUpon>FormFormaçãoSD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Short Dough\FormForneamentoSD.resx">
+      <DependentUpon>FormForneamentoSD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Short Dough\FormMisturaSD.resx">
+      <DependentUpon>FormMisturaSD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Short Dough\FormRecheioSD.resx">
+      <DependentUpon>FormRecheioSD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Short Dough\FormResfriamentoSD.resx">
+      <DependentUpon>FormResfriamentoSD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Short Dough\SDMain.resx">
+      <DependentUpon>SDMain.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

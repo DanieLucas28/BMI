@@ -42,10 +42,12 @@ namespace Parametrizador
             this.IconPanel = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelTitleBar = new System.Windows.Forms.Panel();
+            this.User = new System.Windows.Forms.Label();
             this.MaximizeButton = new FontAwesome.Sharp.IconButton();
             this.MinimizeButton = new FontAwesome.Sharp.IconButton();
+            this.currentlabel = new System.Windows.Forms.Label();
+            this.currentimg = new System.Windows.Forms.PictureBox();
             this.CloseButton = new FontAwesome.Sharp.IconButton();
-            this.User = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.arquivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.novoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -82,15 +84,13 @@ namespace Parametrizador
             this.selecionarTudoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.personalizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.opçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.currentimg = new System.Windows.Forms.PictureBox();
-            this.currentlabel = new System.Windows.Forms.Label();
             this.PanelMenu.SuspendLayout();
             this.IconPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelTitleBar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.currentimg)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.panelDesktop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.currentimg)).BeginInit();
             this.SuspendLayout();
             // 
             // PanelMenu
@@ -341,6 +341,18 @@ namespace Parametrizador
             this.panelTitleBar.TabIndex = 3;
             this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
             // 
+            // User
+            // 
+            this.User.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.User.AutoSize = true;
+            this.User.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.User.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.User.Location = new System.Drawing.Point(626, 80);
+            this.User.Name = "User";
+            this.User.Size = new System.Drawing.Size(75, 21);
+            this.User.TabIndex = 0;
+            this.User.Text = "fty83294";
+            // 
             // MaximizeButton
             // 
             this.MaximizeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -377,6 +389,31 @@ namespace Parametrizador
             this.MinimizeButton.UseVisualStyleBackColor = false;
             this.MinimizeButton.Click += new System.EventHandler(this.MinimizeButton_Click);
             // 
+            // currentlabel
+            // 
+            this.currentlabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.currentlabel.AutoSize = true;
+            this.currentlabel.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.currentlabel.ForeColor = System.Drawing.SystemColors.Window;
+            this.currentlabel.Location = new System.Drawing.Point(290, 72);
+            this.currentlabel.Name = "currentlabel";
+            this.currentlabel.Size = new System.Drawing.Size(147, 30);
+            this.currentlabel.TabIndex = 7;
+            this.currentlabel.Text = "Hard Sweet";
+            this.currentlabel.Visible = false;
+            // 
+            // currentimg
+            // 
+            this.currentimg.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.currentimg.Image = global::Parametrizador.Properties.Resources.hsw;
+            this.currentimg.Location = new System.Drawing.Point(254, 66);
+            this.currentimg.Name = "currentimg";
+            this.currentimg.Size = new System.Drawing.Size(41, 39);
+            this.currentimg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.currentimg.TabIndex = 6;
+            this.currentimg.TabStop = false;
+            this.currentimg.Visible = false;
+            // 
             // CloseButton
             // 
             this.CloseButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -396,18 +433,6 @@ namespace Parametrizador
             this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
             this.CloseButton.MouseEnter += new System.EventHandler(this.CloseButton_MouseEnter);
             this.CloseButton.MouseLeave += new System.EventHandler(this.CloseButton_MouseLeave);
-            // 
-            // User
-            // 
-            this.User.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.User.AutoSize = true;
-            this.User.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.User.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.User.Location = new System.Drawing.Point(626, 80);
-            this.User.Name = "User";
-            this.User.Size = new System.Drawing.Size(75, 21);
-            this.User.TabIndex = 0;
-            this.User.Text = "fty83294";
             // 
             // menuStrip1
             // 
@@ -664,6 +689,7 @@ namespace Parametrizador
             this.CCbutton.Text = "Cream Cracker";
             this.CCbutton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.CCbutton.UseVisualStyleBackColor = false;
+            this.CCbutton.Click += new System.EventHandler(this.CCbutton_Click);
             // 
             // desfazerToolStripMenuItem
             // 
@@ -734,31 +760,6 @@ namespace Parametrizador
             this.opçõesToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
             this.opçõesToolStripMenuItem.Text = "&Opções";
             // 
-            // currentimg
-            // 
-            this.currentimg.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.currentimg.Image = global::Parametrizador.Properties.Resources.hsw;
-            this.currentimg.Location = new System.Drawing.Point(254, 66);
-            this.currentimg.Name = "currentimg";
-            this.currentimg.Size = new System.Drawing.Size(41, 39);
-            this.currentimg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.currentimg.TabIndex = 6;
-            this.currentimg.TabStop = false;
-            this.currentimg.Visible = false;
-            // 
-            // currentlabel
-            // 
-            this.currentlabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.currentlabel.AutoSize = true;
-            this.currentlabel.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currentlabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.currentlabel.Location = new System.Drawing.Point(290, 72);
-            this.currentlabel.Name = "currentlabel";
-            this.currentlabel.Size = new System.Drawing.Size(147, 30);
-            this.currentlabel.TabIndex = 7;
-            this.currentlabel.Text = "Hard Sweet";
-            this.currentlabel.Visible = false;
-            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -778,10 +779,10 @@ namespace Parametrizador
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelTitleBar.ResumeLayout(false);
             this.panelTitleBar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.currentimg)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panelDesktop.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.currentimg)).EndInit();
             this.ResumeLayout(false);
 
         }

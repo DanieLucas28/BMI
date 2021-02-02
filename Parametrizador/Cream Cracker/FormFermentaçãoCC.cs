@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Parametrizador.Cream_Cracker
 {
-    public partial class FormFormaçãoCC : Form
+    public partial class FormFermentaçãoCC : Form
     {
-        public FormFormaçãoCC()
+        public FormFermentaçãoCC()
         {
             InitializeComponent();
         }

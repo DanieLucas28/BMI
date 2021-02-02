@@ -1,7 +1,7 @@
 ﻿
 namespace Parametrizador.Cream_Cracker
 {
-    partial class FormResfriamento
+    partial class FormResfriamentoCC
     {
         /// <summary>
         /// Required designer variable.

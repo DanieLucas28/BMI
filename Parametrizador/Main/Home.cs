@@ -179,6 +179,11 @@ namespace Parametrizador
 
         // funções dos botões centrais
 
+        private void CCbutton_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Cream_Cracker.CCMain());
+            Toppa("Cream Cracker", Parametrizador.Properties.Resources.ccw);
+        }
 
         private void HSbutton_Click(object sender, EventArgs e)
         {
@@ -194,6 +199,7 @@ namespace Parametrizador
 
         private void CookieButton_Click(object sender, EventArgs e)
         {
+            Toppa("Soft Dough", Parametrizador.Properties.Resources.cookiew);
             OpenChildForm(new Cookies.CookieMain());
             BtnResfriamentoCookie.Visible = true;
             BtnForneamentoCookie.Visible = true;
@@ -204,7 +210,8 @@ namespace Parametrizador
 
         private void SDbutton_Click(object sender, EventArgs e)
         {
-            Toppa("Teste", Parametrizador.Properties.Resources.hsw);
+            Toppa("Short Dough", Parametrizador.Properties.Resources.sdw);
+            OpenChildForm(new Short_Dough.SDMain());
         }
 
         // botão home
@@ -216,6 +223,9 @@ namespace Parametrizador
             
             leftBorderBtn.Visible = false;
             currentChildForm.Close();
+            currentimg.Visible = false;
+            currentlabel.Visible = false;
+
         }
 
         // menu
@@ -284,6 +294,8 @@ namespace Parametrizador
             ActivateButton(sender, RGBColors.color1);
             OpenChildForm(new FormResfriamentoCookie());
         }
+
+        
     }   
 
 

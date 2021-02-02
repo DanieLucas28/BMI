@@ -29,11 +29,11 @@ namespace Parametrizador.Main
         /// </summary>
         private void InitializeComponent()
         {
-            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
@@ -47,7 +47,6 @@ namespace Parametrizador.Main
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.panel6 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -58,20 +57,12 @@ namespace Parametrizador.Main
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
-            // vScrollBar1
-            // 
-            this.vScrollBar1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.vScrollBar1.Location = new System.Drawing.Point(671, 0);
-            this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(17, 367);
-            this.vScrollBar1.TabIndex = 0;
-            // 
             // panel1
             // 
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(671, 10);
+            this.panel1.Size = new System.Drawing.Size(688, 10);
             this.panel1.TabIndex = 1;
             // 
             // pictureBox1
@@ -97,6 +88,7 @@ namespace Parametrizador.Main
             // 
             // panel2
             // 
+            this.panel2.AutoScroll = true;
             this.panel2.Controls.Add(this.panel6);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
@@ -104,8 +96,16 @@ namespace Parametrizador.Main
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 10);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(671, 230);
+            this.panel2.Size = new System.Drawing.Size(688, 230);
             this.panel2.TabIndex = 2;
+            // 
+            // panel6
+            // 
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel6.Location = new System.Drawing.Point(0, 220);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(688, 10);
+            this.panel6.TabIndex = 4;
             // 
             // label2
             // 
@@ -126,7 +126,7 @@ namespace Parametrizador.Main
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 240);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(671, 230);
+            this.panel3.Size = new System.Drawing.Size(688, 230);
             this.panel3.TabIndex = 3;
             // 
             // label3
@@ -169,7 +169,7 @@ namespace Parametrizador.Main
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 470);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(671, 230);
+            this.panel4.Size = new System.Drawing.Size(688, 230);
             this.panel4.TabIndex = 4;
             // 
             // label5
@@ -212,7 +212,7 @@ namespace Parametrizador.Main
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 700);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(671, 230);
+            this.panel5.Size = new System.Drawing.Size(688, 230);
             this.panel5.TabIndex = 5;
             // 
             // label7
@@ -247,14 +247,6 @@ namespace Parametrizador.Main
             this.pictureBox4.TabIndex = 0;
             this.pictureBox4.TabStop = false;
             // 
-            // panel6
-            // 
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel6.Location = new System.Drawing.Point(0, 220);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(671, 10);
-            this.panel6.TabIndex = 4;
-            // 
             // Fontes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -266,7 +258,6 @@ namespace Parametrizador.Main
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.vScrollBar1);
             this.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Name = "Fontes";
             this.Text = "Fontes";
