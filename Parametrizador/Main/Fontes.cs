@@ -17,10 +17,7 @@ namespace Parametrizador.Main
         {
             InitializeComponent();
 
-            ScrollBar vScrollBar1 = new VScrollBar();
-            vScrollBar1.Dock = DockStyle.Right;
-            vScrollBar1.Scroll += (sender, e) => { panel1.VerticalScroll.Value = vScrollBar1.Value; };
-            panel1.Controls.Add(vScrollBar1);
+       
         }
         
        

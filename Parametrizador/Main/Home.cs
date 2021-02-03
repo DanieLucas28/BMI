@@ -1,6 +1,7 @@
 ﻿using FontAwesome.Sharp;
 using Parametrizador.Cookies;
 using Parametrizador.Main;
+using Parametrizador.Short_Dough;
 using System;
 using System.Drawing;
 using System.Runtime.InteropServices;
@@ -102,6 +103,7 @@ namespace Parametrizador
             panelDesktop.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
+            childForm.AutoScroll = true;
 
             if (String.Equals(currentChildForm.Name, "Fontes"))
              {
@@ -119,11 +121,15 @@ namespace Parametrizador
             BtnFormaçãoHS.Visible = false;
             BtnResfriamentoCookie.Visible = false;
             BtnForneamentoCookie.Visible = false;
-            BtnFormaçãoCookie.Visible = false;
+            BtnFormaçãoCookie.Visible =false;
             BtnMisturaCookie.Visible = false;
+            BtnResfriamentoSD.Visible =false;
+            BtnRecheioSD.Visible =     false;
+            BtnForneamentoSD.Visible = false;
+            BtnFormaçãoSD.Visible =    false;
+            BtnMisturaSD.Visible = false;
 
         }
-
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -145,6 +151,12 @@ namespace Parametrizador
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
 
+        }
+
+        private void menuStrip1_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
         //Close, maximize and minimize
@@ -212,6 +224,11 @@ namespace Parametrizador
         {
             Toppa("Short Dough", Parametrizador.Properties.Resources.sdw);
             OpenChildForm(new Short_Dough.SDMain());
+            BtnResfriamentoSD.Visible =true;
+            BtnRecheioSD.Visible =     true;
+            BtnForneamentoSD.Visible = true;
+            BtnFormaçãoSD.Visible =    true;
+            BtnMisturaSD.Visible = true;
         }
 
         // botão home
@@ -293,6 +310,36 @@ namespace Parametrizador
         {
             ActivateButton(sender, RGBColors.color1);
             OpenChildForm(new FormResfriamentoCookie());
+        }
+
+        private void BtnFormaçãoSD_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new FormFormaçãoSD());
+        }
+
+        private void BtnMisturaSD_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new FormMisturaSD());
+        }
+
+        private void BtnForneamentoSD_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new FormForneamentoSD());
+        }
+
+        private void BtnResfriamentoSD_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new FormResfriamentoSD());
+        }
+
+        private void BtnRecheioSD_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new FormRecheioSD());
         }
 
         

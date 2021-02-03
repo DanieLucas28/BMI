@@ -31,6 +31,11 @@ namespace Parametrizador
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.PanelMenu = new System.Windows.Forms.Panel();
+            this.BtnResfriamentoSD = new FontAwesome.Sharp.IconButton();
+            this.BtnRecheioSD = new FontAwesome.Sharp.IconButton();
+            this.BtnForneamentoSD = new FontAwesome.Sharp.IconButton();
+            this.BtnFormaçãoSD = new FontAwesome.Sharp.IconButton();
+            this.BtnMisturaSD = new FontAwesome.Sharp.IconButton();
             this.BtnResfriamentoCookie = new FontAwesome.Sharp.IconButton();
             this.BtnForneamentoCookie = new FontAwesome.Sharp.IconButton();
             this.BtnFormaçãoCookie = new FontAwesome.Sharp.IconButton();
@@ -96,6 +101,11 @@ namespace Parametrizador
             // PanelMenu
             // 
             this.PanelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(77)))), ((int)(((byte)(135)))));
+            this.PanelMenu.Controls.Add(this.BtnResfriamentoSD);
+            this.PanelMenu.Controls.Add(this.BtnRecheioSD);
+            this.PanelMenu.Controls.Add(this.BtnForneamentoSD);
+            this.PanelMenu.Controls.Add(this.BtnFormaçãoSD);
+            this.PanelMenu.Controls.Add(this.BtnMisturaSD);
             this.PanelMenu.Controls.Add(this.BtnResfriamentoCookie);
             this.PanelMenu.Controls.Add(this.BtnForneamentoCookie);
             this.PanelMenu.Controls.Add(this.BtnFormaçãoCookie);
@@ -108,8 +118,128 @@ namespace Parametrizador
             this.PanelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.PanelMenu.Location = new System.Drawing.Point(0, 0);
             this.PanelMenu.Name = "PanelMenu";
-            this.PanelMenu.Size = new System.Drawing.Size(220, 721);
+            this.PanelMenu.Size = new System.Drawing.Size(220, 511);
             this.PanelMenu.TabIndex = 2;
+            // 
+            // BtnResfriamentoSD
+            // 
+            this.BtnResfriamentoSD.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnResfriamentoSD.FlatAppearance.BorderSize = 0;
+            this.BtnResfriamentoSD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnResfriamentoSD.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnResfriamentoSD.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BtnResfriamentoSD.IconChar = FontAwesome.Sharp.IconChar.TemperatureLow;
+            this.BtnResfriamentoSD.IconColor = System.Drawing.Color.White;
+            this.BtnResfriamentoSD.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnResfriamentoSD.IconSize = 32;
+            this.BtnResfriamentoSD.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnResfriamentoSD.Location = new System.Drawing.Point(0, 837);
+            this.BtnResfriamentoSD.Name = "BtnResfriamentoSD";
+            this.BtnResfriamentoSD.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.BtnResfriamentoSD.Size = new System.Drawing.Size(220, 60);
+            this.BtnResfriamentoSD.TabIndex = 13;
+            this.BtnResfriamentoSD.Text = "Resfriamento";
+            this.BtnResfriamentoSD.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnResfriamentoSD.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnResfriamentoSD.UseVisualStyleBackColor = true;
+            this.BtnResfriamentoSD.Visible = false;
+            this.BtnResfriamentoSD.Click += new System.EventHandler(this.BtnResfriamentoSD_Click);
+            // 
+            // BtnRecheioSD
+            // 
+            this.BtnRecheioSD.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnRecheioSD.FlatAppearance.BorderSize = 0;
+            this.BtnRecheioSD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnRecheioSD.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnRecheioSD.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BtnRecheioSD.IconChar = FontAwesome.Sharp.IconChar.Tint;
+            this.BtnRecheioSD.IconColor = System.Drawing.Color.White;
+            this.BtnRecheioSD.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnRecheioSD.IconSize = 32;
+            this.BtnRecheioSD.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnRecheioSD.Location = new System.Drawing.Point(0, 777);
+            this.BtnRecheioSD.Name = "BtnRecheioSD";
+            this.BtnRecheioSD.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.BtnRecheioSD.Size = new System.Drawing.Size(220, 60);
+            this.BtnRecheioSD.TabIndex = 12;
+            this.BtnRecheioSD.Text = "Recheio";
+            this.BtnRecheioSD.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnRecheioSD.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnRecheioSD.UseVisualStyleBackColor = true;
+            this.BtnRecheioSD.Visible = false;
+            this.BtnRecheioSD.Click += new System.EventHandler(this.BtnRecheioSD_Click);
+            // 
+            // BtnForneamentoSD
+            // 
+            this.BtnForneamentoSD.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnForneamentoSD.FlatAppearance.BorderSize = 0;
+            this.BtnForneamentoSD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnForneamentoSD.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnForneamentoSD.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BtnForneamentoSD.IconChar = FontAwesome.Sharp.IconChar.DumpsterFire;
+            this.BtnForneamentoSD.IconColor = System.Drawing.Color.White;
+            this.BtnForneamentoSD.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnForneamentoSD.IconSize = 32;
+            this.BtnForneamentoSD.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnForneamentoSD.Location = new System.Drawing.Point(0, 717);
+            this.BtnForneamentoSD.Name = "BtnForneamentoSD";
+            this.BtnForneamentoSD.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.BtnForneamentoSD.Size = new System.Drawing.Size(220, 60);
+            this.BtnForneamentoSD.TabIndex = 11;
+            this.BtnForneamentoSD.Text = "Forneamento";
+            this.BtnForneamentoSD.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnForneamentoSD.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnForneamentoSD.UseVisualStyleBackColor = true;
+            this.BtnForneamentoSD.Visible = false;
+            this.BtnForneamentoSD.Click += new System.EventHandler(this.BtnForneamentoSD_Click);
+            // 
+            // BtnFormaçãoSD
+            // 
+            this.BtnFormaçãoSD.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnFormaçãoSD.FlatAppearance.BorderSize = 0;
+            this.BtnFormaçãoSD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnFormaçãoSD.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnFormaçãoSD.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BtnFormaçãoSD.IconChar = FontAwesome.Sharp.IconChar.Xbox;
+            this.BtnFormaçãoSD.IconColor = System.Drawing.Color.White;
+            this.BtnFormaçãoSD.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnFormaçãoSD.IconSize = 32;
+            this.BtnFormaçãoSD.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnFormaçãoSD.Location = new System.Drawing.Point(0, 657);
+            this.BtnFormaçãoSD.Name = "BtnFormaçãoSD";
+            this.BtnFormaçãoSD.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.BtnFormaçãoSD.Size = new System.Drawing.Size(220, 60);
+            this.BtnFormaçãoSD.TabIndex = 10;
+            this.BtnFormaçãoSD.Text = "Formação";
+            this.BtnFormaçãoSD.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnFormaçãoSD.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnFormaçãoSD.UseVisualStyleBackColor = true;
+            this.BtnFormaçãoSD.Visible = false;
+            this.BtnFormaçãoSD.Click += new System.EventHandler(this.BtnFormaçãoSD_Click);
+            // 
+            // BtnMisturaSD
+            // 
+            this.BtnMisturaSD.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnMisturaSD.FlatAppearance.BorderSize = 0;
+            this.BtnMisturaSD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnMisturaSD.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnMisturaSD.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BtnMisturaSD.IconChar = FontAwesome.Sharp.IconChar.Blender;
+            this.BtnMisturaSD.IconColor = System.Drawing.Color.White;
+            this.BtnMisturaSD.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnMisturaSD.IconSize = 32;
+            this.BtnMisturaSD.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnMisturaSD.Location = new System.Drawing.Point(0, 597);
+            this.BtnMisturaSD.Name = "BtnMisturaSD";
+            this.BtnMisturaSD.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.BtnMisturaSD.Size = new System.Drawing.Size(220, 60);
+            this.BtnMisturaSD.TabIndex = 9;
+            this.BtnMisturaSD.Text = "Mistura";
+            this.BtnMisturaSD.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnMisturaSD.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnMisturaSD.UseVisualStyleBackColor = true;
+            this.BtnMisturaSD.Visible = false;
+            this.BtnMisturaSD.Click += new System.EventHandler(this.BtnMisturaSD_Click);
             // 
             // BtnResfriamentoCookie
             // 
@@ -347,7 +477,7 @@ namespace Parametrizador
             this.User.AutoSize = true;
             this.User.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.User.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.User.Location = new System.Drawing.Point(626, 80);
+            this.User.Location = new System.Drawing.Point(602, 84);
             this.User.Name = "User";
             this.User.Size = new System.Drawing.Size(75, 21);
             this.User.TabIndex = 0;
@@ -395,7 +525,7 @@ namespace Parametrizador
             this.currentlabel.AutoSize = true;
             this.currentlabel.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.currentlabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.currentlabel.Location = new System.Drawing.Point(290, 72);
+            this.currentlabel.Location = new System.Drawing.Point(297, 72);
             this.currentlabel.Name = "currentlabel";
             this.currentlabel.Size = new System.Drawing.Size(147, 30);
             this.currentlabel.TabIndex = 7;
@@ -447,6 +577,7 @@ namespace Parametrizador
             this.menuStrip1.Size = new System.Drawing.Size(704, 28);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.menuStrip1_MouseDown);
             // 
             // arquivoToolStripMenuItem
             // 
@@ -604,6 +735,7 @@ namespace Parametrizador
             // panelDesktop
             // 
             this.panelDesktop.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.panelDesktop.AutoScroll = true;
             this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(87)))), ((int)(((byte)(152)))));
             this.panelDesktop.Controls.Add(this.CookieButton);
             this.panelDesktop.Controls.Add(this.HSbutton);
@@ -612,7 +744,7 @@ namespace Parametrizador
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(220, 105);
             this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(704, 616);
+            this.panelDesktop.Size = new System.Drawing.Size(704, 406);
             this.panelDesktop.TabIndex = 4;
             // 
             // CookieButton
@@ -625,7 +757,7 @@ namespace Parametrizador
             this.CookieButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.CookieButton.Image = global::Parametrizador.Properties.Resources.cookiew;
             this.CookieButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.CookieButton.Location = new System.Drawing.Point(383, 324);
+            this.CookieButton.Location = new System.Drawing.Point(383, 219);
             this.CookieButton.Name = "CookieButton";
             this.CookieButton.Size = new System.Drawing.Size(247, 146);
             this.CookieButton.TabIndex = 49;
@@ -644,7 +776,7 @@ namespace Parametrizador
             this.HSbutton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.HSbutton.Image = global::Parametrizador.Properties.Resources.hsw;
             this.HSbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.HSbutton.Location = new System.Drawing.Point(85, 324);
+            this.HSbutton.Location = new System.Drawing.Point(85, 219);
             this.HSbutton.Name = "HSbutton";
             this.HSbutton.Size = new System.Drawing.Size(247, 146);
             this.HSbutton.TabIndex = 48;
@@ -663,7 +795,7 @@ namespace Parametrizador
             this.SDbutton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.SDbutton.Image = global::Parametrizador.Properties.Resources.sdw;
             this.SDbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.SDbutton.Location = new System.Drawing.Point(383, 144);
+            this.SDbutton.Location = new System.Drawing.Point(383, 39);
             this.SDbutton.Name = "SDbutton";
             this.SDbutton.Size = new System.Drawing.Size(247, 146);
             this.SDbutton.TabIndex = 47;
@@ -682,7 +814,7 @@ namespace Parametrizador
             this.CCbutton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.CCbutton.Image = global::Parametrizador.Properties.Resources.ccw;
             this.CCbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.CCbutton.Location = new System.Drawing.Point(85, 144);
+            this.CCbutton.Location = new System.Drawing.Point(85, 39);
             this.CCbutton.Name = "CCbutton";
             this.CCbutton.Size = new System.Drawing.Size(247, 146);
             this.CCbutton.TabIndex = 46;
@@ -765,7 +897,7 @@ namespace Parametrizador
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(924, 721);
+            this.ClientSize = new System.Drawing.Size(924, 511);
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.PanelMenu);
@@ -842,6 +974,11 @@ namespace Parametrizador
         private FontAwesome.Sharp.IconButton BtnMisturaCookie;
         private System.Windows.Forms.PictureBox currentimg;
         private System.Windows.Forms.Label currentlabel;
+        private FontAwesome.Sharp.IconButton BtnResfriamentoSD;
+        private FontAwesome.Sharp.IconButton BtnRecheioSD;
+        private FontAwesome.Sharp.IconButton BtnForneamentoSD;
+        private FontAwesome.Sharp.IconButton BtnFormaçãoSD;
+        private FontAwesome.Sharp.IconButton BtnMisturaSD;
     }
 }
 
