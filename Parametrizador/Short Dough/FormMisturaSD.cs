@@ -20,6 +20,8 @@ namespace Parametrizador.Short_Dough
 
         private void Tempmassa_TextChanged(object sender, EventArgs e)
         {
+            linktempmassa.Visible = true;
+            dadosreftempmassa.Visible = true;
             if (Int32.TryParse(Tempmassa.Text.Trim(), out _))
             {
 
