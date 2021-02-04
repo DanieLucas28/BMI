@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Parametrizador.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +18,8 @@ namespace Parametrizador.Short_Dough
             InitializeComponent();
 
         }
+
+        // groupbox temperatura da massa
 
         private void Tempmassa_TextChanged(object sender, EventArgs e)
         {
@@ -52,5 +55,30 @@ namespace Parametrizador.Short_Dough
                 this.linktempmassa.Text = "Digite um valor válido para a temperatura.";
             }
         }
+
+        private void radioButtonmisturafluxo1_CheckedChanged(object sender, EventArgs e)
+        {
+            dadosreffluxo.Visible = true;
+            linkfluxoadição.LinkArea = new LinkArea(0, 0);
+            linkfluxoadição.Visible = true;
+            linkfluxoadição.Text = "Fluxo pouco utilizado para este tipo de biscoito, indicado apenas por Manley. Pode prejudicar a homogeneidade da mistura e utiliza maior quantidade de água.";
+            linkfluxoadição.Links.Add(70, 6, "#");
+          
+        }
+
+        private void radioButtonmisturafluxo2_CheckedChanged(object sender, EventArgs e)
+        {
+            dadosreffluxo.Visible = true;
+            linkfluxoadição.LinkArea = new LinkArea(0, 0);
+            linkfluxoadição.Visible = true;
+            linkfluxoadição.Text = "Fluxo amplamente utilizado para este tipo de biscoito e indicado por todos os autores. Deve ser utilizado por utilizar menor quantidade de água em relação aos outros métodos e permitir uma mistura mais homogênea dos ingredientes.";
+        }
+
+        //groupbox fluxo de adição
+
+ 
+       
+
+
     }
 }
