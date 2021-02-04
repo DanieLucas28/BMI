@@ -229,6 +229,8 @@ namespace Parametrizador
             BtnForneamentoSD.Visible = true;
             BtnFormaçãoSD.Visible =    true;
             BtnMisturaSD.Visible = true;
+            if (WindowState == FormWindowState.Normal)
+                WindowState = FormWindowState.Maximized;
         }
 
         // botão home

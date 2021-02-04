@@ -63,7 +63,9 @@ namespace Parametrizador.Short_Dough
             linkfluxoadição.Visible = true;
             linkfluxoadição.Text = "Fluxo pouco utilizado para este tipo de biscoito, indicado apenas por Manley. Pode prejudicar a homogeneidade da mistura e utiliza maior quantidade de água.";
             linkfluxoadição.Links.Add(70, 6, "#");
-          
+            boxtempomistura.Visible = true;
+            Tempmistura2.Visible = false;
+            label17.Text = "Tempo de mistura";
         }
 
         private void radioButtonmisturafluxo2_CheckedChanged(object sender, EventArgs e)
@@ -72,13 +74,61 @@ namespace Parametrizador.Short_Dough
             linkfluxoadição.LinkArea = new LinkArea(0, 0);
             linkfluxoadição.Visible = true;
             linkfluxoadição.Text = "Fluxo amplamente utilizado para este tipo de biscoito e indicado por todos os autores. Deve ser utilizado por utilizar menor quantidade de água em relação aos outros métodos e permitir uma mistura mais homogênea dos ingredientes.";
+            label23.Visible = true;
+            Tempmistura2.Visible = true;
+            boxtempomistura.Visible = true;
         }
 
-        //groupbox fluxo de adição
 
- 
-       
+        //groupbox Tempo de mistura
+
+        private void TempMistura_TextChanged(object sender, EventArgs e)
+        {
+            dadosreftempmistura.Visible = true;
+            if (Int32.TryParse(TempMistura.Text.Trim(), out _))
+            {
+                if (Tempmistura2.Visible==true)
+                {
+                    if (Convert.ToInt32(TempMistura.Text.Trim()) > 0 && (Convert.ToInt32(Tempmistura2.Text.Trim()) > 0))
+                    {
+                        linktempmistura.Visible = true;
+                        linktempmistura.LinkArea = new LinkArea(0, 0);
+                        linktempmistura.Text = "O tempo de mistura possui influência direta na formação de glúten, e portanto o tempo ótimo deve ser definido de acordo com a estrutura desejada da massa para a etapa de formação. É importante que o tempo seja o mínimo necessário para obtenção da temperatura indicada para a massa, juntamente com a consistência adequada. Excesso de mistura ocasiona maior formação de glúten e modificações na estrutura da massa.";
+                    }
+                }
+                else
+                {
+                    if (Convert.ToInt32(TempMistura.Text.Trim()) > 0)
+                    {
+                        linktempmistura.Visible = true;
+                        linktempmistura.LinkArea = new LinkArea(0, 0);
+                        linktempmistura.Text = "O tempo de mistura possui influência direta na formação de glúten, e portanto o tempo ótimo deve ser definido de acordo com a estrutura desejada da massa para a etapa de formação. É importante que o tempo seja o mínimo necessário para obtenção da temperatura indicada para a massa, juntamente com a consistência adequada. Excesso de mistura ocasiona maior formação de glúten e modificações na estrutura da massa.";
+                    }
+
+                }
+            }
+            else
+            {
+                this.linktempmassa.Text = "Digite um valor válido para a temperatura.";
+            }
+
+        }
 
 
+
+        //mudar cor do link label
+
+
+        private void linktempmassa_Paint(object sender, PaintEventArgs e)
+        {
+            ControlPaint.DrawBorder(e.Graphics, linktempmassa.DisplayRectangle, Color.White, ButtonBorderStyle.Solid);
+        }
+
+        private void linkfluxoadição_Paint(object sender, PaintEventArgs e)
+        {
+            ControlPaint.DrawBorder(e.Graphics, linkfluxoadição.DisplayRectangle, Color.White, ButtonBorderStyle.Solid);
+        }
+
+        
     }
 }
