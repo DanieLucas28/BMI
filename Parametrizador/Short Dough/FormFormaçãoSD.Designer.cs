@@ -97,7 +97,7 @@ namespace Parametrizador.Short_Dough
             this.dadosrefext.Location = new System.Drawing.Point(472, 11);
             this.dadosrefext.Margin = new System.Windows.Forms.Padding(0);
             this.dadosrefext.Name = "dadosrefext";
-            this.dadosrefext.Size = new System.Drawing.Size(382, 96);
+            this.dadosrefext.Size = new System.Drawing.Size(382, 76);
             this.dadosrefext.TabIndex = 9;
             this.dadosrefext.TabStop = false;
             this.dadosrefext.Visible = false;
@@ -108,7 +108,7 @@ namespace Parametrizador.Short_Dough
             this.label15.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label15.Location = new System.Drawing.Point(191, 53);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(191, 41);
+            this.label15.Size = new System.Drawing.Size(191, 21);
             this.label15.TabIndex = 10;
             this.label15.Text = "Sem fim";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -119,7 +119,7 @@ namespace Parametrizador.Short_Dough
             this.label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label13.Location = new System.Drawing.Point(1, 53);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(189, 41);
+            this.label13.Size = new System.Drawing.Size(189, 21);
             this.label13.TabIndex = 14;
             this.label13.Text = "Sem fim";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

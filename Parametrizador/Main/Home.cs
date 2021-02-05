@@ -1,6 +1,7 @@
 ﻿using FontAwesome.Sharp;
 using Parametrizador.Cookies;
 using Parametrizador.Main;
+using Parametrizador.Properties;
 using Parametrizador.Short_Dough;
 using System;
 using System.Drawing;
@@ -219,7 +220,6 @@ namespace Parametrizador
             BtnMisturaCookie.Visible = true;
         }
 
-
         private void SDbutton_Click(object sender, EventArgs e)
         {
             Toppa("Short Dough", Parametrizador.Properties.Resources.sdw);
@@ -229,8 +229,6 @@ namespace Parametrizador
             BtnForneamentoSD.Visible = true;
             BtnFormaçãoSD.Visible =    true;
             BtnMisturaSD.Visible = true;
-            if (WindowState == FormWindowState.Normal)
-                WindowState = FormWindowState.Maximized;
         }
 
         // botão home
@@ -258,6 +256,12 @@ namespace Parametrizador
             OpenChildForm(new Fontes());
         }
 
+        private void shortDoughToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Short_Dough.SDMain());
+            Toppa("Short Dough", Resources.sdw);
+        }
+
         // funções dos botões laterais
 
         private void BtnMistura_Click(object sender, EventArgs e)
@@ -273,6 +277,8 @@ namespace Parametrizador
         {
             ActivateButton(sender, RGBColors.color3);
             OpenChildForm(new FormFormaçãoHS());
+            if (WindowState == FormWindowState.Normal)
+                WindowState = FormWindowState.Maximized;
 
         }
 
@@ -280,6 +286,8 @@ namespace Parametrizador
         {
             ActivateButton(sender, RGBColors.color2);
             OpenChildForm(new FormForneamentoHS());
+            if (WindowState == FormWindowState.Normal)
+                WindowState = FormWindowState.Maximized;
 
         }
 
@@ -287,6 +295,8 @@ namespace Parametrizador
         {
             ActivateButton(sender, RGBColors.color4);
             OpenChildForm(new FormResfriamento());
+            if (WindowState == FormWindowState.Normal)
+                WindowState = FormWindowState.Maximized;
 
         }
 
@@ -294,54 +304,72 @@ namespace Parametrizador
         {
             ActivateButton(sender, RGBColors.color1);
             OpenChildForm(new FormFormaçãoCookie());
+            if (WindowState == FormWindowState.Normal)
+                WindowState = FormWindowState.Maximized;
         }
 
         private void BtnMisturaCookie_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
             OpenChildForm(new FormMisturaCookie());
+            if (WindowState == FormWindowState.Normal)
+                WindowState = FormWindowState.Maximized;
         }
 
         private void BtnForneamentoCookie_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
             OpenChildForm(new FormForneamentoCookie());
+            if (WindowState == FormWindowState.Normal)
+                WindowState = FormWindowState.Maximized;
         }
 
         private void BtnResfriamentoCookie_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
             OpenChildForm(new FormResfriamentoCookie());
+            if (WindowState == FormWindowState.Normal)
+                WindowState = FormWindowState.Maximized;
         }
 
         private void BtnFormaçãoSD_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
             OpenChildForm(new FormFormaçãoSD());
+            if (WindowState == FormWindowState.Normal)
+                WindowState = FormWindowState.Maximized;
         }
 
         private void BtnMisturaSD_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
             OpenChildForm(new FormMisturaSD());
+            if (WindowState == FormWindowState.Normal)
+                WindowState = FormWindowState.Maximized;
         }
 
         private void BtnForneamentoSD_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
             OpenChildForm(new FormForneamentoSD());
+            if (WindowState == FormWindowState.Normal)
+                WindowState = FormWindowState.Maximized;
         }
 
         private void BtnResfriamentoSD_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
             OpenChildForm(new FormResfriamentoSD());
+            if (WindowState == FormWindowState.Normal)
+                WindowState = FormWindowState.Maximized;
         }
 
         private void BtnRecheioSD_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
             OpenChildForm(new FormRecheioSD());
+            if (WindowState == FormWindowState.Normal)
+                WindowState = FormWindowState.Maximized;
         }
 
         

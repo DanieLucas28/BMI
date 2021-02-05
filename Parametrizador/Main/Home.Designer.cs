@@ -620,6 +620,7 @@ namespace Parametrizador
             this.shortDoughToolStripMenuItem.Name = "shortDoughToolStripMenuItem";
             this.shortDoughToolStripMenuItem.Size = new System.Drawing.Size(192, 24);
             this.shortDoughToolStripMenuItem.Text = "Short Dough";
+            this.shortDoughToolStripMenuItem.Click += new System.EventHandler(this.shortDoughToolStripMenuItem_Click);
             // 
             // hardSweetToolStripMenuItem
             // 
@@ -705,31 +706,31 @@ namespace Parametrizador
             // conteúdoToolStripMenuItem
             // 
             this.conteúdoToolStripMenuItem.Name = "conteúdoToolStripMenuItem";
-            this.conteúdoToolStripMenuItem.Size = new System.Drawing.Size(165, 24);
+            this.conteúdoToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.conteúdoToolStripMenuItem.Text = "&Referências";
             this.conteúdoToolStripMenuItem.Click += new System.EventHandler(this.conteúdoToolStripMenuItem_Click);
             // 
             // índiceToolStripMenuItem
             // 
             this.índiceToolStripMenuItem.Name = "índiceToolStripMenuItem";
-            this.índiceToolStripMenuItem.Size = new System.Drawing.Size(165, 24);
+            this.índiceToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.índiceToolStripMenuItem.Text = "Í&ndice";
             // 
             // pesquisarToolStripMenuItem
             // 
             this.pesquisarToolStripMenuItem.Name = "pesquisarToolStripMenuItem";
-            this.pesquisarToolStripMenuItem.Size = new System.Drawing.Size(165, 24);
+            this.pesquisarToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.pesquisarToolStripMenuItem.Text = "&Pesquisar";
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(162, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(177, 6);
             // 
             // sobreToolStripMenuItem
             // 
             this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
-            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(165, 24);
+            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.sobreToolStripMenuItem.Text = "&Sobre...";
             // 
             // panelDesktop

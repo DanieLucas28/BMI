@@ -47,11 +47,11 @@ namespace Parametrizador.Short_Dough
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox1.Image = global::Parametrizador.Properties.Resources.maria01_1;
+            this.pictureBox1.Image = global::Parametrizador.Properties.Resources.shortdough;
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(109, 179);
+            this.pictureBox1.Location = new System.Drawing.Point(225, 238);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(469, 293);
+            this.pictureBox1.Size = new System.Drawing.Size(237, 116);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
@@ -67,7 +67,7 @@ namespace Parametrizador.Short_Dough
             this.label1.TabIndex = 5;
             this.label1.Text = resources.GetString("label1.Text");
             // 
-            // HSMain
+            // SDMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -76,7 +76,7 @@ namespace Parametrizador.Short_Dough
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
-            this.Name = "HSMain";
+            this.Name = "SDMain";
             this.Text = "HS";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
