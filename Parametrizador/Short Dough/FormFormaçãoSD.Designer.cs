@@ -31,30 +31,30 @@ namespace Parametrizador.Short_Dough
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.lonabox = new System.Windows.Forms.GroupBox();
-            this.dadosreffluxo = new System.Windows.Forms.GroupBox();
+            this.dadosrefext = new System.Windows.Forms.GroupBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.linkfluxoadição = new System.Windows.Forms.LinkLabel();
-            this.radioButtonmisturafluxo2 = new System.Windows.Forms.RadioButton();
-            this.radioButtonmisturafluxo1 = new System.Windows.Forms.RadioButton();
+            this.linklona = new System.Windows.Forms.LinkLabel();
+            this.radioButtonlona2 = new System.Windows.Forms.RadioButton();
+            this.radioButtonlona1 = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.rolobox = new System.Windows.Forms.GroupBox();
-            this.dadosreftempmassa = new System.Windows.Forms.GroupBox();
+            this.dadosrefrolo = new System.Windows.Forms.GroupBox();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.linktempmassa = new System.Windows.Forms.LinkLabel();
+            this.linkrolo = new System.Windows.Forms.LinkLabel();
             this.label1 = new System.Windows.Forms.Label();
-            this.Tempmassa = new System.Windows.Forms.TextBox();
+            this.durezarolo = new System.Windows.Forms.TextBox();
             this.lonabox.SuspendLayout();
-            this.dadosreffluxo.SuspendLayout();
+            this.dadosrefext.SuspendLayout();
             this.rolobox.SuspendLayout();
-            this.dadosreftempmassa.SuspendLayout();
+            this.dadosrefrolo.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -62,15 +62,15 @@ namespace Parametrizador.Short_Dough
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(28, 450);
+            this.panel1.Size = new System.Drawing.Size(28, 400);
             this.panel1.TabIndex = 4;
             // 
             // lonabox
             // 
-            this.lonabox.Controls.Add(this.dadosreffluxo);
-            this.lonabox.Controls.Add(this.linkfluxoadição);
-            this.lonabox.Controls.Add(this.radioButtonmisturafluxo2);
-            this.lonabox.Controls.Add(this.radioButtonmisturafluxo1);
+            this.lonabox.Controls.Add(this.dadosrefext);
+            this.lonabox.Controls.Add(this.linklona);
+            this.lonabox.Controls.Add(this.radioButtonlona2);
+            this.lonabox.Controls.Add(this.radioButtonlona1);
             this.lonabox.Controls.Add(this.label2);
             this.lonabox.Dock = System.Windows.Forms.DockStyle.Top;
             this.lonabox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -86,21 +86,21 @@ namespace Parametrizador.Short_Dough
             this.lonabox.TabStop = false;
             this.lonabox.Text = "Lona de extração";
             // 
-            // dadosreffluxo
+            // dadosrefext
             // 
-            this.dadosreffluxo.Controls.Add(this.label15);
-            this.dadosreffluxo.Controls.Add(this.label13);
-            this.dadosreffluxo.Controls.Add(this.label16);
-            this.dadosreffluxo.Controls.Add(this.label14);
-            this.dadosreffluxo.Controls.Add(this.label12);
-            this.dadosreffluxo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(87)))), ((int)(((byte)(152)))));
-            this.dadosreffluxo.Location = new System.Drawing.Point(472, 11);
-            this.dadosreffluxo.Margin = new System.Windows.Forms.Padding(0);
-            this.dadosreffluxo.Name = "dadosreffluxo";
-            this.dadosreffluxo.Size = new System.Drawing.Size(382, 96);
-            this.dadosreffluxo.TabIndex = 9;
-            this.dadosreffluxo.TabStop = false;
-            this.dadosreffluxo.Visible = false;
+            this.dadosrefext.Controls.Add(this.label15);
+            this.dadosrefext.Controls.Add(this.label13);
+            this.dadosrefext.Controls.Add(this.label16);
+            this.dadosrefext.Controls.Add(this.label14);
+            this.dadosrefext.Controls.Add(this.label12);
+            this.dadosrefext.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(87)))), ((int)(((byte)(152)))));
+            this.dadosrefext.Location = new System.Drawing.Point(472, 11);
+            this.dadosrefext.Margin = new System.Windows.Forms.Padding(0);
+            this.dadosrefext.Name = "dadosrefext";
+            this.dadosrefext.Size = new System.Drawing.Size(382, 96);
+            this.dadosrefext.TabIndex = 9;
+            this.dadosrefext.TabStop = false;
+            this.dadosrefext.Visible = false;
             // 
             // label15
             // 
@@ -110,7 +110,7 @@ namespace Parametrizador.Short_Dough
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(191, 41);
             this.label15.TabIndex = 10;
-            this.label15.Text = "Creme em 2 estágios";
+            this.label15.Text = "Sem fim";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label13
@@ -121,7 +121,7 @@ namespace Parametrizador.Short_Dough
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(189, 41);
             this.label13.TabIndex = 14;
-            this.label13.Text = "Creme em 2 estágios";
+            this.label13.Text = "Sem fim";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label16
@@ -158,57 +158,59 @@ namespace Parametrizador.Short_Dough
             this.label12.Text = "Dados de referência";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // linkfluxoadição
+            // linklona
             // 
-            this.linkfluxoadição.ActiveLinkColor = System.Drawing.Color.DodgerBlue;
-            this.linkfluxoadição.AutoEllipsis = true;
-            this.linkfluxoadição.BackColor = System.Drawing.Color.Transparent;
-            this.linkfluxoadição.DisabledLinkColor = System.Drawing.Color.DimGray;
-            this.linkfluxoadição.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.linkfluxoadição.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.linkfluxoadição.Location = new System.Drawing.Point(3, 119);
-            this.linkfluxoadição.Name = "linkfluxoadição";
-            this.linkfluxoadição.Size = new System.Drawing.Size(1128, 78);
-            this.linkfluxoadição.TabIndex = 8;
-            this.linkfluxoadição.Visible = false;
+            this.linklona.ActiveLinkColor = System.Drawing.Color.DodgerBlue;
+            this.linklona.AutoEllipsis = true;
+            this.linklona.BackColor = System.Drawing.Color.Transparent;
+            this.linklona.DisabledLinkColor = System.Drawing.Color.DimGray;
+            this.linklona.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.linklona.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.linklona.Location = new System.Drawing.Point(3, 119);
+            this.linklona.Name = "linklona";
+            this.linklona.Size = new System.Drawing.Size(1128, 78);
+            this.linklona.TabIndex = 8;
+            this.linklona.Visible = false;
             // 
-            // radioButtonmisturafluxo2
+            // radioButtonlona2
             // 
-            this.radioButtonmisturafluxo2.AutoSize = true;
-            this.radioButtonmisturafluxo2.Location = new System.Drawing.Point(16, 72);
-            this.radioButtonmisturafluxo2.Name = "radioButtonmisturafluxo2";
-            this.radioButtonmisturafluxo2.Size = new System.Drawing.Size(88, 25);
-            this.radioButtonmisturafluxo2.TabIndex = 7;
-            this.radioButtonmisturafluxo2.TabStop = true;
-            this.radioButtonmisturafluxo2.Text = "Sem fim";
-            this.radioButtonmisturafluxo2.UseVisualStyleBackColor = true;
+            this.radioButtonlona2.AutoSize = true;
+            this.radioButtonlona2.Location = new System.Drawing.Point(16, 72);
+            this.radioButtonlona2.Name = "radioButtonlona2";
+            this.radioButtonlona2.Size = new System.Drawing.Size(88, 25);
+            this.radioButtonlona2.TabIndex = 7;
+            this.radioButtonlona2.TabStop = true;
+            this.radioButtonlona2.Text = "Sem fim";
+            this.radioButtonlona2.UseVisualStyleBackColor = true;
+            this.radioButtonlona2.CheckedChanged += new System.EventHandler(this.radioButtonlona2_CheckedChanged);
             // 
-            // radioButtonmisturafluxo1
+            // radioButtonlona1
             // 
-            this.radioButtonmisturafluxo1.AutoSize = true;
-            this.radioButtonmisturafluxo1.Location = new System.Drawing.Point(16, 51);
-            this.radioButtonmisturafluxo1.Name = "radioButtonmisturafluxo1";
-            this.radioButtonmisturafluxo1.Size = new System.Drawing.Size(129, 25);
-            this.radioButtonmisturafluxo1.TabIndex = 6;
-            this.radioButtonmisturafluxo1.TabStop = true;
-            this.radioButtonmisturafluxo1.Text = "Com costura";
-            this.radioButtonmisturafluxo1.UseVisualStyleBackColor = true;
+            this.radioButtonlona1.AutoSize = true;
+            this.radioButtonlona1.Location = new System.Drawing.Point(16, 51);
+            this.radioButtonlona1.Name = "radioButtonlona1";
+            this.radioButtonlona1.Size = new System.Drawing.Size(129, 25);
+            this.radioButtonlona1.TabIndex = 6;
+            this.radioButtonlona1.TabStop = true;
+            this.radioButtonlona1.Text = "Com costura";
+            this.radioButtonlona1.UseVisualStyleBackColor = true;
+            this.radioButtonlona1.CheckedChanged += new System.EventHandler(this.radioButtonmisturafluxo1_CheckedChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(3, 30);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(207, 21);
+            this.label2.Size = new System.Drawing.Size(206, 21);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Tipo de lona de borracha";
+            this.label2.Text = "Tipo de lona de extração";
             // 
             // rolobox
             // 
-            this.rolobox.Controls.Add(this.dadosreftempmassa);
-            this.rolobox.Controls.Add(this.linktempmassa);
+            this.rolobox.Controls.Add(this.dadosrefrolo);
+            this.rolobox.Controls.Add(this.linkrolo);
             this.rolobox.Controls.Add(this.label1);
-            this.rolobox.Controls.Add(this.Tempmassa);
+            this.rolobox.Controls.Add(this.durezarolo);
             this.rolobox.Dock = System.Windows.Forms.DockStyle.Top;
             this.rolobox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rolobox.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -223,21 +225,21 @@ namespace Parametrizador.Short_Dough
             this.rolobox.TabStop = false;
             this.rolobox.Text = "Rolo de borracha";
             // 
-            // dadosreftempmassa
+            // dadosrefrolo
             // 
-            this.dadosreftempmassa.Controls.Add(this.label28);
-            this.dadosreftempmassa.Controls.Add(this.label29);
-            this.dadosreftempmassa.Controls.Add(this.label25);
-            this.dadosreftempmassa.Controls.Add(this.label27);
-            this.dadosreftempmassa.Controls.Add(this.label3);
-            this.dadosreftempmassa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(87)))), ((int)(((byte)(152)))));
-            this.dadosreftempmassa.Location = new System.Drawing.Point(472, 11);
-            this.dadosreftempmassa.Margin = new System.Windows.Forms.Padding(0);
-            this.dadosreftempmassa.Name = "dadosreftempmassa";
-            this.dadosreftempmassa.Size = new System.Drawing.Size(381, 77);
-            this.dadosreftempmassa.TabIndex = 6;
-            this.dadosreftempmassa.TabStop = false;
-            this.dadosreftempmassa.Visible = false;
+            this.dadosrefrolo.Controls.Add(this.label28);
+            this.dadosrefrolo.Controls.Add(this.label29);
+            this.dadosrefrolo.Controls.Add(this.label25);
+            this.dadosrefrolo.Controls.Add(this.label27);
+            this.dadosrefrolo.Controls.Add(this.label3);
+            this.dadosrefrolo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(87)))), ((int)(((byte)(152)))));
+            this.dadosrefrolo.Location = new System.Drawing.Point(472, 11);
+            this.dadosrefrolo.Margin = new System.Windows.Forms.Padding(0);
+            this.dadosrefrolo.Name = "dadosrefrolo";
+            this.dadosrefrolo.Size = new System.Drawing.Size(381, 77);
+            this.dadosrefrolo.TabIndex = 6;
+            this.dadosrefrolo.TabStop = false;
+            this.dadosrefrolo.Visible = false;
             // 
             // label28
             // 
@@ -248,7 +250,7 @@ namespace Parametrizador.Short_Dough
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(189, 21);
             this.label28.TabIndex = 13;
-            this.label28.Text = "-";
+            this.label28.Text = "70~80";
             this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label29
@@ -294,46 +296,47 @@ namespace Parametrizador.Short_Dough
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(380, 21);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Dados de referência (°C)";
+            this.label3.Text = "Dados de referência (Shore)";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // linktempmassa
+            // linkrolo
             // 
-            this.linktempmassa.ActiveLinkColor = System.Drawing.Color.DodgerBlue;
-            this.linktempmassa.AutoEllipsis = true;
-            this.linktempmassa.BackColor = System.Drawing.Color.Transparent;
-            this.linktempmassa.DisabledLinkColor = System.Drawing.Color.DimGray;
-            this.linktempmassa.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.linktempmassa.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.linktempmassa.Location = new System.Drawing.Point(3, 118);
-            this.linktempmassa.Name = "linktempmassa";
-            this.linktempmassa.Size = new System.Drawing.Size(1128, 79);
-            this.linktempmassa.TabIndex = 3;
-            this.linktempmassa.Visible = false;
+            this.linkrolo.ActiveLinkColor = System.Drawing.Color.DodgerBlue;
+            this.linkrolo.AutoEllipsis = true;
+            this.linkrolo.BackColor = System.Drawing.Color.Transparent;
+            this.linkrolo.DisabledLinkColor = System.Drawing.Color.DimGray;
+            this.linkrolo.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.linkrolo.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.linkrolo.Location = new System.Drawing.Point(3, 118);
+            this.linkrolo.Name = "linkrolo";
+            this.linkrolo.Size = new System.Drawing.Size(1128, 79);
+            this.linkrolo.TabIndex = 3;
+            this.linkrolo.Visible = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(3, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(300, 21);
+            this.label1.Size = new System.Drawing.Size(293, 21);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Temperatura da massa nesse estágio";
+            this.label1.Text = "Dureza de rolo de borracha utilizado";
             // 
-            // Tempmassa
+            // durezarolo
             // 
-            this.Tempmassa.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Tempmassa.Location = new System.Drawing.Point(303, 24);
-            this.Tempmassa.Name = "Tempmassa";
-            this.Tempmassa.Size = new System.Drawing.Size(30, 27);
-            this.Tempmassa.TabIndex = 0;
+            this.durezarolo.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.durezarolo.Location = new System.Drawing.Point(302, 27);
+            this.durezarolo.Name = "durezarolo";
+            this.durezarolo.Size = new System.Drawing.Size(30, 27);
+            this.durezarolo.TabIndex = 0;
+            this.durezarolo.TextChanged += new System.EventHandler(this.durezarolo_TextChanged);
             // 
             // FormFormaçãoSD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(87)))), ((int)(((byte)(152)))));
-            this.ClientSize = new System.Drawing.Size(1162, 450);
+            this.ClientSize = new System.Drawing.Size(1162, 400);
             this.Controls.Add(this.rolobox);
             this.Controls.Add(this.lonabox);
             this.Controls.Add(this.panel1);
@@ -341,10 +344,10 @@ namespace Parametrizador.Short_Dough
             this.Text = "FormFormação";
             this.lonabox.ResumeLayout(false);
             this.lonabox.PerformLayout();
-            this.dadosreffluxo.ResumeLayout(false);
+            this.dadosrefext.ResumeLayout(false);
             this.rolobox.ResumeLayout(false);
             this.rolobox.PerformLayout();
-            this.dadosreftempmassa.ResumeLayout(false);
+            this.dadosrefrolo.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -353,25 +356,25 @@ namespace Parametrizador.Short_Dough
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.GroupBox lonabox;
-        private System.Windows.Forms.GroupBox dadosreffluxo;
+        private System.Windows.Forms.GroupBox dadosrefext;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.LinkLabel linkfluxoadição;
-        private System.Windows.Forms.RadioButton radioButtonmisturafluxo2;
-        private System.Windows.Forms.RadioButton radioButtonmisturafluxo1;
+        private System.Windows.Forms.LinkLabel linklona;
+        private System.Windows.Forms.RadioButton radioButtonlona2;
+        private System.Windows.Forms.RadioButton radioButtonlona1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox rolobox;
-        private System.Windows.Forms.GroupBox dadosreftempmassa;
+        private System.Windows.Forms.GroupBox dadosrefrolo;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.LinkLabel linktempmassa;
+        private System.Windows.Forms.LinkLabel linkrolo;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox Tempmassa;
+        private System.Windows.Forms.TextBox durezarolo;
     }
 }
