@@ -116,14 +116,14 @@ namespace Parametrizador.Short_Dough
 
 
 
-        //mudar cor do link label
+        //mudar cor do link label caso eu queria algum dia
 
 
         private void linktempmassa_Paint(object sender, PaintEventArgs e)
         {
             ControlPaint.DrawBorder(e.Graphics, linktempmassa.DisplayRectangle, Color.White, ButtonBorderStyle.Solid);
         }
-
+       
         private void linkfluxoadição_Paint(object sender, PaintEventArgs e)
         {
             ControlPaint.DrawBorder(e.Graphics, linkfluxoadição.DisplayRectangle, Color.White, ButtonBorderStyle.Solid);

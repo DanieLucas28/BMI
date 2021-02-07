@@ -29,13 +29,14 @@ namespace Parametrizador.Short_Dough
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series25 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series26 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series27 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series28 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tempfornobox = new System.Windows.Forms.GroupBox();
+            this.gráficoforno = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.labelforno7 = new System.Windows.Forms.Label();
             this.tempforno7 = new System.Windows.Forms.TextBox();
             this.labelforno6 = new System.Windows.Forms.Label();
@@ -52,6 +53,30 @@ namespace Parametrizador.Short_Dough
             this.labelforno1 = new System.Windows.Forms.Label();
             this.Tempforno1 = new System.Windows.Forms.TextBox();
             this.dadosrefext = new System.Windows.Forms.GroupBox();
+            this.z7 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.z6 = new System.Windows.Forms.Label();
+            this.bt6 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.z5 = new System.Windows.Forms.Label();
+            this.bt5 = new System.Windows.Forms.Label();
+            this.dt5 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.z4 = new System.Windows.Forms.Label();
+            this.bt4 = new System.Windows.Forms.Label();
+            this.dt4 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.z3 = new System.Windows.Forms.Label();
+            this.bt3 = new System.Windows.Forms.Label();
+            this.dt3 = new System.Windows.Forms.Label();
+            this.mt3 = new System.Windows.Forms.Label();
+            this.z2 = new System.Windows.Forms.Label();
+            this.bt2 = new System.Windows.Forms.Label();
+            this.dt2 = new System.Windows.Forms.Label();
+            this.mt2 = new System.Windows.Forms.Label();
             this.z1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.bt1 = new System.Windows.Forms.Label();
@@ -63,34 +88,9 @@ namespace Parametrizador.Short_Dough
             this.label12 = new System.Windows.Forms.Label();
             this.linkforno = new System.Windows.Forms.LinkLabel();
             this.label2 = new System.Windows.Forms.Label();
-            this.gráficoforno = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.z2 = new System.Windows.Forms.Label();
-            this.bt2 = new System.Windows.Forms.Label();
-            this.dt2 = new System.Windows.Forms.Label();
-            this.mt2 = new System.Windows.Forms.Label();
-            this.z3 = new System.Windows.Forms.Label();
-            this.bt3 = new System.Windows.Forms.Label();
-            this.dt3 = new System.Windows.Forms.Label();
-            this.mt3 = new System.Windows.Forms.Label();
-            this.z4 = new System.Windows.Forms.Label();
-            this.bt4 = new System.Windows.Forms.Label();
-            this.dt4 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.z5 = new System.Windows.Forms.Label();
-            this.bt5 = new System.Windows.Forms.Label();
-            this.dt5 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.z6 = new System.Windows.Forms.Label();
-            this.bt6 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.z7 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
             this.tempfornobox.SuspendLayout();
-            this.dadosrefext.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gráficoforno)).BeginInit();
+            this.dadosrefext.SuspendLayout();
             this.SuspendLayout();
             // 
             // tempfornobox
@@ -127,6 +127,44 @@ namespace Parametrizador.Short_Dough
             this.tempfornobox.TabIndex = 9;
             this.tempfornobox.TabStop = false;
             // 
+            // gráficoforno
+            // 
+            chartArea7.Name = "ChartArea1";
+            this.gráficoforno.ChartAreas.Add(chartArea7);
+            legend7.Name = "Legend1";
+            this.gráficoforno.Legends.Add(legend7);
+            this.gráficoforno.Location = new System.Drawing.Point(852, 21);
+            this.gráficoforno.Margin = new System.Windows.Forms.Padding(0);
+            this.gráficoforno.Name = "gráficoforno";
+            series25.BorderWidth = 2;
+            series25.ChartArea = "ChartArea1";
+            series25.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series25.Legend = "Legend1";
+            series25.Name = "Manley";
+            series26.BorderWidth = 2;
+            series26.ChartArea = "ChartArea1";
+            series26.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series26.Legend = "Legend1";
+            series26.Name = "Davidson";
+            series27.BorderWidth = 2;
+            series27.ChartArea = "ChartArea1";
+            series27.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series27.Legend = "Legend1";
+            series27.Name = "Bertolino & Braga";
+            series28.BorderWidth = 2;
+            series28.ChartArea = "ChartArea1";
+            series28.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series28.Legend = "Legend1";
+            series28.Name = "Utilizado";
+            this.gráficoforno.Series.Add(series25);
+            this.gráficoforno.Series.Add(series26);
+            this.gráficoforno.Series.Add(series27);
+            this.gráficoforno.Series.Add(series28);
+            this.gráficoforno.Size = new System.Drawing.Size(376, 197);
+            this.gráficoforno.TabIndex = 32;
+            this.gráficoforno.Text = "chart1";
+            this.gráficoforno.Visible = false;
+            // 
             // labelforno7
             // 
             this.labelforno7.AutoSize = true;
@@ -145,6 +183,7 @@ namespace Parametrizador.Short_Dough
             this.tempforno7.Size = new System.Drawing.Size(30, 27);
             this.tempforno7.TabIndex = 30;
             this.tempforno7.Visible = false;
+            this.tempforno7.TextChanged += new System.EventHandler(this.tempforno7_TextChanged);
             // 
             // labelforno6
             // 
@@ -164,6 +203,7 @@ namespace Parametrizador.Short_Dough
             this.tempforno6.Size = new System.Drawing.Size(30, 27);
             this.tempforno6.TabIndex = 28;
             this.tempforno6.Visible = false;
+            this.tempforno6.TextChanged += new System.EventHandler(this.tempforno6_TextChanged);
             // 
             // labelforno5
             // 
@@ -183,6 +223,7 @@ namespace Parametrizador.Short_Dough
             this.tempforno5.Size = new System.Drawing.Size(30, 27);
             this.tempforno5.TabIndex = 26;
             this.tempforno5.Visible = false;
+            this.tempforno5.TextChanged += new System.EventHandler(this.tempforno5_TextChanged);
             // 
             // labelforno4
             // 
@@ -202,6 +243,7 @@ namespace Parametrizador.Short_Dough
             this.tempforno4.Size = new System.Drawing.Size(30, 27);
             this.tempforno4.TabIndex = 18;
             this.tempforno4.Visible = false;
+            this.tempforno4.TextChanged += new System.EventHandler(this.tempforno4_TextChanged);
             // 
             // labelforno3
             // 
@@ -221,6 +263,7 @@ namespace Parametrizador.Short_Dough
             this.tempforno3.Size = new System.Drawing.Size(30, 27);
             this.tempforno3.TabIndex = 16;
             this.tempforno3.Visible = false;
+            this.tempforno3.TextChanged += new System.EventHandler(this.tempforno3_TextChanged);
             // 
             // comboBox1
             // 
@@ -257,6 +300,7 @@ namespace Parametrizador.Short_Dough
             this.tempforno2.Size = new System.Drawing.Size(30, 27);
             this.tempforno2.TabIndex = 13;
             this.tempforno2.Visible = false;
+            this.tempforno2.TextChanged += new System.EventHandler(this.tempforno2_TextChanged);
             // 
             // labelforno1
             // 
@@ -276,6 +320,7 @@ namespace Parametrizador.Short_Dough
             this.Tempforno1.Size = new System.Drawing.Size(30, 27);
             this.Tempforno1.TabIndex = 11;
             this.Tempforno1.Visible = false;
+            this.Tempforno1.TextChanged += new System.EventHandler(this.Tempforno1_TextChanged);
             // 
             // dadosrefext
             // 
@@ -320,6 +365,270 @@ namespace Parametrizador.Short_Dough
             this.dadosrefext.TabIndex = 9;
             this.dadosrefext.TabStop = false;
             this.dadosrefext.Visible = false;
+            // 
+            // z7
+            // 
+            this.z7.BackColor = System.Drawing.Color.White;
+            this.z7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.z7.Location = new System.Drawing.Point(0, 185);
+            this.z7.Name = "z7";
+            this.z7.Size = new System.Drawing.Size(70, 21);
+            this.z7.TabIndex = 42;
+            this.z7.Text = "7";
+            this.z7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label32
+            // 
+            this.label32.BackColor = System.Drawing.Color.White;
+            this.label32.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label32.Location = new System.Drawing.Point(365, 185);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(146, 21);
+            this.label32.TabIndex = 41;
+            this.label32.Text = "-";
+            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label33
+            // 
+            this.label33.BackColor = System.Drawing.Color.White;
+            this.label33.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label33.Location = new System.Drawing.Point(218, 185);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(146, 21);
+            this.label33.TabIndex = 39;
+            this.label33.Text = "-";
+            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label34
+            // 
+            this.label34.BackColor = System.Drawing.Color.White;
+            this.label34.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label34.Location = new System.Drawing.Point(71, 185);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(146, 21);
+            this.label34.TabIndex = 40;
+            this.label34.Text = "-";
+            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // z6
+            // 
+            this.z6.BackColor = System.Drawing.Color.White;
+            this.z6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.z6.Location = new System.Drawing.Point(0, 163);
+            this.z6.Name = "z6";
+            this.z6.Size = new System.Drawing.Size(70, 21);
+            this.z6.TabIndex = 38;
+            this.z6.Text = "6";
+            this.z6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // bt6
+            // 
+            this.bt6.BackColor = System.Drawing.Color.White;
+            this.bt6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.bt6.Location = new System.Drawing.Point(365, 163);
+            this.bt6.Name = "bt6";
+            this.bt6.Size = new System.Drawing.Size(146, 21);
+            this.bt6.TabIndex = 37;
+            this.bt6.Text = "220";
+            this.bt6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label29
+            // 
+            this.label29.BackColor = System.Drawing.Color.White;
+            this.label29.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label29.Location = new System.Drawing.Point(218, 163);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(146, 21);
+            this.label29.TabIndex = 35;
+            this.label29.Text = "-";
+            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label30
+            // 
+            this.label30.BackColor = System.Drawing.Color.White;
+            this.label30.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label30.Location = new System.Drawing.Point(71, 163);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(146, 21);
+            this.label30.TabIndex = 36;
+            this.label30.Text = "-";
+            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // z5
+            // 
+            this.z5.BackColor = System.Drawing.Color.White;
+            this.z5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.z5.Location = new System.Drawing.Point(0, 141);
+            this.z5.Name = "z5";
+            this.z5.Size = new System.Drawing.Size(70, 21);
+            this.z5.TabIndex = 34;
+            this.z5.Text = "5";
+            this.z5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // bt5
+            // 
+            this.bt5.BackColor = System.Drawing.Color.White;
+            this.bt5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.bt5.Location = new System.Drawing.Point(365, 141);
+            this.bt5.Name = "bt5";
+            this.bt5.Size = new System.Drawing.Size(146, 21);
+            this.bt5.TabIndex = 33;
+            this.bt5.Text = "240";
+            this.bt5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // dt5
+            // 
+            this.dt5.BackColor = System.Drawing.Color.White;
+            this.dt5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dt5.Location = new System.Drawing.Point(218, 141);
+            this.dt5.Name = "dt5";
+            this.dt5.Size = new System.Drawing.Size(146, 21);
+            this.dt5.TabIndex = 31;
+            this.dt5.Text = "180";
+            this.dt5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label26
+            // 
+            this.label26.BackColor = System.Drawing.Color.White;
+            this.label26.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label26.Location = new System.Drawing.Point(71, 141);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(146, 21);
+            this.label26.TabIndex = 32;
+            this.label26.Text = "-";
+            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // z4
+            // 
+            this.z4.BackColor = System.Drawing.Color.White;
+            this.z4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.z4.Location = new System.Drawing.Point(0, 119);
+            this.z4.Name = "z4";
+            this.z4.Size = new System.Drawing.Size(70, 21);
+            this.z4.TabIndex = 30;
+            this.z4.Text = "4";
+            this.z4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // bt4
+            // 
+            this.bt4.BackColor = System.Drawing.Color.White;
+            this.bt4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.bt4.Location = new System.Drawing.Point(365, 119);
+            this.bt4.Name = "bt4";
+            this.bt4.Size = new System.Drawing.Size(146, 21);
+            this.bt4.TabIndex = 29;
+            this.bt4.Text = "270";
+            this.bt4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // dt4
+            // 
+            this.dt4.BackColor = System.Drawing.Color.White;
+            this.dt4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dt4.Location = new System.Drawing.Point(218, 119);
+            this.dt4.Name = "dt4";
+            this.dt4.Size = new System.Drawing.Size(146, 21);
+            this.dt4.TabIndex = 27;
+            this.dt4.Text = "200";
+            this.dt4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label22
+            // 
+            this.label22.BackColor = System.Drawing.Color.White;
+            this.label22.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label22.Location = new System.Drawing.Point(71, 119);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(146, 21);
+            this.label22.TabIndex = 28;
+            this.label22.Text = "-";
+            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // z3
+            // 
+            this.z3.BackColor = System.Drawing.Color.White;
+            this.z3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.z3.Location = new System.Drawing.Point(0, 97);
+            this.z3.Name = "z3";
+            this.z3.Size = new System.Drawing.Size(70, 21);
+            this.z3.TabIndex = 26;
+            this.z3.Text = "3";
+            this.z3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // bt3
+            // 
+            this.bt3.BackColor = System.Drawing.Color.White;
+            this.bt3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.bt3.Location = new System.Drawing.Point(365, 97);
+            this.bt3.Name = "bt3";
+            this.bt3.Size = new System.Drawing.Size(146, 21);
+            this.bt3.TabIndex = 25;
+            this.bt3.Text = "270";
+            this.bt3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // dt3
+            // 
+            this.dt3.BackColor = System.Drawing.Color.White;
+            this.dt3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dt3.Location = new System.Drawing.Point(218, 97);
+            this.dt3.Name = "dt3";
+            this.dt3.Size = new System.Drawing.Size(146, 21);
+            this.dt3.TabIndex = 23;
+            this.dt3.Text = "220";
+            this.dt3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // mt3
+            // 
+            this.mt3.BackColor = System.Drawing.Color.White;
+            this.mt3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.mt3.Location = new System.Drawing.Point(71, 97);
+            this.mt3.Name = "mt3";
+            this.mt3.Size = new System.Drawing.Size(146, 21);
+            this.mt3.TabIndex = 24;
+            this.mt3.Text = "170";
+            this.mt3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // z2
+            // 
+            this.z2.BackColor = System.Drawing.Color.White;
+            this.z2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.z2.Location = new System.Drawing.Point(0, 75);
+            this.z2.Name = "z2";
+            this.z2.Size = new System.Drawing.Size(70, 21);
+            this.z2.TabIndex = 22;
+            this.z2.Text = "2";
+            this.z2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // bt2
+            // 
+            this.bt2.BackColor = System.Drawing.Color.White;
+            this.bt2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.bt2.Location = new System.Drawing.Point(365, 75);
+            this.bt2.Name = "bt2";
+            this.bt2.Size = new System.Drawing.Size(146, 21);
+            this.bt2.TabIndex = 21;
+            this.bt2.Text = "240";
+            this.bt2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // dt2
+            // 
+            this.dt2.BackColor = System.Drawing.Color.White;
+            this.dt2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dt2.Location = new System.Drawing.Point(218, 75);
+            this.dt2.Name = "dt2";
+            this.dt2.Size = new System.Drawing.Size(146, 21);
+            this.dt2.TabIndex = 19;
+            this.dt2.Text = "200";
+            this.dt2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // mt2
+            // 
+            this.mt2.BackColor = System.Drawing.Color.White;
+            this.mt2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.mt2.Location = new System.Drawing.Point(71, 75);
+            this.mt2.Name = "mt2";
+            this.mt2.Size = new System.Drawing.Size(146, 21);
+            this.mt2.TabIndex = 20;
+            this.mt2.Text = "240";
+            this.mt2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // z1
             // 
@@ -445,307 +754,6 @@ namespace Parametrizador.Short_Dough
             this.label2.TabIndex = 2;
             this.label2.Text = "Quantidade de zonas no forno";
             // 
-            // gráficoforno
-            // 
-            chartArea1.Name = "ChartArea1";
-            this.gráficoforno.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.gráficoforno.Legends.Add(legend1);
-            this.gráficoforno.Location = new System.Drawing.Point(852, 21);
-            this.gráficoforno.Name = "gráficoforno";
-            series1.BorderWidth = 2;
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series1.Legend = "Legend1";
-            series1.Name = "Manley";
-            series2.BorderWidth = 2;
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series2.Legend = "Legend1";
-            series2.Name = "Davidson";
-            series3.BorderWidth = 2;
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series3.Legend = "Legend1";
-            series3.Name = "Bertolino & Braga";
-            series4.BorderWidth = 2;
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series4.Legend = "Legend1";
-            series4.Name = "Utilizado";
-            this.gráficoforno.Series.Add(series1);
-            this.gráficoforno.Series.Add(series2);
-            this.gráficoforno.Series.Add(series3);
-            this.gráficoforno.Series.Add(series4);
-            this.gráficoforno.Size = new System.Drawing.Size(390, 197);
-            this.gráficoforno.TabIndex = 32;
-            this.gráficoforno.Text = "chart1";
-            this.gráficoforno.Visible = false;
-            // 
-            // z2
-            // 
-            this.z2.BackColor = System.Drawing.Color.White;
-            this.z2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.z2.Location = new System.Drawing.Point(0, 75);
-            this.z2.Name = "z2";
-            this.z2.Size = new System.Drawing.Size(70, 21);
-            this.z2.TabIndex = 22;
-            this.z2.Text = "2";
-            this.z2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // bt2
-            // 
-            this.bt2.BackColor = System.Drawing.Color.White;
-            this.bt2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bt2.Location = new System.Drawing.Point(365, 75);
-            this.bt2.Name = "bt2";
-            this.bt2.Size = new System.Drawing.Size(146, 21);
-            this.bt2.TabIndex = 21;
-            this.bt2.Text = "240";
-            this.bt2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // dt2
-            // 
-            this.dt2.BackColor = System.Drawing.Color.White;
-            this.dt2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.dt2.Location = new System.Drawing.Point(218, 75);
-            this.dt2.Name = "dt2";
-            this.dt2.Size = new System.Drawing.Size(146, 21);
-            this.dt2.TabIndex = 19;
-            this.dt2.Text = "200";
-            this.dt2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // mt2
-            // 
-            this.mt2.BackColor = System.Drawing.Color.White;
-            this.mt2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.mt2.Location = new System.Drawing.Point(71, 75);
-            this.mt2.Name = "mt2";
-            this.mt2.Size = new System.Drawing.Size(146, 21);
-            this.mt2.TabIndex = 20;
-            this.mt2.Text = "240";
-            this.mt2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // z3
-            // 
-            this.z3.BackColor = System.Drawing.Color.White;
-            this.z3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.z3.Location = new System.Drawing.Point(0, 97);
-            this.z3.Name = "z3";
-            this.z3.Size = new System.Drawing.Size(70, 21);
-            this.z3.TabIndex = 26;
-            this.z3.Text = "3";
-            this.z3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // bt3
-            // 
-            this.bt3.BackColor = System.Drawing.Color.White;
-            this.bt3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bt3.Location = new System.Drawing.Point(365, 97);
-            this.bt3.Name = "bt3";
-            this.bt3.Size = new System.Drawing.Size(146, 21);
-            this.bt3.TabIndex = 25;
-            this.bt3.Text = "270";
-            this.bt3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // dt3
-            // 
-            this.dt3.BackColor = System.Drawing.Color.White;
-            this.dt3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.dt3.Location = new System.Drawing.Point(218, 97);
-            this.dt3.Name = "dt3";
-            this.dt3.Size = new System.Drawing.Size(146, 21);
-            this.dt3.TabIndex = 23;
-            this.dt3.Text = "220";
-            this.dt3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // mt3
-            // 
-            this.mt3.BackColor = System.Drawing.Color.White;
-            this.mt3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.mt3.Location = new System.Drawing.Point(71, 97);
-            this.mt3.Name = "mt3";
-            this.mt3.Size = new System.Drawing.Size(146, 21);
-            this.mt3.TabIndex = 24;
-            this.mt3.Text = "170";
-            this.mt3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // z4
-            // 
-            this.z4.BackColor = System.Drawing.Color.White;
-            this.z4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.z4.Location = new System.Drawing.Point(0, 119);
-            this.z4.Name = "z4";
-            this.z4.Size = new System.Drawing.Size(70, 21);
-            this.z4.TabIndex = 30;
-            this.z4.Text = "4";
-            this.z4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // bt4
-            // 
-            this.bt4.BackColor = System.Drawing.Color.White;
-            this.bt4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bt4.Location = new System.Drawing.Point(365, 119);
-            this.bt4.Name = "bt4";
-            this.bt4.Size = new System.Drawing.Size(146, 21);
-            this.bt4.TabIndex = 29;
-            this.bt4.Text = "270";
-            this.bt4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // dt4
-            // 
-            this.dt4.BackColor = System.Drawing.Color.White;
-            this.dt4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.dt4.Location = new System.Drawing.Point(218, 119);
-            this.dt4.Name = "dt4";
-            this.dt4.Size = new System.Drawing.Size(146, 21);
-            this.dt4.TabIndex = 27;
-            this.dt4.Text = "200";
-            this.dt4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label22
-            // 
-            this.label22.BackColor = System.Drawing.Color.White;
-            this.label22.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label22.Location = new System.Drawing.Point(71, 119);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(146, 21);
-            this.label22.TabIndex = 28;
-            this.label22.Text = "-";
-            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // z5
-            // 
-            this.z5.BackColor = System.Drawing.Color.White;
-            this.z5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.z5.Location = new System.Drawing.Point(0, 141);
-            this.z5.Name = "z5";
-            this.z5.Size = new System.Drawing.Size(70, 21);
-            this.z5.TabIndex = 34;
-            this.z5.Text = "5";
-            this.z5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // bt5
-            // 
-            this.bt5.BackColor = System.Drawing.Color.White;
-            this.bt5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bt5.Location = new System.Drawing.Point(365, 141);
-            this.bt5.Name = "bt5";
-            this.bt5.Size = new System.Drawing.Size(146, 21);
-            this.bt5.TabIndex = 33;
-            this.bt5.Text = "240";
-            this.bt5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // dt5
-            // 
-            this.dt5.BackColor = System.Drawing.Color.White;
-            this.dt5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.dt5.Location = new System.Drawing.Point(218, 141);
-            this.dt5.Name = "dt5";
-            this.dt5.Size = new System.Drawing.Size(146, 21);
-            this.dt5.TabIndex = 31;
-            this.dt5.Text = "180";
-            this.dt5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label26
-            // 
-            this.label26.BackColor = System.Drawing.Color.White;
-            this.label26.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label26.Location = new System.Drawing.Point(71, 141);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(146, 21);
-            this.label26.TabIndex = 32;
-            this.label26.Text = "-";
-            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // z6
-            // 
-            this.z6.BackColor = System.Drawing.Color.White;
-            this.z6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.z6.Location = new System.Drawing.Point(0, 163);
-            this.z6.Name = "z6";
-            this.z6.Size = new System.Drawing.Size(70, 21);
-            this.z6.TabIndex = 38;
-            this.z6.Text = "6";
-            this.z6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // bt6
-            // 
-            this.bt6.BackColor = System.Drawing.Color.White;
-            this.bt6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.bt6.Location = new System.Drawing.Point(365, 163);
-            this.bt6.Name = "bt6";
-            this.bt6.Size = new System.Drawing.Size(146, 21);
-            this.bt6.TabIndex = 37;
-            this.bt6.Text = "220";
-            this.bt6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label29
-            // 
-            this.label29.BackColor = System.Drawing.Color.White;
-            this.label29.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label29.Location = new System.Drawing.Point(218, 163);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(146, 21);
-            this.label29.TabIndex = 35;
-            this.label29.Text = "-";
-            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label30
-            // 
-            this.label30.BackColor = System.Drawing.Color.White;
-            this.label30.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label30.Location = new System.Drawing.Point(71, 163);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(146, 21);
-            this.label30.TabIndex = 36;
-            this.label30.Text = "-";
-            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // z7
-            // 
-            this.z7.BackColor = System.Drawing.Color.White;
-            this.z7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.z7.Location = new System.Drawing.Point(0, 185);
-            this.z7.Name = "z7";
-            this.z7.Size = new System.Drawing.Size(70, 21);
-            this.z7.TabIndex = 42;
-            this.z7.Text = "7";
-            this.z7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label32
-            // 
-            this.label32.BackColor = System.Drawing.Color.White;
-            this.label32.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label32.Location = new System.Drawing.Point(365, 185);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(146, 21);
-            this.label32.TabIndex = 41;
-            this.label32.Text = "-";
-            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label33
-            // 
-            this.label33.BackColor = System.Drawing.Color.White;
-            this.label33.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label33.Location = new System.Drawing.Point(218, 185);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(146, 21);
-            this.label33.TabIndex = 39;
-            this.label33.Text = "-";
-            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label34
-            // 
-            this.label34.BackColor = System.Drawing.Color.White;
-            this.label34.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label34.Location = new System.Drawing.Point(71, 185);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(146, 21);
-            this.label34.TabIndex = 40;
-            this.label34.Text = "-";
-            this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // FormForneamentoSD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -757,8 +765,8 @@ namespace Parametrizador.Short_Dough
             this.Text = "FormForneamento";
             this.tempfornobox.ResumeLayout(false);
             this.tempfornobox.PerformLayout();
-            this.dadosrefext.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gráficoforno)).EndInit();
+            this.dadosrefext.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
