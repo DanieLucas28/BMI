@@ -15,15 +15,35 @@ namespace Parametrizador.Short_Dough
         public FormForneamentoSD()
         {
             InitializeComponent();
+            var objchart = gráficoforno.ChartAreas[0];
+            objchart.AxisX.Minimum = 1;
+            objchart.AxisX.Maximum = 7;
+
+            gráficoforno.Series["Manley"].Points.AddXY(z1.Text, mt1.Text) ;
+            gráficoforno.Series["Manley"].Points.AddXY(z2.Text, mt2.Text);
+            gráficoforno.Series["Manley"].Points.AddXY(z3.Text, mt3.Text);
+            gráficoforno.Series["Davidson"].Points.AddXY(z1.Text, dt1.Text);
+            gráficoforno.Series["Davidson"].Points.AddXY(z2.Text, dt2.Text);
+            gráficoforno.Series["Davidson"].Points.AddXY(z3.Text, dt3.Text);
+            gráficoforno.Series["Davidson"].Points.AddXY(z4.Text, dt4.Text);
+            gráficoforno.Series["Davidson"].Points.AddXY(z5.Text, dt5.Text);
+            gráficoforno.Series["Bertolino & Braga"].Points.AddXY(z1.Text, bt1.Text);
+            gráficoforno.Series["Bertolino & Braga"].Points.AddXY(z2.Text, bt2.Text);
+            gráficoforno.Series["Bertolino & Braga"].Points.AddXY(z3.Text, bt3.Text);
+            gráficoforno.Series["Bertolino & Braga"].Points.AddXY(z4.Text, bt4.Text);
+            gráficoforno.Series["Bertolino & Braga"].Points.AddXY(z5.Text, bt5.Text);
+            gráficoforno.Series["Bertolino & Braga"].Points.AddXY(z6.Text, bt6.Text);
         }
 
-       
+
+        
+        
 
         private void comboBox1_SelectedValueChanged(object sender, EventArgs e)
         {
             int qtdzona = Convert.ToInt32(comboBox1.SelectedItem.ToString()) - 1;
 
-            tempfornobox.Size = new Size(1162, 200 + (32 * qtdzona));
+            tempfornobox.Size = new Size(1162, 335 + (10 * qtdzona));
 
             if (Convert.ToInt32(comboBox1.SelectedItem.ToString()) == 1)
             {
