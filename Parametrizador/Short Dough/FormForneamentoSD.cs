@@ -307,6 +307,134 @@ namespace Parametrizador.Short_Dough
                 gráficoforno.Visible = true;
             
         }
+
+        private void Tempcoz_TextChanged(object sender, EventArgs e)
+        {
+            linktempcozimento.Visible = true;
+            dadosreftempcozimento.Visible = true;
+            if (Int32.TryParse(Tempcoz.Text.Trim(), out _))
+            {
+
+                if (Convert.ToInt32(Tempcoz.Text.Trim()) >= 5.1 && (Convert.ToInt32(Tempcoz.Text.Trim()) <= 5.6))
+                {
+                    this.linktempcozimento.LinkArea = new LinkArea(0, 0);
+                    this.linktempcozimento.UseMnemonic = false;
+                    this.linktempcozimento.Text = "A temperatura indicada está dentro dos critérios estabelecidos por Manley e Davidson.";
+                    this.linktempcozimento.Links.Add(67, 6, "#");
+                    this.linktempcozimento.Links.Add(76, 8, "#");
+                }
+                else if (Convert.ToInt32(Tempcoz.Text.Trim()) == 5)
+                {
+                    this.linktempcozimento.LinkArea = new LinkArea(0, 0);
+                    this.linktempcozimento.UseMnemonic = false;
+                    this.linktempcozimento.Text = "Tempo dentro dos critérios estabelecidos por todos os autores.";
+                }
+                else if (Convert.ToInt32(Tempcoz.Text.Trim()) >= 4 && (Convert.ToInt32(Tempcoz.Text.Trim()) < 5))
+                {
+                    this.linktempcozimento.LinkArea = new LinkArea(0, 0);
+                    this.linktempcozimento.UseMnemonic = false;
+                    this.linktempcozimento.Text = "Tempo dentro do critério estabelecido por Moretto e Bertolino & Braga.";
+                    this.linktempcozimento.Links.Add(43, 7, "#");
+                    this.linktempcozimento.Links.Add(53, 17, "#");
+                }
+                else if (Convert.ToInt32(Tempcoz.Text.Trim()) >= 3.4 && (Convert.ToInt32(Tempcoz.Text.Trim()) < 4))
+                {
+                    this.linktempcozimento.LinkArea = new LinkArea(0, 0);
+                    this.linktempcozimento.UseMnemonic = false;
+                    this.linktempcozimento.Text = "Tempo dentro do critério estabelecido por Moretto.";
+                    this.linktempcozimento.Links.Add(43, 7, "#");
+
+                }
+                else if (Convert.ToInt32(Tempcoz.Text.Trim()) > 20 && (Convert.ToInt32(Tempcoz.Text.Trim()) < 3.5))
+                {
+                    this.linktempcozimento.LinkArea = new LinkArea(0, 0);
+                    this.linktempcozimento.UseMnemonic = false;
+                    this.linktempcozimento.Text = "Tempo divergente ao estabelecido pelos autores. O tempo de cozimento é correlacionado ao tamanho do forno, temperatura das zonas e tipo da massa. Estes fatores alteram de acordo com o estudo de cada autor, e, por este motivo, caso o tempo de cozimento utilizado forneça as especificações desejadas ao produto final, pode ser mantido.";
+
+
+                }
+                else if (Convert.ToInt32(Tempcoz.Text.Trim()) > 5.5 && (Convert.ToInt32(Tempcoz.Text.Trim()) <= 20))
+                {
+                    this.linktempcozimento.LinkArea = new LinkArea(0, 0);
+                    this.linktempcozimento.UseMnemonic = false;
+                    this.linktempcozimento.Text = "Tempo dentro do critério estabelecido por Manley.";
+                    this.linktempcozimento.Links.Add(43, 6, "#");
+
+                }
+            }
+            else
+            {
+                this.linktempcozimento.Text = "Digite um valor válido para a temperatura.";
+            }
+        
+
+
+
+
+    }
+
+        private void umidade_TextChanged(object sender, EventArgs e)
+        {
+            linkumidade.Visible = true;
+            dadosrefumidade.Visible = true;
+            if (Int32.TryParse(Tempcoz.Text.Trim(), out _))
+            {
+
+                if (Convert.ToInt32(Tempcoz.Text.Trim()) >= 2.5 && (Convert.ToInt32(Tempcoz.Text.Trim()) <= 3))
+                {
+                    this.linkumidade.LinkArea = new LinkArea(0, 0);
+                    this.linkumidade.UseMnemonic = false;
+                    this.linkumidade.Text = "Umidade dentro dos critérios estabelecidos por Manley e Davidson.";
+                    this.linkumidade.Links.Add(48, 6, "#");
+                    this.linkumidade.Links.Add(57, 8, "#");
+                }
+                else if (Convert.ToInt32(Tempcoz.Text.Trim()) == 3)
+                {
+                    this.linkumidade.LinkArea = new LinkArea(0, 0);
+                    this.linkumidade.UseMnemonic = false;
+                    this.linkumidade.Text = "Umidade dentro dos critérios estabelecidos por Davidson.";
+                    this.linkumidade.Links.Add(48, 8, "#");
+                }
+                // else if (Convert.ToInt32(Tempcoz.Text.Trim()) >= 4 && (Convert.ToInt32(Tempcoz.Text.Trim()) < 5))
+                // {
+                //     this.linkumidade.LinkArea = new LinkArea(0, 0);
+                //     this.linkumidade.UseMnemonic = false;
+                //     this.linkumidade.Text = "Tempo dentro do critério estabelecido por Moretto e Bertolino & Braga.";
+                //     this.linkumidade.Links.Add(43, 7, "#");
+                //     this.linkumidade.Links.Add(53, 17, "#");
+                // }
+                // else if (Convert.ToInt32(Tempcoz.Text.Trim()) >= 3.4 && (Convert.ToInt32(Tempcoz.Text.Trim()) < 4))
+                // {
+                //     this.linkumidade.LinkArea = new LinkArea(0, 0);
+                //     this.linkumidade.UseMnemonic = false;
+                //     this.linkumidade.Text = "Tempo dentro do critério estabelecido por Moretto.";
+                //     this.linkumidade.Links.Add(43, 7, "#");
+                //
+                // }
+                // else if (Convert.ToInt32(Tempcoz.Text.Trim()) > 20 && (Convert.ToInt32(Tempcoz.Text.Trim()) < 3.5))
+                // {
+                //     this.linkumidade.LinkArea = new LinkArea(0, 0);
+                //     this.linkumidade.UseMnemonic = false;
+                //     this.linkumidade.Text = "Tempo divergente ao estabelecido pelos autores. O tempo de cozimento é correlacionado ao tamanho do forno, temperatura das zonas e tipo da massa. Estes fatores alteram de acordo com o estudo de cada autor, e, por este motivo, caso o tempo de cozimento utilizado forneça as especificações desejadas ao produto final, pode ser mantido.";
+                //
+                //
+                // }
+                // else if (Convert.ToInt32(Tempcoz.Text.Trim()) > 5.5 && (Convert.ToInt32(Tempcoz.Text.Trim()) <= 20))
+                // {
+                //     this.linkumidade.LinkArea = new LinkArea(0, 0);
+                //     this.linkumidade.UseMnemonic = false;
+                //     this.linkumidade.Text = "Tempo dentro do critério estabelecido por Manley.";
+                //     this.linkumidade.Links.Add(43, 6, "#");
+                //
+                // }
+
+            }
+            else
+            {
+                this.linkumidade.Text = "Digite um valor válido para a temperatura.";
+            }
+            
+        }
     }
 }
 

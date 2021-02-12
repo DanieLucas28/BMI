@@ -29,12 +29,12 @@ namespace Parametrizador.Short_Dough
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series25 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series26 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series27 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series28 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tempfornobox = new System.Windows.Forms.GroupBox();
             this.gráficoforno = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.labelforno7 = new System.Windows.Forms.Label();
@@ -88,9 +88,41 @@ namespace Parametrizador.Short_Dough
             this.label12 = new System.Windows.Forms.Label();
             this.linkforno = new System.Windows.Forms.LinkLabel();
             this.label2 = new System.Windows.Forms.Label();
+            this.boxtempomistura = new System.Windows.Forms.GroupBox();
+            this.dadosreftempcozimento = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.Tempcoz = new System.Windows.Forms.TextBox();
+            this.linktempcozimento = new System.Windows.Forms.LinkLabel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.umidadebox = new System.Windows.Forms.GroupBox();
+            this.dadosrefumidade = new System.Windows.Forms.GroupBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.umidade = new System.Windows.Forms.TextBox();
+            this.linkumidade = new System.Windows.Forms.LinkLabel();
             this.tempfornobox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gráficoforno)).BeginInit();
             this.dadosrefext.SuspendLayout();
+            this.boxtempomistura.SuspendLayout();
+            this.dadosreftempcozimento.SuspendLayout();
+            this.umidadebox.SuspendLayout();
+            this.dadosrefumidade.SuspendLayout();
             this.SuspendLayout();
             // 
             // tempfornobox
@@ -129,37 +161,51 @@ namespace Parametrizador.Short_Dough
             // 
             // gráficoforno
             // 
-            chartArea7.Name = "ChartArea1";
-            this.gráficoforno.ChartAreas.Add(chartArea7);
-            legend7.Name = "Legend1";
-            this.gráficoforno.Legends.Add(legend7);
-            this.gráficoforno.Location = new System.Drawing.Point(852, 21);
+            chartArea2.Name = "ChartArea1";
+            this.gráficoforno.ChartAreas.Add(chartArea2);
+            legend2.AutoFitMinFontSize = 6;
+            legend2.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
+            legend2.BorderWidth = 0;
+            legend2.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            legend2.IsTextAutoFit = false;
+            legend2.LegendStyle = System.Windows.Forms.DataVisualization.Charting.LegendStyle.Row;
+            legend2.Name = "Legend1";
+            legend2.Position.Auto = false;
+            legend2.Position.Height = 5F;
+            legend2.Position.Width = 100F;
+            this.gráficoforno.Legends.Add(legend2);
+            this.gráficoforno.Location = new System.Drawing.Point(852, 10);
             this.gráficoforno.Margin = new System.Windows.Forms.Padding(0);
             this.gráficoforno.Name = "gráficoforno";
-            series25.BorderWidth = 2;
-            series25.ChartArea = "ChartArea1";
-            series25.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series25.Legend = "Legend1";
-            series25.Name = "Manley";
-            series26.BorderWidth = 2;
-            series26.ChartArea = "ChartArea1";
-            series26.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series26.Legend = "Legend1";
-            series26.Name = "Davidson";
-            series27.BorderWidth = 2;
-            series27.ChartArea = "ChartArea1";
-            series27.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series27.Legend = "Legend1";
-            series27.Name = "Bertolino & Braga";
-            series28.BorderWidth = 2;
-            series28.ChartArea = "ChartArea1";
-            series28.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series28.Legend = "Legend1";
-            series28.Name = "Utilizado";
-            this.gráficoforno.Series.Add(series25);
-            this.gráficoforno.Series.Add(series26);
-            this.gráficoforno.Series.Add(series27);
-            this.gráficoforno.Series.Add(series28);
+            this.gráficoforno.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            series5.BorderWidth = 2;
+            series5.ChartArea = "ChartArea1";
+            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series5.Legend = "Legend1";
+            series5.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
+            series5.Name = "Manley";
+            series6.BorderWidth = 2;
+            series6.ChartArea = "ChartArea1";
+            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series6.Legend = "Legend1";
+            series6.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
+            series6.Name = "Davidson";
+            series7.BorderWidth = 2;
+            series7.ChartArea = "ChartArea1";
+            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series7.Legend = "Legend1";
+            series7.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
+            series7.Name = "Bertolino & Braga";
+            series8.BorderWidth = 2;
+            series8.ChartArea = "ChartArea1";
+            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series8.Legend = "Legend1";
+            series8.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
+            series8.Name = "Utilizado";
+            this.gráficoforno.Series.Add(series5);
+            this.gráficoforno.Series.Add(series6);
+            this.gráficoforno.Series.Add(series7);
+            this.gráficoforno.Series.Add(series8);
             this.gráficoforno.Size = new System.Drawing.Size(376, 197);
             this.gráficoforno.TabIndex = 32;
             this.gráficoforno.Text = "chart1";
@@ -358,7 +404,7 @@ namespace Parametrizador.Short_Dough
             this.dadosrefext.Controls.Add(this.label14);
             this.dadosrefext.Controls.Add(this.label12);
             this.dadosrefext.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(87)))), ((int)(((byte)(152)))));
-            this.dadosrefext.Location = new System.Drawing.Point(340, 11);
+            this.dadosrefext.Location = new System.Drawing.Point(340, 0);
             this.dadosrefext.Margin = new System.Windows.Forms.Padding(0);
             this.dadosrefext.Name = "dadosrefext";
             this.dadosrefext.Size = new System.Drawing.Size(511, 208);
@@ -728,7 +774,7 @@ namespace Parametrizador.Short_Dough
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(511, 21);
             this.label12.TabIndex = 5;
-            this.label12.Text = "Dados de referência";
+            this.label12.Text = "Dados de referência (°C)";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // linkforno
@@ -754,12 +800,362 @@ namespace Parametrizador.Short_Dough
             this.label2.TabIndex = 2;
             this.label2.Text = "Quantidade de zonas no forno";
             // 
+            // boxtempomistura
+            // 
+            this.boxtempomistura.Controls.Add(this.dadosreftempcozimento);
+            this.boxtempomistura.Controls.Add(this.label17);
+            this.boxtempomistura.Controls.Add(this.Tempcoz);
+            this.boxtempomistura.Controls.Add(this.linktempcozimento);
+            this.boxtempomistura.Dock = System.Windows.Forms.DockStyle.Top;
+            this.boxtempomistura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.boxtempomistura.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.boxtempomistura.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.boxtempomistura.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.boxtempomistura.Location = new System.Drawing.Point(0, 335);
+            this.boxtempomistura.Margin = new System.Windows.Forms.Padding(10);
+            this.boxtempomistura.Name = "boxtempomistura";
+            this.boxtempomistura.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.boxtempomistura.Size = new System.Drawing.Size(1264, 200);
+            this.boxtempomistura.TabIndex = 10;
+            this.boxtempomistura.TabStop = false;
+            this.boxtempomistura.Text = "Tempo de cozimento";
+            // 
+            // dadosreftempcozimento
+            // 
+            this.dadosreftempcozimento.Controls.Add(this.label10);
+            this.dadosreftempcozimento.Controls.Add(this.label9);
+            this.dadosreftempcozimento.Controls.Add(this.label8);
+            this.dadosreftempcozimento.Controls.Add(this.label3);
+            this.dadosreftempcozimento.Controls.Add(this.label7);
+            this.dadosreftempcozimento.Controls.Add(this.label18);
+            this.dadosreftempcozimento.Controls.Add(this.label19);
+            this.dadosreftempcozimento.Controls.Add(this.label5);
+            this.dadosreftempcozimento.Controls.Add(this.label6);
+            this.dadosreftempcozimento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(87)))), ((int)(((byte)(152)))));
+            this.dadosreftempcozimento.Location = new System.Drawing.Point(348, 0);
+            this.dadosreftempcozimento.Margin = new System.Windows.Forms.Padding(0);
+            this.dadosreftempcozimento.Name = "dadosreftempcozimento";
+            this.dadosreftempcozimento.Size = new System.Drawing.Size(588, 81);
+            this.dadosreftempcozimento.TabIndex = 12;
+            this.dadosreftempcozimento.TabStop = false;
+            this.dadosreftempcozimento.Visible = false;
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.White;
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label3.Location = new System.Drawing.Point(147, 55);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(146, 24);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "5~5.5";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label18
+            // 
+            this.label18.BackColor = System.Drawing.Color.White;
+            this.label18.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label18.Location = new System.Drawing.Point(441, 55);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(146, 24);
+            this.label18.TabIndex = 10;
+            this.label18.Text = "4~5";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label19
+            // 
+            this.label19.BackColor = System.Drawing.Color.White;
+            this.label19.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label19.Location = new System.Drawing.Point(294, 55);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(146, 24);
+            this.label19.TabIndex = 14;
+            this.label19.Text = "3.5~5";
+            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            this.label5.BackColor = System.Drawing.Color.White;
+            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label5.Location = new System.Drawing.Point(1, 55);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(145, 24);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "-";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label6
+            // 
+            this.label6.BackColor = System.Drawing.Color.White;
+            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label6.Location = new System.Drawing.Point(0, 11);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(587, 21);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Dados de referência (min)";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(12, 37);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(175, 21);
+            this.label17.TabIndex = 11;
+            this.label17.Text = "Tempo de cozimento";
+            // 
+            // Tempcoz
+            // 
+            this.Tempcoz.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Tempcoz.Location = new System.Drawing.Point(202, 34);
+            this.Tempcoz.Name = "Tempcoz";
+            this.Tempcoz.Size = new System.Drawing.Size(30, 27);
+            this.Tempcoz.TabIndex = 10;
+            this.Tempcoz.TextChanged += new System.EventHandler(this.Tempcoz_TextChanged);
+            // 
+            // linktempcozimento
+            // 
+            this.linktempcozimento.ActiveLinkColor = System.Drawing.Color.DodgerBlue;
+            this.linktempcozimento.AutoEllipsis = true;
+            this.linktempcozimento.BackColor = System.Drawing.Color.Transparent;
+            this.linktempcozimento.DisabledLinkColor = System.Drawing.Color.DimGray;
+            this.linktempcozimento.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.linktempcozimento.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.linktempcozimento.Location = new System.Drawing.Point(3, 119);
+            this.linktempcozimento.Name = "linktempcozimento";
+            this.linktempcozimento.Size = new System.Drawing.Size(1258, 78);
+            this.linktempcozimento.TabIndex = 9;
+            this.linktempcozimento.Visible = false;
+            // 
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label7.Location = new System.Drawing.Point(0, 33);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(146, 21);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "Manley";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label8
+            // 
+            this.label8.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label8.Location = new System.Drawing.Point(147, 33);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(146, 21);
+            this.label8.TabIndex = 18;
+            this.label8.Text = "Davidson";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label8.UseMnemonic = false;
+            // 
+            // label9
+            // 
+            this.label9.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label9.Location = new System.Drawing.Point(294, 33);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(146, 21);
+            this.label9.TabIndex = 19;
+            this.label9.Text = "Moretto";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label9.UseMnemonic = false;
+            // 
+            // label10
+            // 
+            this.label10.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label10.Location = new System.Drawing.Point(441, 33);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(146, 21);
+            this.label10.TabIndex = 20;
+            this.label10.Text = "Bertolino & Braga";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label10.UseMnemonic = false;
+            // 
+            // umidadebox
+            // 
+            this.umidadebox.Controls.Add(this.dadosrefumidade);
+            this.umidadebox.Controls.Add(this.label28);
+            this.umidadebox.Controls.Add(this.umidade);
+            this.umidadebox.Controls.Add(this.linkumidade);
+            this.umidadebox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.umidadebox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.umidadebox.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.umidadebox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.umidadebox.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.umidadebox.Location = new System.Drawing.Point(0, 535);
+            this.umidadebox.Margin = new System.Windows.Forms.Padding(10);
+            this.umidadebox.Name = "umidadebox";
+            this.umidadebox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.umidadebox.Size = new System.Drawing.Size(1264, 200);
+            this.umidadebox.TabIndex = 11;
+            this.umidadebox.TabStop = false;
+            this.umidadebox.Text = "Umidade";
+            // 
+            // dadosrefumidade
+            // 
+            this.dadosrefumidade.Controls.Add(this.label11);
+            this.dadosrefumidade.Controls.Add(this.label13);
+            this.dadosrefumidade.Controls.Add(this.label15);
+            this.dadosrefumidade.Controls.Add(this.label20);
+            this.dadosrefumidade.Controls.Add(this.label21);
+            this.dadosrefumidade.Controls.Add(this.label23);
+            this.dadosrefumidade.Controls.Add(this.label24);
+            this.dadosrefumidade.Controls.Add(this.label25);
+            this.dadosrefumidade.Controls.Add(this.label27);
+            this.dadosrefumidade.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(87)))), ((int)(((byte)(152)))));
+            this.dadosrefumidade.Location = new System.Drawing.Point(348, 0);
+            this.dadosrefumidade.Margin = new System.Windows.Forms.Padding(0);
+            this.dadosrefumidade.Name = "dadosrefumidade";
+            this.dadosrefumidade.Size = new System.Drawing.Size(588, 81);
+            this.dadosrefumidade.TabIndex = 12;
+            this.dadosrefumidade.TabStop = false;
+            this.dadosrefumidade.Visible = false;
+            // 
+            // label11
+            // 
+            this.label11.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label11.Location = new System.Drawing.Point(441, 33);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(146, 21);
+            this.label11.TabIndex = 20;
+            this.label11.Text = "Bertolino & Braga";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label11.UseMnemonic = false;
+            // 
+            // label13
+            // 
+            this.label13.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label13.Location = new System.Drawing.Point(294, 33);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(146, 21);
+            this.label13.TabIndex = 19;
+            this.label13.Text = "Moretto";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label13.UseMnemonic = false;
+            // 
+            // label15
+            // 
+            this.label15.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label15.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label15.Location = new System.Drawing.Point(147, 33);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(146, 21);
+            this.label15.TabIndex = 18;
+            this.label15.Text = "Davidson";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label15.UseMnemonic = false;
+            // 
+            // label20
+            // 
+            this.label20.BackColor = System.Drawing.Color.White;
+            this.label20.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label20.Location = new System.Drawing.Point(147, 55);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(146, 24);
+            this.label20.TabIndex = 16;
+            this.label20.Text = "<3";
+            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label21
+            // 
+            this.label21.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label21.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label21.Location = new System.Drawing.Point(0, 33);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(146, 21);
+            this.label21.TabIndex = 17;
+            this.label21.Text = "Manley";
+            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label23
+            // 
+            this.label23.BackColor = System.Drawing.Color.White;
+            this.label23.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label23.Location = new System.Drawing.Point(441, 55);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(146, 24);
+            this.label23.TabIndex = 10;
+            this.label23.Text = "2.5";
+            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label24
+            // 
+            this.label24.BackColor = System.Drawing.Color.White;
+            this.label24.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label24.Location = new System.Drawing.Point(294, 55);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(146, 24);
+            this.label24.TabIndex = 14;
+            this.label24.Text = "-";
+            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label25
+            // 
+            this.label25.BackColor = System.Drawing.Color.White;
+            this.label25.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label25.Location = new System.Drawing.Point(1, 55);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(145, 24);
+            this.label25.TabIndex = 9;
+            this.label25.Text = "2.5~3";
+            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label27
+            // 
+            this.label27.BackColor = System.Drawing.Color.White;
+            this.label27.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label27.Location = new System.Drawing.Point(0, 11);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(587, 21);
+            this.label27.TabIndex = 5;
+            this.label27.Text = "Dados de referência (%)";
+            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(12, 37);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(207, 21);
+            this.label28.TabIndex = 11;
+            this.label28.Text = "Umidade final do biscoito";
+            // 
+            // umidade
+            // 
+            this.umidade.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.umidade.Location = new System.Drawing.Point(225, 34);
+            this.umidade.Name = "umidade";
+            this.umidade.Size = new System.Drawing.Size(30, 27);
+            this.umidade.TabIndex = 10;
+            this.umidade.TextChanged += new System.EventHandler(this.umidade_TextChanged);
+            // 
+            // linkumidade
+            // 
+            this.linkumidade.ActiveLinkColor = System.Drawing.Color.DodgerBlue;
+            this.linkumidade.AutoEllipsis = true;
+            this.linkumidade.BackColor = System.Drawing.Color.Transparent;
+            this.linkumidade.DisabledLinkColor = System.Drawing.Color.DimGray;
+            this.linkumidade.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.linkumidade.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.linkumidade.Location = new System.Drawing.Point(3, 119);
+            this.linkumidade.Name = "linkumidade";
+            this.linkumidade.Size = new System.Drawing.Size(1258, 78);
+            this.linkumidade.TabIndex = 9;
+            this.linkumidade.Visible = false;
+            // 
             // FormForneamentoSD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(87)))), ((int)(((byte)(152)))));
-            this.ClientSize = new System.Drawing.Size(1264, 578);
+            this.ClientSize = new System.Drawing.Size(1264, 717);
+            this.Controls.Add(this.umidadebox);
+            this.Controls.Add(this.boxtempomistura);
             this.Controls.Add(this.tempfornobox);
             this.Name = "FormForneamentoSD";
             this.Text = "FormForneamento";
@@ -767,6 +1163,12 @@ namespace Parametrizador.Short_Dough
             this.tempfornobox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gráficoforno)).EndInit();
             this.dadosrefext.ResumeLayout(false);
+            this.boxtempomistura.ResumeLayout(false);
+            this.boxtempomistura.PerformLayout();
+            this.dadosreftempcozimento.ResumeLayout(false);
+            this.umidadebox.ResumeLayout(false);
+            this.umidadebox.PerformLayout();
+            this.dadosrefumidade.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -801,7 +1203,6 @@ namespace Parametrizador.Short_Dough
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label z1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DataVisualization.Charting.Chart gráficoforno;
         private System.Windows.Forms.Label z7;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label33;
@@ -826,5 +1227,34 @@ namespace Parametrizador.Short_Dough
         private System.Windows.Forms.Label bt2;
         private System.Windows.Forms.Label dt2;
         private System.Windows.Forms.Label mt2;
+        private System.Windows.Forms.GroupBox boxtempomistura;
+        private System.Windows.Forms.GroupBox dadosreftempcozimento;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox Tempcoz;
+        private System.Windows.Forms.LinkLabel linktempcozimento;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.DataVisualization.Charting.Chart gráficoforno;
+        private System.Windows.Forms.GroupBox umidadebox;
+        private System.Windows.Forms.GroupBox dadosrefumidade;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.TextBox umidade;
+        private System.Windows.Forms.LinkLabel linkumidade;
     }
 }
