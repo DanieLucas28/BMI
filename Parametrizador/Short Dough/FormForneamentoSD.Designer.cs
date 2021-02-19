@@ -29,12 +29,12 @@ namespace Parametrizador.Short_Dough
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tempfornobox = new System.Windows.Forms.GroupBox();
             this.gráficoforno = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.labelforno7 = new System.Windows.Forms.Label();
@@ -90,7 +90,11 @@ namespace Parametrizador.Short_Dough
             this.label2 = new System.Windows.Forms.Label();
             this.boxtempomistura = new System.Windows.Forms.GroupBox();
             this.dadosreftempcozimento = new System.Windows.Forms.GroupBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -98,10 +102,6 @@ namespace Parametrizador.Short_Dough
             this.label17 = new System.Windows.Forms.Label();
             this.Tempcoz = new System.Windows.Forms.TextBox();
             this.linktempcozimento = new System.Windows.Forms.LinkLabel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.umidadebox = new System.Windows.Forms.GroupBox();
             this.dadosrefumidade = new System.Windows.Forms.GroupBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -161,51 +161,51 @@ namespace Parametrizador.Short_Dough
             // 
             // gráficoforno
             // 
-            chartArea2.Name = "ChartArea1";
-            this.gráficoforno.ChartAreas.Add(chartArea2);
-            legend2.AutoFitMinFontSize = 6;
-            legend2.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
-            legend2.BorderWidth = 0;
-            legend2.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            legend2.IsTextAutoFit = false;
-            legend2.LegendStyle = System.Windows.Forms.DataVisualization.Charting.LegendStyle.Row;
-            legend2.Name = "Legend1";
-            legend2.Position.Auto = false;
-            legend2.Position.Height = 5F;
-            legend2.Position.Width = 100F;
-            this.gráficoforno.Legends.Add(legend2);
+            chartArea1.Name = "ChartArea1";
+            this.gráficoforno.ChartAreas.Add(chartArea1);
+            legend1.AutoFitMinFontSize = 6;
+            legend1.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
+            legend1.BorderWidth = 0;
+            legend1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            legend1.IsTextAutoFit = false;
+            legend1.LegendStyle = System.Windows.Forms.DataVisualization.Charting.LegendStyle.Row;
+            legend1.Name = "Legend1";
+            legend1.Position.Auto = false;
+            legend1.Position.Height = 5F;
+            legend1.Position.Width = 100F;
+            this.gráficoforno.Legends.Add(legend1);
             this.gráficoforno.Location = new System.Drawing.Point(852, 10);
             this.gráficoforno.Margin = new System.Windows.Forms.Padding(0);
             this.gráficoforno.Name = "gráficoforno";
             this.gráficoforno.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            series5.BorderWidth = 2;
-            series5.ChartArea = "ChartArea1";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series5.Legend = "Legend1";
-            series5.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
-            series5.Name = "Manley";
-            series6.BorderWidth = 2;
-            series6.ChartArea = "ChartArea1";
-            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series6.Legend = "Legend1";
-            series6.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
-            series6.Name = "Davidson";
-            series7.BorderWidth = 2;
-            series7.ChartArea = "ChartArea1";
-            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series7.Legend = "Legend1";
-            series7.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
-            series7.Name = "Bertolino & Braga";
-            series8.BorderWidth = 2;
-            series8.ChartArea = "ChartArea1";
-            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series8.Legend = "Legend1";
-            series8.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
-            series8.Name = "Utilizado";
-            this.gráficoforno.Series.Add(series5);
-            this.gráficoforno.Series.Add(series6);
-            this.gráficoforno.Series.Add(series7);
-            this.gráficoforno.Series.Add(series8);
+            series1.BorderWidth = 2;
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series1.Legend = "Legend1";
+            series1.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
+            series1.Name = "Manley";
+            series2.BorderWidth = 2;
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series2.Legend = "Legend1";
+            series2.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
+            series2.Name = "Davidson";
+            series3.BorderWidth = 2;
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series3.Legend = "Legend1";
+            series3.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
+            series3.Name = "Bertolino & Braga";
+            series4.BorderWidth = 2;
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series4.Legend = "Legend1";
+            series4.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
+            series4.Name = "Utilizado";
+            this.gráficoforno.Series.Add(series1);
+            this.gráficoforno.Series.Add(series2);
+            this.gráficoforno.Series.Add(series3);
+            this.gráficoforno.Series.Add(series4);
             this.gráficoforno.Size = new System.Drawing.Size(376, 197);
             this.gráficoforno.TabIndex = 32;
             this.gráficoforno.Text = "chart1";
@@ -840,6 +840,42 @@ namespace Parametrizador.Short_Dough
             this.dadosreftempcozimento.TabStop = false;
             this.dadosreftempcozimento.Visible = false;
             // 
+            // label10
+            // 
+            this.label10.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label10.Location = new System.Drawing.Point(441, 33);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(146, 21);
+            this.label10.TabIndex = 20;
+            this.label10.Text = "Bertolino & Braga";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label10.UseMnemonic = false;
+            // 
+            // label9
+            // 
+            this.label9.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label9.Location = new System.Drawing.Point(294, 33);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(146, 21);
+            this.label9.TabIndex = 19;
+            this.label9.Text = "Moretto";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label9.UseMnemonic = false;
+            // 
+            // label8
+            // 
+            this.label8.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label8.Location = new System.Drawing.Point(147, 33);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(146, 21);
+            this.label8.TabIndex = 18;
+            this.label8.Text = "Davidson";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label8.UseMnemonic = false;
+            // 
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.White;
@@ -850,6 +886,17 @@ namespace Parametrizador.Short_Dough
             this.label3.TabIndex = 16;
             this.label3.Text = "5~5.5";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label7.Location = new System.Drawing.Point(0, 33);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(146, 21);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "Manley";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label18
             // 
@@ -926,53 +973,6 @@ namespace Parametrizador.Short_Dough
             this.linktempcozimento.Size = new System.Drawing.Size(1258, 78);
             this.linktempcozimento.TabIndex = 9;
             this.linktempcozimento.Visible = false;
-            // 
-            // label7
-            // 
-            this.label7.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(0, 33);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(146, 21);
-            this.label7.TabIndex = 17;
-            this.label7.Text = "Manley";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label8
-            // 
-            this.label8.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label8.Location = new System.Drawing.Point(147, 33);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(146, 21);
-            this.label8.TabIndex = 18;
-            this.label8.Text = "Davidson";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label8.UseMnemonic = false;
-            // 
-            // label9
-            // 
-            this.label9.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label9.Location = new System.Drawing.Point(294, 33);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(146, 21);
-            this.label9.TabIndex = 19;
-            this.label9.Text = "Moretto";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label9.UseMnemonic = false;
-            // 
-            // label10
-            // 
-            this.label10.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label10.Location = new System.Drawing.Point(441, 33);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(146, 21);
-            this.label10.TabIndex = 20;
-            this.label10.Text = "Bertolino & Braga";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label10.UseMnemonic = false;
             // 
             // umidadebox
             // 

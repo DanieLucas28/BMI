@@ -203,7 +203,7 @@ namespace Parametrizador.Short_Dough
             this.linktempmassa.Size = new System.Drawing.Size(1128, 79);
             this.linktempmassa.TabIndex = 3;
             this.linktempmassa.Visible = false;
-            this.linktempmassa.Paint += new System.Windows.Forms.PaintEventHandler(this.linktempmassa_Paint);
+           
             // 
             // label1
             // 
@@ -561,7 +561,7 @@ namespace Parametrizador.Short_Dough
             this.linkfluxoadição.Size = new System.Drawing.Size(1128, 78);
             this.linkfluxoadição.TabIndex = 8;
             this.linkfluxoadição.Visible = false;
-            this.linkfluxoadição.Paint += new System.Windows.Forms.PaintEventHandler(this.linkfluxoadição_Paint);
+          
             // 
             // radioButtonmisturafluxo2
             // 

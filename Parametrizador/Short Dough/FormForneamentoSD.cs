@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -16,8 +17,6 @@ namespace Parametrizador.Short_Dough
         {
             InitializeComponent();
             var objchart = gráficoforno.ChartAreas[0];
-
-
             #region dados do gráfico
             objchart.AxisX.Minimum = 1;
             objchart.AxisX.Maximum = 7;                       
@@ -189,10 +188,11 @@ namespace Parametrizador.Short_Dough
 
         //ações dos texts boxes e alterações no gráfico
 
-        private void Tempforno1_TextChanged(object sender, EventArgs e)
+        private async void Tempforno1_TextChanged(object sender, EventArgs e)
         {
             if (tempforno2.Visible == false)
             {
+                await Task.Delay(2000);
                 linkforno.Visible = true;
                 linkforno.Text = "Para este tipo de biscoito, nota-se um comportamento crescente das temperaturas das zonas até atingimento do pico e posterior decaimento. Esse comportamento é característico para a formação da estrutura desse tipo de biscoito.Deve - se evitar altas temperaturas ou picos nas primeiras zonas do forno.";
                 linkforno.LinkArea = new LinkArea(0, 0);
@@ -204,10 +204,11 @@ namespace Parametrizador.Short_Dough
             }
         }
 
-        private void tempforno2_TextChanged(object sender, EventArgs e)
+        private async void tempforno2_TextChanged(object sender, EventArgs e)
         {
             if (tempforno3.Visible == false)
             {
+                await Task.Delay(2000);
                 linkforno.Visible = true;
                 linkforno.Text = "Para este tipo de biscoito, nota-se um comportamento crescente das temperaturas das zonas até atingimento do pico e posterior decaimento. Esse comportamento é característico para a formação da estrutura desse tipo de biscoito.Deve - se evitar altas temperaturas ou picos nas primeiras zonas do forno.";
                 linkforno.LinkArea = new LinkArea(0, 0);
@@ -219,10 +220,11 @@ namespace Parametrizador.Short_Dough
             else { }
         }
 
-        private void tempforno3_TextChanged(object sender, EventArgs e)
+        private async void tempforno3_TextChanged(object sender, EventArgs e)
         {
             if (tempforno4.Visible == false)
             {
+                await Task.Delay(2000);
                 linkforno.Visible = true;
                 linkforno.Text = "Para este tipo de biscoito, nota-se um comportamento crescente das temperaturas das zonas até atingimento do pico e posterior decaimento. Esse comportamento é característico para a formação da estrutura desse tipo de biscoito.Deve - se evitar altas temperaturas ou picos nas primeiras zonas do forno.";
                 linkforno.LinkArea = new LinkArea(0, 0);
@@ -235,10 +237,12 @@ namespace Parametrizador.Short_Dough
             else { }
         }
 
-        private void tempforno4_TextChanged(object sender, EventArgs e)
+        private async void tempforno4_TextChanged(object sender, EventArgs e)
         {
+            
             if (tempforno5.Visible == false)
             {
+                await Task.Delay(2000);
                 linkforno.Visible = true;
                 linkforno.Text = "Para este tipo de biscoito, nota-se um comportamento crescente das temperaturas das zonas até atingimento do pico e posterior decaimento. Esse comportamento é característico para a formação da estrutura desse tipo de biscoito.Deve - se evitar altas temperaturas ou picos nas primeiras zonas do forno.";
                 linkforno.LinkArea = new LinkArea(0, 0);
@@ -252,10 +256,11 @@ namespace Parametrizador.Short_Dough
             else { }
         }
 
-        private void tempforno5_TextChanged(object sender, EventArgs e)
+        private async void tempforno5_TextChanged(object sender, EventArgs e)
         {
             if (tempforno6.Visible == false)
             {
+                await Task.Delay(2000);
                 linkforno.Visible = true;
                 linkforno.Text = "Para este tipo de biscoito, nota-se um comportamento crescente das temperaturas das zonas até atingimento do pico e posterior decaimento. Esse comportamento é característico para a formação da estrutura desse tipo de biscoito.Deve - se evitar altas temperaturas ou picos nas primeiras zonas do forno.";
                 linkforno.LinkArea = new LinkArea(0, 0);
@@ -270,10 +275,13 @@ namespace Parametrizador.Short_Dough
             else { }
         }
 
-        private void tempforno6_TextChanged(object sender, EventArgs e)
+        private async void tempforno6_TextChanged(object sender, EventArgs e)
         {
+            
+
             if (tempforno7.Visible == false)
             {
+                await Task.Delay(2000);
                 linkforno.Visible = true;
                 linkforno.Text = "Para este tipo de biscoito, nota-se um comportamento crescente das temperaturas das zonas até atingimento do pico e posterior decaimento. Esse comportamento é característico para a formação da estrutura desse tipo de biscoito.Deve - se evitar altas temperaturas ou picos nas primeiras zonas do forno.";
                 linkforno.LinkArea = new LinkArea(0, 0);
@@ -289,10 +297,12 @@ namespace Parametrizador.Short_Dough
             else { }
         }
 
-        private void tempforno7_TextChanged(object sender, EventArgs e)
+        private async void tempforno7_TextChanged(object sender, EventArgs e)
         {
-         
-                linkforno.Visible = true;
+
+            await Task.Delay(2000);
+
+            linkforno.Visible = true;
                 linkforno.Text = "Para este tipo de biscoito, nota-se um comportamento crescente das temperaturas das zonas até atingimento do pico e posterior decaimento. Esse comportamento é característico para a formação da estrutura desse tipo de biscoito.Deve - se evitar altas temperaturas ou picos nas primeiras zonas do forno.";
                 linkforno.LinkArea = new LinkArea(0, 0);
                 dadosrefext.Visible = true;
@@ -377,56 +387,55 @@ namespace Parametrizador.Short_Dough
         {
             linkumidade.Visible = true;
             dadosrefumidade.Visible = true;
-            if (Int32.TryParse(Tempcoz.Text.Trim(), out _))
+            if (Int32.TryParse(umidade.Text.Trim(), out _))
             {
 
-                if (Convert.ToInt32(Tempcoz.Text.Trim()) >= 2.5 && (Convert.ToInt32(Tempcoz.Text.Trim()) <= 3))
+                if (Convert.ToInt32(umidade.Text.Trim()) > 2.5 && (Convert.ToInt32(umidade.Text.Trim()) <= 3))
                 {
+                    linkumidade.Visible = true;
                     this.linkumidade.LinkArea = new LinkArea(0, 0);
                     this.linkumidade.UseMnemonic = false;
                     this.linkumidade.Text = "Umidade dentro dos critérios estabelecidos por Manley e Davidson.";
                     this.linkumidade.Links.Add(48, 6, "#");
                     this.linkumidade.Links.Add(57, 8, "#");
                 }
-                else if (Convert.ToInt32(Tempcoz.Text.Trim()) == 3)
+                else if (Convert.ToInt32(umidade.Text.Trim()) == 3)
                 {
+                    linkumidade.Visible = true;
                     this.linkumidade.LinkArea = new LinkArea(0, 0);
                     this.linkumidade.UseMnemonic = false;
                     this.linkumidade.Text = "Umidade dentro dos critérios estabelecidos por Davidson.";
                     this.linkumidade.Links.Add(48, 8, "#");
                 }
-                // else if (Convert.ToInt32(Tempcoz.Text.Trim()) >= 4 && (Convert.ToInt32(Tempcoz.Text.Trim()) < 5))
-                // {
-                //     this.linkumidade.LinkArea = new LinkArea(0, 0);
-                //     this.linkumidade.UseMnemonic = false;
-                //     this.linkumidade.Text = "Tempo dentro do critério estabelecido por Moretto e Bertolino & Braga.";
-                //     this.linkumidade.Links.Add(43, 7, "#");
-                //     this.linkumidade.Links.Add(53, 17, "#");
-                // }
-                // else if (Convert.ToInt32(Tempcoz.Text.Trim()) >= 3.4 && (Convert.ToInt32(Tempcoz.Text.Trim()) < 4))
-                // {
-                //     this.linkumidade.LinkArea = new LinkArea(0, 0);
-                //     this.linkumidade.UseMnemonic = false;
-                //     this.linkumidade.Text = "Tempo dentro do critério estabelecido por Moretto.";
-                //     this.linkumidade.Links.Add(43, 7, "#");
-                //
-                // }
-                // else if (Convert.ToInt32(Tempcoz.Text.Trim()) > 20 && (Convert.ToInt32(Tempcoz.Text.Trim()) < 3.5))
-                // {
-                //     this.linkumidade.LinkArea = new LinkArea(0, 0);
-                //     this.linkumidade.UseMnemonic = false;
-                //     this.linkumidade.Text = "Tempo divergente ao estabelecido pelos autores. O tempo de cozimento é correlacionado ao tamanho do forno, temperatura das zonas e tipo da massa. Estes fatores alteram de acordo com o estudo de cada autor, e, por este motivo, caso o tempo de cozimento utilizado forneça as especificações desejadas ao produto final, pode ser mantido.";
-                //
-                //
-                // }
-                // else if (Convert.ToInt32(Tempcoz.Text.Trim()) > 5.5 && (Convert.ToInt32(Tempcoz.Text.Trim()) <= 20))
-                // {
-                //     this.linkumidade.LinkArea = new LinkArea(0, 0);
-                //     this.linkumidade.UseMnemonic = false;
-                //     this.linkumidade.Text = "Tempo dentro do critério estabelecido por Manley.";
-                //     this.linkumidade.Links.Add(43, 6, "#");
-                //
-                // }
+                 else if (Convert.ToInt32(umidade.Text.Trim()) == 2.5)
+                {
+                     linkumidade.Visible = true;
+                     this.linkumidade.LinkArea = new LinkArea(0, 0);
+                     this.linkumidade.UseMnemonic = false;
+                     this.linkumidade.Text = "Tempo dentro do critério estabelecido por Manley, Davidson e Bertolino & Braga.";
+                     this.linkumidade.Links.Add(43, 6, "#");
+                     this.linkumidade.Links.Add(51, 8, "#");
+                     this.linkumidade.Links.Add(62, 17, "#");
+                }
+                 else if (Convert.ToInt32(umidade.Text.Trim()) < 4)
+                 {
+                    linkumidade.Visible = true;
+                     this.linkumidade.LinkArea = new LinkArea(0, 0);
+                     this.linkumidade.UseMnemonic = false;
+                     this.linkumidade.Text = "Umidade abaixo do indicado pelos autores. Verificar textura e estrutura do biscoito (pode encontrar-se quebradiço).";
+                     
+                
+                 }
+                else if (Convert.ToInt32(umidade.Text.Trim()) > 3)
+                 {
+                    linkumidade.Visible = true;
+                    this.linkumidade.LinkArea = new LinkArea(0, 0);
+                    this.linkumidade.UseMnemonic = false;
+                    this.linkumidade.Text = "Umidade acima do indicado pelos autores. Verificar textura e crocância do biscoito (pode encontrar-se amolecido ou não estar crocante).";
+
+
+                }
+
 
             }
             else

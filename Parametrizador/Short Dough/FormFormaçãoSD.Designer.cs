@@ -94,7 +94,7 @@ namespace Parametrizador.Short_Dough
             this.dadosrefext.Controls.Add(this.label14);
             this.dadosrefext.Controls.Add(this.label12);
             this.dadosrefext.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(87)))), ((int)(((byte)(152)))));
-            this.dadosrefext.Location = new System.Drawing.Point(472, 11);
+            this.dadosrefext.Location = new System.Drawing.Point(472, 0);
             this.dadosrefext.Margin = new System.Windows.Forms.Padding(0);
             this.dadosrefext.Name = "dadosrefext";
             this.dadosrefext.Size = new System.Drawing.Size(382, 76);
@@ -233,7 +233,7 @@ namespace Parametrizador.Short_Dough
             this.dadosrefrolo.Controls.Add(this.label27);
             this.dadosrefrolo.Controls.Add(this.label3);
             this.dadosrefrolo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(87)))), ((int)(((byte)(152)))));
-            this.dadosrefrolo.Location = new System.Drawing.Point(472, 11);
+            this.dadosrefrolo.Location = new System.Drawing.Point(472, 0);
             this.dadosrefrolo.Margin = new System.Windows.Forms.Padding(0);
             this.dadosrefrolo.Name = "dadosrefrolo";
             this.dadosrefrolo.Size = new System.Drawing.Size(381, 77);

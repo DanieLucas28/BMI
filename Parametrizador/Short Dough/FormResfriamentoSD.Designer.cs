@@ -30,29 +30,29 @@ namespace Parametrizador.Short_Dough
         private void InitializeComponent()
         {
             this.rolobox = new System.Windows.Forms.GroupBox();
-            this.dadosrefrolo = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tempresf = new System.Windows.Forms.TextBox();
+            this.dadosrefresf = new System.Windows.Forms.GroupBox();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.linkrolo = new System.Windows.Forms.LinkLabel();
+            this.linkresfr = new System.Windows.Forms.LinkLabel();
             this.label1 = new System.Windows.Forms.Label();
-            this.durezarolo = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tempcoz = new System.Windows.Forms.TextBox();
             this.rolobox.SuspendLayout();
-            this.dadosrefrolo.SuspendLayout();
+            this.dadosrefresf.SuspendLayout();
             this.SuspendLayout();
             // 
             // rolobox
             // 
             this.rolobox.Controls.Add(this.label2);
-            this.rolobox.Controls.Add(this.textBox1);
-            this.rolobox.Controls.Add(this.dadosrefrolo);
-            this.rolobox.Controls.Add(this.linkrolo);
+            this.rolobox.Controls.Add(this.tempresf);
+            this.rolobox.Controls.Add(this.dadosrefresf);
+            this.rolobox.Controls.Add(this.linkresfr);
             this.rolobox.Controls.Add(this.label1);
-            this.rolobox.Controls.Add(this.durezarolo);
+            this.rolobox.Controls.Add(this.tempcoz);
             this.rolobox.Dock = System.Windows.Forms.DockStyle.Top;
             this.rolobox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rolobox.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -62,26 +62,44 @@ namespace Parametrizador.Short_Dough
             this.rolobox.Margin = new System.Windows.Forms.Padding(10);
             this.rolobox.Name = "rolobox";
             this.rolobox.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.rolobox.Size = new System.Drawing.Size(966, 200);
+            this.rolobox.Size = new System.Drawing.Size(966, 230);
             this.rolobox.TabIndex = 10;
             this.rolobox.TabStop = false;
             this.rolobox.Text = "Tempo de resfriamento";
             // 
-            // dadosrefrolo
+            // label2
             // 
-            this.dadosrefrolo.Controls.Add(this.label28);
-            this.dadosrefrolo.Controls.Add(this.label29);
-            this.dadosrefrolo.Controls.Add(this.label25);
-            this.dadosrefrolo.Controls.Add(this.label27);
-            this.dadosrefrolo.Controls.Add(this.label3);
-            this.dadosrefrolo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(87)))), ((int)(((byte)(152)))));
-            this.dadosrefrolo.Location = new System.Drawing.Point(472, 0);
-            this.dadosrefrolo.Margin = new System.Windows.Forms.Padding(0);
-            this.dadosrefrolo.Name = "dadosrefrolo";
-            this.dadosrefrolo.Size = new System.Drawing.Size(381, 118);
-            this.dadosrefrolo.TabIndex = 6;
-            this.dadosrefrolo.TabStop = false;
-            this.dadosrefrolo.Visible = false;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(3, 64);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(259, 21);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Tempo de resfriamento utilizado";
+            // 
+            // tempresf
+            // 
+            this.tempresf.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.tempresf.Location = new System.Drawing.Point(302, 61);
+            this.tempresf.Name = "tempresf";
+            this.tempresf.Size = new System.Drawing.Size(30, 27);
+            this.tempresf.TabIndex = 7;
+            this.tempresf.TextChanged += new System.EventHandler(this.tempresf_TextChanged);
+            // 
+            // dadosrefresf
+            // 
+            this.dadosrefresf.Controls.Add(this.label28);
+            this.dadosrefresf.Controls.Add(this.label29);
+            this.dadosrefresf.Controls.Add(this.label25);
+            this.dadosrefresf.Controls.Add(this.label27);
+            this.dadosrefresf.Controls.Add(this.label3);
+            this.dadosrefresf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(87)))), ((int)(((byte)(152)))));
+            this.dadosrefresf.Location = new System.Drawing.Point(472, 0);
+            this.dadosrefresf.Margin = new System.Windows.Forms.Padding(0);
+            this.dadosrefresf.Name = "dadosrefresf";
+            this.dadosrefresf.Size = new System.Drawing.Size(381, 118);
+            this.dadosrefresf.TabIndex = 6;
+            this.dadosrefresf.TabStop = false;
+            this.dadosrefresf.Visible = false;
             // 
             // label28
             // 
@@ -141,19 +159,18 @@ namespace Parametrizador.Short_Dough
             this.label3.Text = "Dados de referência (Shore)";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // linkrolo
+            // linkresfr
             // 
-            this.linkrolo.ActiveLinkColor = System.Drawing.Color.DodgerBlue;
-            this.linkrolo.AutoEllipsis = true;
-            this.linkrolo.BackColor = System.Drawing.Color.Transparent;
-            this.linkrolo.DisabledLinkColor = System.Drawing.Color.DimGray;
-            this.linkrolo.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.linkrolo.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.linkrolo.Location = new System.Drawing.Point(3, 118);
-            this.linkrolo.Name = "linkrolo";
-            this.linkrolo.Size = new System.Drawing.Size(960, 79);
-            this.linkrolo.TabIndex = 3;
-            this.linkrolo.Visible = false;
+            this.linkresfr.ActiveLinkColor = System.Drawing.Color.DodgerBlue;
+            this.linkresfr.AutoEllipsis = true;
+            this.linkresfr.BackColor = System.Drawing.Color.Transparent;
+            this.linkresfr.DisabledLinkColor = System.Drawing.Color.DimGray;
+            this.linkresfr.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.linkresfr.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.linkresfr.Location = new System.Drawing.Point(3, 148);
+            this.linkresfr.Name = "linkresfr";
+            this.linkresfr.Size = new System.Drawing.Size(960, 79);
+            this.linkresfr.TabIndex = 3;
             // 
             // label1
             // 
@@ -164,30 +181,13 @@ namespace Parametrizador.Short_Dough
             this.label1.TabIndex = 1;
             this.label1.Text = "Tempo de cozimento utilizado";
             // 
-            // durezarolo
+            // tempcoz
             // 
-            this.durezarolo.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.durezarolo.Location = new System.Drawing.Point(302, 27);
-            this.durezarolo.Name = "durezarolo";
-            this.durezarolo.Size = new System.Drawing.Size(30, 27);
-            this.durezarolo.TabIndex = 0;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 64);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(259, 21);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Tempo de resfriamento utilizado";
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.textBox1.Location = new System.Drawing.Point(302, 61);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(30, 27);
-            this.textBox1.TabIndex = 7;
+            this.tempcoz.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.tempcoz.Location = new System.Drawing.Point(302, 27);
+            this.tempcoz.Name = "tempcoz";
+            this.tempcoz.Size = new System.Drawing.Size(30, 27);
+            this.tempcoz.TabIndex = 0;
             // 
             // FormResfriamentoSD
             // 
@@ -200,7 +200,7 @@ namespace Parametrizador.Short_Dough
             this.Text = "FormResfriamento";
             this.rolobox.ResumeLayout(false);
             this.rolobox.PerformLayout();
-            this.dadosrefrolo.ResumeLayout(false);
+            this.dadosrefresf.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -208,16 +208,16 @@ namespace Parametrizador.Short_Dough
         #endregion
 
         private System.Windows.Forms.GroupBox rolobox;
-        private System.Windows.Forms.GroupBox dadosrefrolo;
+        private System.Windows.Forms.GroupBox dadosrefresf;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.LinkLabel linkrolo;
+        private System.Windows.Forms.LinkLabel linkresfr;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox durezarolo;
+        private System.Windows.Forms.TextBox tempcoz;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tempresf;
     }
 }
