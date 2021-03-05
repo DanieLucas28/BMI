@@ -29,5 +29,33 @@ namespace Parametrizador.Short_Dough
             }
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (Convert.ToInt32(densidade.Text.Trim()) >= 0.75 && (Convert.ToInt32(densidade.Text.Trim()) <= 1.15))
+            {
+                percrecbox.Visible = true;
+                linkdensidade.Visible = true;
+                linkdensidade.Text = "Densidade do recheio de acordo com o indicado por Manley. A densidade está relacionada a consistência do recheio e visibilidade no biscoito sanduíche (diretamente proporcional ao volume).";
+                linkdensidade.LinkArea = new LinkArea(0, 0);
+                linkdensidade.Links.Add(50, 6, "#");
+            }
+            if (Convert.ToInt32(densidade.Text.Trim()) > 1.15)
+            {
+                percrecbox.Visible = true;
+                linkdensidade.Visible = true;
+                linkdensidade.Text = "Densidade fora do range indicado por Manley. A densidade está relacionada a consistência do recheio e sua visibilidade no biscoito sanduíche. Avaliar se a consistência do recheio está de acordo com o desejado e se a visibilidade do recheio condiz com a imagem comercial do produto.";
+                linkdensidade.LinkArea = new LinkArea(0, 0);
+                linkdensidade.Links.Add(37, 6, "#");
+            }
+            if (Convert.ToInt32(densidade.Text.Trim()) < 0.75)
+            {
+                percrecbox.Visible = true;
+                linkdensidade.Visible = true;
+                linkdensidade.Text = "Densidade fora do range indicado por Manley. A densidade está relacionada a consistência do recheio e sua visibilidade no biscoito sanduíche. Avaliar se a consistência do recheio está de acordo com o desejado e se a visibilidade do recheio condiz com a imagem comercial do produto.";
+                linkdensidade.LinkArea = new LinkArea(0, 0);
+                linkdensidade.Links.Add(37, 6, "#");
+            }
+        }
     }
 }

@@ -1,4 +1,4 @@
-﻿using FontAwesome.Sharp;
+﻿ using FontAwesome.Sharp;
 using Parametrizador.Cookies;
 using Parametrizador.Main;
 using Parametrizador.Properties;
@@ -105,6 +105,8 @@ namespace Parametrizador
             childForm.BringToFront();
             childForm.Show();
             childForm.AutoScroll = true;
+            childForm.AutoScrollMinSize = new Size(1200,500);
+            
 
             if (String.Equals(currentChildForm.Name, "Fontes"))
              {

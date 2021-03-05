@@ -25,7 +25,7 @@ namespace Parametrizador.Short_Dough
                 linkresfr.Visible = true;
                 linkresfr.Text = "Digite um valor para o tempo de cozimento";
             }
-            else if (Convert.ToInt32(tempresf.Text.Trim()) == 0)
+            else if (Convert.ToInt32(tempresf.Text.Trim()) == 0) 
             {
                 linkresfr.Visible = true;
                 linkresfr.Text = "Digite um valor válido para o tempo de resfriamento";

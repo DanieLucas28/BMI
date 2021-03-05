@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\Ima2gem1.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <EmbedInteropTypes>True</EmbedInteropTypes>
@@ -343,9 +346,6 @@
     <None Include="Resources\logo.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Sem Título-1.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\hstext.txt" />
   </ItemGroup>
   <ItemGroup>
@@ -374,6 +374,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\shortdough.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sem Título-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sem Título-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ima2gem1.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

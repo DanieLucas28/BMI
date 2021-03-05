@@ -29,12 +29,12 @@ namespace Parametrizador.Short_Dough
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tempfornobox = new System.Windows.Forms.GroupBox();
             this.gráficoforno = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.labelforno7 = new System.Windows.Forms.Label();
@@ -158,54 +158,55 @@ namespace Parametrizador.Short_Dough
             this.tempfornobox.Size = new System.Drawing.Size(1264, 335);
             this.tempfornobox.TabIndex = 9;
             this.tempfornobox.TabStop = false;
+            this.tempfornobox.Text = "Curva de forneamento";
             // 
             // gráficoforno
             // 
-            chartArea1.Name = "ChartArea1";
-            this.gráficoforno.ChartAreas.Add(chartArea1);
-            legend1.AutoFitMinFontSize = 6;
-            legend1.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
-            legend1.BorderWidth = 0;
-            legend1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            legend1.IsTextAutoFit = false;
-            legend1.LegendStyle = System.Windows.Forms.DataVisualization.Charting.LegendStyle.Row;
-            legend1.Name = "Legend1";
-            legend1.Position.Auto = false;
-            legend1.Position.Height = 5F;
-            legend1.Position.Width = 100F;
-            this.gráficoforno.Legends.Add(legend1);
+            chartArea2.Name = "ChartArea1";
+            this.gráficoforno.ChartAreas.Add(chartArea2);
+            legend2.AutoFitMinFontSize = 6;
+            legend2.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
+            legend2.BorderWidth = 0;
+            legend2.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            legend2.IsTextAutoFit = false;
+            legend2.LegendStyle = System.Windows.Forms.DataVisualization.Charting.LegendStyle.Row;
+            legend2.Name = "Legend1";
+            legend2.Position.Auto = false;
+            legend2.Position.Height = 5F;
+            legend2.Position.Width = 100F;
+            this.gráficoforno.Legends.Add(legend2);
             this.gráficoforno.Location = new System.Drawing.Point(852, 10);
             this.gráficoforno.Margin = new System.Windows.Forms.Padding(0);
             this.gráficoforno.Name = "gráficoforno";
             this.gráficoforno.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            series1.BorderWidth = 2;
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series1.Legend = "Legend1";
-            series1.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
-            series1.Name = "Manley";
-            series2.BorderWidth = 2;
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series2.Legend = "Legend1";
-            series2.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
-            series2.Name = "Davidson";
-            series3.BorderWidth = 2;
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series3.Legend = "Legend1";
-            series3.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
-            series3.Name = "Bertolino & Braga";
-            series4.BorderWidth = 2;
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series4.Legend = "Legend1";
-            series4.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
-            series4.Name = "Utilizado";
-            this.gráficoforno.Series.Add(series1);
-            this.gráficoforno.Series.Add(series2);
-            this.gráficoforno.Series.Add(series3);
-            this.gráficoforno.Series.Add(series4);
+            series5.BorderWidth = 2;
+            series5.ChartArea = "ChartArea1";
+            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series5.Legend = "Legend1";
+            series5.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
+            series5.Name = "Manley";
+            series6.BorderWidth = 2;
+            series6.ChartArea = "ChartArea1";
+            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series6.Legend = "Legend1";
+            series6.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
+            series6.Name = "Davidson";
+            series7.BorderWidth = 2;
+            series7.ChartArea = "ChartArea1";
+            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series7.Legend = "Legend1";
+            series7.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
+            series7.Name = "Bertolino & Braga";
+            series8.BorderWidth = 2;
+            series8.ChartArea = "ChartArea1";
+            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series8.Legend = "Legend1";
+            series8.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
+            series8.Name = "Utilizado";
+            this.gráficoforno.Series.Add(series5);
+            this.gráficoforno.Series.Add(series6);
+            this.gráficoforno.Series.Add(series7);
+            this.gráficoforno.Series.Add(series8);
             this.gráficoforno.Size = new System.Drawing.Size(376, 197);
             this.gráficoforno.TabIndex = 32;
             this.gráficoforno.Text = "chart1";
@@ -224,7 +225,7 @@ namespace Parametrizador.Short_Dough
             // tempforno7
             // 
             this.tempforno7.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.tempforno7.Location = new System.Drawing.Point(202, 250);
+            this.tempforno7.Location = new System.Drawing.Point(258, 250);
             this.tempforno7.Name = "tempforno7";
             this.tempforno7.Size = new System.Drawing.Size(30, 27);
             this.tempforno7.TabIndex = 30;
@@ -244,7 +245,7 @@ namespace Parametrizador.Short_Dough
             // tempforno6
             // 
             this.tempforno6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.tempforno6.Location = new System.Drawing.Point(202, 218);
+            this.tempforno6.Location = new System.Drawing.Point(258, 218);
             this.tempforno6.Name = "tempforno6";
             this.tempforno6.Size = new System.Drawing.Size(30, 27);
             this.tempforno6.TabIndex = 28;
@@ -264,7 +265,7 @@ namespace Parametrizador.Short_Dough
             // tempforno5
             // 
             this.tempforno5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.tempforno5.Location = new System.Drawing.Point(202, 186);
+            this.tempforno5.Location = new System.Drawing.Point(258, 186);
             this.tempforno5.Name = "tempforno5";
             this.tempforno5.Size = new System.Drawing.Size(30, 27);
             this.tempforno5.TabIndex = 26;
@@ -284,7 +285,7 @@ namespace Parametrizador.Short_Dough
             // tempforno4
             // 
             this.tempforno4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.tempforno4.Location = new System.Drawing.Point(202, 154);
+            this.tempforno4.Location = new System.Drawing.Point(258, 154);
             this.tempforno4.Name = "tempforno4";
             this.tempforno4.Size = new System.Drawing.Size(30, 27);
             this.tempforno4.TabIndex = 18;
@@ -304,7 +305,7 @@ namespace Parametrizador.Short_Dough
             // tempforno3
             // 
             this.tempforno3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.tempforno3.Location = new System.Drawing.Point(202, 122);
+            this.tempforno3.Location = new System.Drawing.Point(258, 122);
             this.tempforno3.Name = "tempforno3";
             this.tempforno3.Size = new System.Drawing.Size(30, 27);
             this.tempforno3.TabIndex = 16;
@@ -341,7 +342,7 @@ namespace Parametrizador.Short_Dough
             // tempforno2
             // 
             this.tempforno2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.tempforno2.Location = new System.Drawing.Point(202, 90);
+            this.tempforno2.Location = new System.Drawing.Point(258, 90);
             this.tempforno2.Name = "tempforno2";
             this.tempforno2.Size = new System.Drawing.Size(30, 27);
             this.tempforno2.TabIndex = 13;
@@ -353,15 +354,15 @@ namespace Parametrizador.Short_Dough
             this.labelforno1.AutoSize = true;
             this.labelforno1.Location = new System.Drawing.Point(3, 64);
             this.labelforno1.Name = "labelforno1";
-            this.labelforno1.Size = new System.Drawing.Size(193, 21);
+            this.labelforno1.Size = new System.Drawing.Size(228, 21);
             this.labelforno1.TabIndex = 12;
-            this.labelforno1.Text = "Temperatura na zona 1";
+            this.labelforno1.Text = "Temperatura na zona 1 (°C)";
             this.labelforno1.Visible = false;
             // 
             // Tempforno1
             // 
             this.Tempforno1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Tempforno1.Location = new System.Drawing.Point(202, 58);
+            this.Tempforno1.Location = new System.Drawing.Point(258, 58);
             this.Tempforno1.Name = "Tempforno1";
             this.Tempforno1.Size = new System.Drawing.Size(30, 27);
             this.Tempforno1.TabIndex = 11;
@@ -947,14 +948,14 @@ namespace Parametrizador.Short_Dough
             this.label17.AutoSize = true;
             this.label17.Location = new System.Drawing.Point(12, 37);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(175, 21);
+            this.label17.Size = new System.Drawing.Size(219, 21);
             this.label17.TabIndex = 11;
-            this.label17.Text = "Tempo de cozimento";
+            this.label17.Text = "Tempo de cozimento (min)";
             // 
             // Tempcoz
             // 
             this.Tempcoz.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Tempcoz.Location = new System.Drawing.Point(202, 34);
+            this.Tempcoz.Location = new System.Drawing.Point(258, 31);
             this.Tempcoz.Name = "Tempcoz";
             this.Tempcoz.Size = new System.Drawing.Size(30, 27);
             this.Tempcoz.TabIndex = 10;
@@ -1121,14 +1122,14 @@ namespace Parametrizador.Short_Dough
             this.label28.AutoSize = true;
             this.label28.Location = new System.Drawing.Point(12, 37);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(207, 21);
+            this.label28.Size = new System.Drawing.Size(235, 21);
             this.label28.TabIndex = 11;
-            this.label28.Text = "Umidade final do biscoito";
+            this.label28.Text = "Umidade final do biscoito (%)";
             // 
             // umidade
             // 
             this.umidade.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.umidade.Location = new System.Drawing.Point(225, 34);
+            this.umidade.Location = new System.Drawing.Point(258, 31);
             this.umidade.Name = "umidade";
             this.umidade.Size = new System.Drawing.Size(30, 27);
             this.umidade.TabIndex = 10;

@@ -162,6 +162,16 @@ namespace Parametrizador.Properties {
         }
         
         /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Icon semelhante a (Ícone).
+        /// </summary>
+        internal static System.Drawing.Icon Ima2gem1 {
+            get {
+                object obj = ResourceManager.GetObject("Ima2gem1", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap imgbertolino {
@@ -277,6 +287,16 @@ namespace Parametrizador.Properties {
         internal static System.Drawing.Bitmap Sem_Título_1 {
             get {
                 object obj = ResourceManager.GetObject("Sem_Título_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sem_Título_2 {
+            get {
+                object obj = ResourceManager.GetObject("Sem_Título_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

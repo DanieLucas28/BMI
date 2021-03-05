@@ -706,31 +706,31 @@ namespace Parametrizador
             // conteúdoToolStripMenuItem
             // 
             this.conteúdoToolStripMenuItem.Name = "conteúdoToolStripMenuItem";
-            this.conteúdoToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.conteúdoToolStripMenuItem.Size = new System.Drawing.Size(165, 24);
             this.conteúdoToolStripMenuItem.Text = "&Referências";
             this.conteúdoToolStripMenuItem.Click += new System.EventHandler(this.conteúdoToolStripMenuItem_Click);
             // 
             // índiceToolStripMenuItem
             // 
             this.índiceToolStripMenuItem.Name = "índiceToolStripMenuItem";
-            this.índiceToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.índiceToolStripMenuItem.Size = new System.Drawing.Size(165, 24);
             this.índiceToolStripMenuItem.Text = "Í&ndice";
             // 
             // pesquisarToolStripMenuItem
             // 
             this.pesquisarToolStripMenuItem.Name = "pesquisarToolStripMenuItem";
-            this.pesquisarToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.pesquisarToolStripMenuItem.Size = new System.Drawing.Size(165, 24);
             this.pesquisarToolStripMenuItem.Text = "&Pesquisar";
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(162, 6);
             // 
             // sobreToolStripMenuItem
             // 
             this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
-            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(165, 24);
             this.sobreToolStripMenuItem.Text = "&Sobre...";
             // 
             // panelDesktop
@@ -902,6 +902,7 @@ namespace Parametrizador
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.PanelMenu);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

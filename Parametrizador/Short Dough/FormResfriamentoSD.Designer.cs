@@ -72,14 +72,14 @@ namespace Parametrizador.Short_Dough
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(3, 64);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(259, 21);
+            this.label2.Size = new System.Drawing.Size(303, 21);
             this.label2.TabIndex = 8;
-            this.label2.Text = "Tempo de resfriamento utilizado";
+            this.label2.Text = "Tempo de resfriamento utilizado (min)";
             // 
             // tempresf
             // 
             this.tempresf.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.tempresf.Location = new System.Drawing.Point(302, 61);
+            this.tempresf.Location = new System.Drawing.Point(312, 61);
             this.tempresf.Name = "tempresf";
             this.tempresf.Size = new System.Drawing.Size(30, 27);
             this.tempresf.TabIndex = 7;
@@ -156,7 +156,7 @@ namespace Parametrizador.Short_Dough
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(380, 21);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Dados de referência (Shore)";
+            this.label3.Text = "Dados de referência (min)";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // linkresfr
@@ -177,14 +177,14 @@ namespace Parametrizador.Short_Dough
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(3, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(244, 21);
+            this.label1.Size = new System.Drawing.Size(288, 21);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Tempo de cozimento utilizado";
+            this.label1.Text = "Tempo de cozimento utilizado (min)";
             // 
             // tempcoz
             // 
             this.tempcoz.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.tempcoz.Location = new System.Drawing.Point(302, 27);
+            this.tempcoz.Location = new System.Drawing.Point(312, 27);
             this.tempcoz.Name = "tempcoz";
             this.tempcoz.Size = new System.Drawing.Size(30, 27);
             this.tempcoz.TabIndex = 0;
