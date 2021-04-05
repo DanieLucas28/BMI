@@ -1,5 +1,6 @@
 ﻿ using FontAwesome.Sharp;
 using Parametrizador.Cookies;
+using Parametrizador.Impressão;
 using Parametrizador.Main;
 using Parametrizador.Properties;
 using Parametrizador.Short_Dough;
@@ -374,7 +375,11 @@ namespace Parametrizador
                 WindowState = FormWindowState.Maximized;
         }
 
-        
+        private void imprimirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ImpressãoSD sf = new ImpressãoSD();
+            sf.ShowDialog();
+        }
     }   
 
 

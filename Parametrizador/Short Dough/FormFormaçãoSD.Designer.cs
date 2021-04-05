@@ -62,7 +62,7 @@ namespace Parametrizador.Short_Dough
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(28, 400);
+            this.panel1.Size = new System.Drawing.Size(28, 405);
             this.panel1.TabIndex = 4;
             // 
             // lonabox
@@ -336,7 +336,7 @@ namespace Parametrizador.Short_Dough
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(87)))), ((int)(((byte)(152)))));
-            this.ClientSize = new System.Drawing.Size(1162, 400);
+            this.ClientSize = new System.Drawing.Size(1162, 405);
             this.Controls.Add(this.rolobox);
             this.Controls.Add(this.lonabox);
             this.Controls.Add(this.panel1);
