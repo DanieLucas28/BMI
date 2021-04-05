@@ -77,6 +77,7 @@ namespace Parametrizador.Short_Dough
             this.radioButtonmisturafluxo1 = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             this.tempmassabox.SuspendLayout();
             this.dadosreftempmassa.SuspendLayout();
             this.boxtempomistura.SuspendLayout();
@@ -90,7 +91,7 @@ namespace Parametrizador.Short_Dough
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(28, 604);
+            this.panel1.Size = new System.Drawing.Size(28, 651);
             this.panel1.TabIndex = 3;
             // 
             // tempmassabox
@@ -664,12 +665,23 @@ namespace Parametrizador.Short_Dough
             this.label2.TabIndex = 2;
             this.label2.Text = "Fluxo de adição utilizado";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(665, 616);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FormMisturaSD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(87)))), ((int)(((byte)(152)))));
-            this.ClientSize = new System.Drawing.Size(1331, 604);
+            this.ClientSize = new System.Drawing.Size(1331, 651);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.boxtempomistura);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.tempmassabox);
@@ -737,5 +749,6 @@ namespace Parametrizador.Short_Dough
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Button button1;
     }
 }

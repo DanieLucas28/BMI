@@ -22,10 +22,10 @@ namespace Parametrizador.Cream_Cracker
 
         private void Tempmassa_TextChanged(object sender, EventArgs e)
         {
-            if (Int32.TryParse(Tempmassa.Text.Trim(), out _))
+            if (Decimal.TryParse(Tempmassa.Text.Trim(), out _))
             {
 
-                if (Convert.ToInt32(Tempmassa.Text.Trim()) >= 40 && (Convert.ToInt32(Tempmassa.Text.Trim()) <= 42))
+                if (Convert.ToDecimal(Tempmassa.Text.Trim()) >= 40M && (Convert.ToDecimal(Tempmassa.Text.Trim()) <= 42M))
                 {
                     this.linktempmassa.LinkArea = new LinkArea(0, 0);
                     this.linktempmassa.UseMnemonic = false;
@@ -34,21 +34,21 @@ namespace Parametrizador.Cream_Cracker
                     this.linktempmassa.Links.Add(75, 8, "#");
                     this.linktempmassa.Links.Add(86, 17, "#");
                 }
-                else if (Convert.ToInt32(Tempmassa.Text.Trim()) >= 42)
+                else if (Convert.ToDecimal(Tempmassa.Text.Trim()) >= 42M)
                 {
                     this.linktempmassa.LinkArea = new LinkArea(0, 0);
                     this.linktempmassa.UseMnemonic = false;
                     this.linktempmassa.Text = "A temperatura está acima do previsto pelos autores. Quanto mais alta for a temperatura, mais macia e amolecida é a massa. Ou seja, altas temperaturas podem ocasionar modificações na estrutura da massa desejada e torná-la mais difícil de ser manuseada. Temperaturas elevadas podem ocasionar uma massa escaldada.";
 
                 }
-                else if (Convert.ToInt32(Tempmassa.Text.Trim()) >= 30 && (Convert.ToInt32(Tempmassa.Text.Trim()) <= 36))
+                else if (Convert.ToDecimal(Tempmassa.Text.Trim()) >= 30M && (Convert.ToDecimal(Tempmassa.Text.Trim()) <= 36M))
                 {
                     this.linktempmassa.LinkArea = new LinkArea(0, 0);
                     this.linktempmassa.UseMnemonic = false;
                     this.linktempmassa.Text = "Temperatura de acordo apenas com Moretto. Atenção para a estrutura da massa: laminados doces possuem massa caracterizada como macia, ou seja, uma massa com bastante ''liga''. Baixas temperaturas não favorecem a formação desse tipo de estrutura da massa. ";
                     this.linktempmassa.Links.Add(33, 7, "#");
                 }
-                else if (Convert.ToInt32(Tempmassa.Text.Trim()) < 30)
+                else if (Convert.ToDecimal(Tempmassa.Text.Trim()) < 30M)
                 {
                     this.linktempmassa.LinkArea = new LinkArea(0,0);
                     this.linktempmassa.UseMnemonic = false;

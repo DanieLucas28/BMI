@@ -224,6 +224,16 @@ namespace Parametrizador.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap m_dias_branco_mdb_azul {
+            get {
+                object obj = ResourceManager.GetObject("m-dias-branco-mdb_azul", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap maizena {
             get {
                 object obj = ResourceManager.GetObject("maizena", resourceCulture);

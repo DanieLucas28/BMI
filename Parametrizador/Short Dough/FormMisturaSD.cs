@@ -1,12 +1,15 @@
-﻿using Parametrizador.Properties;
+﻿using Parametrizador.Impressão;
+using Parametrizador.Properties;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.UI.Design;
 using System.Windows.Forms;
 
 namespace Parametrizador.Short_Dough
@@ -18,17 +21,21 @@ namespace Parametrizador.Short_Dough
             InitializeComponent();
 
         }
-
+        public static string tempmassateste;
+        public static string fluxoaddprint;
+        public static string tempo1print;
+        public static string tempo2print;
         // groupbox temperatura da massa
 
         private void Tempmassa_TextChanged(object sender, EventArgs e)
         {
+            tempmassateste = Tempmassa.Text;
             linktempmassa.Visible = true;
             dadosreftempmassa.Visible = true;
-            if (Int32.TryParse(Tempmassa.Text.Trim(), out _))
+            if (Decimal.TryParse(Tempmassa.Text.Trim(), out _))
             {
 
-                if (Convert.ToInt32(Tempmassa.Text.Trim()) >= 18 && (Convert.ToInt32(Tempmassa.Text.Trim()) <= 22))
+                if (Convert.ToDecimal(Tempmassa.Text.Trim()) >= 18 && (Convert.ToDecimal(Tempmassa.Text.Trim()) <= 22))
                 {
                     this.linktempmassa.LinkArea = new LinkArea(0, 0);
                     this.linktempmassa.UseMnemonic = false;
@@ -36,14 +43,14 @@ namespace Parametrizador.Short_Dough
                     this.linktempmassa.Links.Add(67, 6, "#");
                     this.linktempmassa.Links.Add(76, 8, "#");
                 }
-                else if (Convert.ToInt32(Tempmassa.Text.Trim()) > 22)
+                else if (Convert.ToDecimal(Tempmassa.Text.Trim()) > 22)
                 {
                     this.linktempmassa.LinkArea = new LinkArea(0, 0);
                     this.linktempmassa.UseMnemonic = false;
                     this.linktempmassa.Text = "A temperatura está acima do previsto pelos autores. O elevado aumento de temperatura favorece a formação da rede de glúten. Esse tipo de biscoito possui uma massa com característica de farofa, ou seja, com pouca formação de glúten. Elevadas temperaturas podem ocasionar uma formação indesejada à massa e dificultar a etapa subjacente do processo. Além disso, pode ocorrer a volatização de importantes matérias primas como o bicarbonato de amônio, utilizado como fermento químico, que deve somente ser dissociado em alta velocidade durante a etapa de forneamento.";
 
                 }
-                else if (Convert.ToInt32(Tempmassa.Text.Trim()) < 18)
+                else if (Convert.ToDecimal(Tempmassa.Text.Trim()) < 18)
                 {
                     this.linktempmassa.LinkArea = new LinkArea(0, 0);
                     this.linktempmassa.UseMnemonic = false;
@@ -58,6 +65,7 @@ namespace Parametrizador.Short_Dough
 
         private void radioButtonmisturafluxo1_CheckedChanged(object sender, EventArgs e)
         {
+            fluxoaddprint = "All-in";
             dadosreffluxo.Visible = true;
             linkfluxoadição.LinkArea = new LinkArea(0, 0);
             linkfluxoadição.Visible = true;
@@ -70,6 +78,7 @@ namespace Parametrizador.Short_Dough
 
         private void radioButtonmisturafluxo2_CheckedChanged(object sender, EventArgs e)
         {
+            fluxoaddprint = "Creme em mais de um estágio";
             dadosreffluxo.Visible = true;
             linkfluxoadição.LinkArea = new LinkArea(0, 0);
             linkfluxoadição.Visible = true;
@@ -84,12 +93,14 @@ namespace Parametrizador.Short_Dough
 
         private void TempMistura_TextChanged(object sender, EventArgs e)
         {
+            tempo1print = TempMistura.Text;
             dadosreftempmistura.Visible = true;
-            if (Int32.TryParse(TempMistura.Text.Trim(), out _))
+            if (Decimal.TryParse(TempMistura.Text.Trim(), out _))
             {
                 if (Tempmistura2.Visible==true)
                 {
-                    if (Convert.ToInt32(TempMistura.Text.Trim()) > 0 && (Convert.ToInt32(Tempmistura2.Text.Trim()) > 0))
+                    tempo2print = Tempmistura2.Text;
+                    if (Convert.ToDecimal(TempMistura.Text.Trim()) > 0 && (Convert.ToDecimal(Tempmistura2.Text.Trim()) > 0))
                     {
                         linktempmistura.Visible = true;
                         linktempmistura.LinkArea = new LinkArea(0, 0);
@@ -98,7 +109,7 @@ namespace Parametrizador.Short_Dough
                 }
                 else
                 {
-                    if (Convert.ToInt32(TempMistura.Text.Trim()) > 0)
+                    if (Convert.ToDecimal(TempMistura.Text.Trim()) > 0)
                     {
                         linktempmistura.Visible = true;
                         linktempmistura.LinkArea = new LinkArea(0, 0);
@@ -114,10 +125,17 @@ namespace Parametrizador.Short_Dough
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Impressão.ImpressãoSD sf = new Impressão.ImpressãoSD();
+            sf.Show();
 
+        }
+
+     
 
         //mudar cor do link label caso eu queria algum dia
 
-                     
+
     }
 }

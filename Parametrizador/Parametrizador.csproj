@@ -163,6 +163,12 @@
     <Compile Include="Hard Sweet\FormResfriamentoHS.Designer.cs">
       <DependentUpon>FormResfriamentoHS.cs</DependentUpon>
     </Compile>
+    <Compile Include="Impressão\ImpressãoSD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Impressão\ImpressãoSD.Designer.cs">
+      <DependentUpon>ImpressãoSD.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main\Fontes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -259,6 +265,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Hard Sweet\HSMain.resx">
       <DependentUpon>HSMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Impressão\ImpressãoSD.resx">
+      <DependentUpon>ImpressãoSD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main\Fontes.resx">
       <DependentUpon>Fontes.cs</DependentUpon>
@@ -383,6 +392,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Ima2gem1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m-dias-branco-mdb_azul.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

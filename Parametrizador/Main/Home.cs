@@ -91,11 +91,11 @@ namespace Parametrizador
 
         public void OpenChildForm(Form childForm)
         {
-            if (currentChildForm != null)
-            {
+            //if (currentChildForm != null)
+            //{
             //open only 1 form
-            currentChildForm.Close();
-            }
+            //currentChildForm.Close();
+            //}
             currentChildForm = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;

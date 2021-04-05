@@ -19,7 +19,7 @@ namespace Parametrizador.Short_Dough
 
         private void percentual_TextChanged(object sender, EventArgs e)
         {
-            if (Convert.ToInt32(percentual.Text.Trim()) >= 23 && (Convert.ToInt32(percentual.Text.Trim()) <= 45))
+            if (Convert.ToDecimal(percentual.Text.Trim()) >= 23 && (Convert.ToDecimal(percentual.Text.Trim()) <= 45))
             {
                 percrecbox.Visible = true;
                 linkpercrec.Visible = true;
@@ -32,7 +32,7 @@ namespace Parametrizador.Short_Dough
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            if (Convert.ToInt32(densidade.Text.Trim()) >= 0.75 && (Convert.ToInt32(densidade.Text.Trim()) <= 1.15))
+            if (Convert.ToDecimal(densidade.Text.Trim()) >= 0.75m && (Convert.ToDecimal(densidade.Text.Trim()) <= 1.15m))
             {
                 percrecbox.Visible = true;
                 linkdensidade.Visible = true;
@@ -40,7 +40,7 @@ namespace Parametrizador.Short_Dough
                 linkdensidade.LinkArea = new LinkArea(0, 0);
                 linkdensidade.Links.Add(50, 6, "#");
             }
-            if (Convert.ToInt32(densidade.Text.Trim()) > 1.15)
+            if (Convert.ToDecimal(densidade.Text.Trim()) > 1.15m)
             {
                 percrecbox.Visible = true;
                 linkdensidade.Visible = true;
@@ -48,7 +48,7 @@ namespace Parametrizador.Short_Dough
                 linkdensidade.LinkArea = new LinkArea(0, 0);
                 linkdensidade.Links.Add(37, 6, "#");
             }
-            if (Convert.ToInt32(densidade.Text.Trim()) < 0.75)
+            if (Convert.ToDecimal(densidade.Text.Trim()) < 0.75m)
             {
                 percrecbox.Visible = true;
                 linkdensidade.Visible = true;

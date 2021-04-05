@@ -42,7 +42,7 @@ namespace Parametrizador.Short_Dough
 
             tempfornobox.Size = new Size(1162, 335 + (10 * qtdzona));
 
-            if (Convert.ToInt32(comboBox1.SelectedItem.ToString()) == 1)
+            if (Convert.ToDecimal(comboBox1.SelectedItem.ToString()) == 1)
             {
                 Tempforno1.Visible = true;
                 labelforno1.Visible = true;
@@ -62,7 +62,7 @@ namespace Parametrizador.Short_Dough
 
 
             }
-            else if (Convert.ToInt32(comboBox1.SelectedItem.ToString()) == 2)
+            else if (Convert.ToDecimal(comboBox1.SelectedItem.ToString()) == 2)
             {
                 Tempforno1.Visible = true;
                 labelforno1.Visible = true;
@@ -79,7 +79,7 @@ namespace Parametrizador.Short_Dough
                 tempforno7.Visible = false;
                 labelforno7.Visible = false;
             }
-            else if (Convert.ToInt32(comboBox1.SelectedItem.ToString()) == 3)
+            else if (Convert.ToDecimal(comboBox1.SelectedItem.ToString()) == 3)
             {
                 Tempforno1.Visible = true;
                 labelforno1.Visible = true;
@@ -96,7 +96,7 @@ namespace Parametrizador.Short_Dough
                 tempforno7.Visible = false;
                 labelforno7.Visible = false;
             }
-            else if (Convert.ToInt32(comboBox1.SelectedItem.ToString()) == 4)
+            else if (Convert.ToDecimal(comboBox1.SelectedItem.ToString()) == 4)
             {
                 Tempforno1.Visible = true;
                 labelforno1.Visible = true;
@@ -113,7 +113,7 @@ namespace Parametrizador.Short_Dough
                 tempforno7.Visible = false;
                 labelforno7.Visible = false;
             }
-            else if (Convert.ToInt32(comboBox1.SelectedItem.ToString()) == 5)
+            else if (Convert.ToDecimal(comboBox1.SelectedItem.ToString()) == 5)
             {
                 Tempforno1.Visible = true;
                 labelforno1.Visible = true;
@@ -130,7 +130,7 @@ namespace Parametrizador.Short_Dough
                 tempforno7.Visible = false;
                 labelforno7.Visible = false;
             }
-            else if (Convert.ToInt32(comboBox1.SelectedItem.ToString()) == 6)
+            else if (Convert.ToDecimal(comboBox1.SelectedItem.ToString()) == 6)
             {
                 Tempforno1.Visible = true;
                 labelforno1.Visible = true;
@@ -147,7 +147,7 @@ namespace Parametrizador.Short_Dough
                 tempforno7.Visible = false;
                 labelforno7.Visible = false;
             }
-            else if (Convert.ToInt32(comboBox1.SelectedItem.ToString()) == 7)
+            else if (Convert.ToDecimal(comboBox1.SelectedItem.ToString()) == 7)
             {
                 Tempforno1.Visible = true;
                 labelforno1.Visible = true;
@@ -322,10 +322,10 @@ namespace Parametrizador.Short_Dough
         {
             linktempcozimento.Visible = true;
             dadosreftempcozimento.Visible = true;
-            if (Int32.TryParse(Tempcoz.Text.Trim(), out _))
+            if (Decimal.TryParse(Tempcoz.Text.Trim(), out _))
             {
 
-                if (Convert.ToInt32(Tempcoz.Text.Trim()) >= 5.1 && (Convert.ToInt32(Tempcoz.Text.Trim()) <= 5.6))
+                if (Convert.ToDecimal(Tempcoz.Text.Trim()) >= 5.1M && (Convert.ToDecimal(Tempcoz.Text.Trim()) <= 5.6M))
                 {
                     this.linktempcozimento.LinkArea = new LinkArea(0, 0);
                     this.linktempcozimento.UseMnemonic = false;
@@ -333,13 +333,13 @@ namespace Parametrizador.Short_Dough
                     this.linktempcozimento.Links.Add(67, 6, "#");
                     this.linktempcozimento.Links.Add(76, 8, "#");
                 }
-                else if (Convert.ToInt32(Tempcoz.Text.Trim()) == 5)
+                else if (Convert.ToDecimal(Tempcoz.Text.Trim()) == 5)
                 {
                     this.linktempcozimento.LinkArea = new LinkArea(0, 0);
                     this.linktempcozimento.UseMnemonic = false;
                     this.linktempcozimento.Text = "Tempo dentro dos critérios estabelecidos por todos os autores.";
                 }
-                else if (Convert.ToInt32(Tempcoz.Text.Trim()) >= 4 && (Convert.ToInt32(Tempcoz.Text.Trim()) < 5))
+                else if (Convert.ToDecimal(Tempcoz.Text.Trim()) >= 4 && (Convert.ToDecimal(Tempcoz.Text.Trim()) < 5))
                 {
                     this.linktempcozimento.LinkArea = new LinkArea(0, 0);
                     this.linktempcozimento.UseMnemonic = false;
@@ -347,7 +347,7 @@ namespace Parametrizador.Short_Dough
                     this.linktempcozimento.Links.Add(43, 7, "#");
                     this.linktempcozimento.Links.Add(53, 17, "#");
                 }
-                else if (Convert.ToInt32(Tempcoz.Text.Trim()) >= 3.4 && (Convert.ToInt32(Tempcoz.Text.Trim()) < 4))
+                else if (Convert.ToDecimal(Tempcoz.Text.Trim()) >= 3.4M && (Convert.ToDecimal(Tempcoz.Text.Trim()) < 4M))
                 {
                     this.linktempcozimento.LinkArea = new LinkArea(0, 0);
                     this.linktempcozimento.UseMnemonic = false;
@@ -355,7 +355,7 @@ namespace Parametrizador.Short_Dough
                     this.linktempcozimento.Links.Add(43, 7, "#");
 
                 }
-                else if (Convert.ToInt32(Tempcoz.Text.Trim()) > 20 && (Convert.ToInt32(Tempcoz.Text.Trim()) < 3.5))
+                else if (Convert.ToDecimal(Tempcoz.Text.Trim()) > 20M && (Convert.ToDecimal(Tempcoz.Text.Trim()) < 3.5M))
                 {
                     this.linktempcozimento.LinkArea = new LinkArea(0, 0);
                     this.linktempcozimento.UseMnemonic = false;
@@ -363,7 +363,7 @@ namespace Parametrizador.Short_Dough
 
 
                 }
-                else if (Convert.ToInt32(Tempcoz.Text.Trim()) > 5.5 && (Convert.ToInt32(Tempcoz.Text.Trim()) <= 20))
+                else if (Convert.ToDecimal(Tempcoz.Text.Trim()) > 5.5M && (Convert.ToDecimal(Tempcoz.Text.Trim()) <= 20M))
                 {
                     this.linktempcozimento.LinkArea = new LinkArea(0, 0);
                     this.linktempcozimento.UseMnemonic = false;
@@ -387,10 +387,10 @@ namespace Parametrizador.Short_Dough
         {
             linkumidade.Visible = true;
             dadosrefumidade.Visible = true;
-            if (Int32.TryParse(umidade.Text.Trim(), out _))
+            if (Decimal.TryParse(umidade.Text.Trim(), out _))
             {
 
-                if (Convert.ToInt32(umidade.Text.Trim()) > 2.5 && (Convert.ToInt32(umidade.Text.Trim()) <= 3))
+                if (Convert.ToDecimal(umidade.Text.Trim()) > 2.5m && (Convert.ToDecimal(umidade.Text.Trim()) <= 3M))
                 {
                     linkumidade.Visible = true;
                     this.linkumidade.LinkArea = new LinkArea(0, 0);
@@ -399,7 +399,7 @@ namespace Parametrizador.Short_Dough
                     this.linkumidade.Links.Add(48, 6, "#");
                     this.linkumidade.Links.Add(57, 8, "#");
                 }
-                else if (Convert.ToInt32(umidade.Text.Trim()) == 3)
+                else if (Convert.ToDecimal(umidade.Text.Trim()) == 3)
                 {
                     linkumidade.Visible = true;
                     this.linkumidade.LinkArea = new LinkArea(0, 0);
@@ -407,17 +407,17 @@ namespace Parametrizador.Short_Dough
                     this.linkumidade.Text = "Umidade dentro dos critérios estabelecidos por Davidson.";
                     this.linkumidade.Links.Add(48, 8, "#");
                 }
-                 else if (Convert.ToInt32(umidade.Text.Trim()) == 2.5)
+                 else if (Convert.ToDecimal(umidade.Text.Trim()) == 2.5M)
                 {
                      linkumidade.Visible = true;
                      this.linkumidade.LinkArea = new LinkArea(0, 0);
                      this.linkumidade.UseMnemonic = false;
                      this.linkumidade.Text = "Tempo dentro do critério estabelecido por Manley, Davidson e Bertolino & Braga.";
-                     this.linkumidade.Links.Add(43, 6, "#");
-                     this.linkumidade.Links.Add(51, 8, "#");
-                     this.linkumidade.Links.Add(62, 17, "#");
+                     this.linkumidade.Links.Add(42, 6, "#");
+                     this.linkumidade.Links.Add(50, 8, "#");
+                     this.linkumidade.Links.Add(61, 17, "#");
                 }
-                 else if (Convert.ToInt32(umidade.Text.Trim()) < 4)
+                 else if (Convert.ToDecimal(umidade.Text.Trim()) < 4M)
                  {
                     linkumidade.Visible = true;
                      this.linkumidade.LinkArea = new LinkArea(0, 0);
@@ -426,7 +426,7 @@ namespace Parametrizador.Short_Dough
                      
                 
                  }
-                else if (Convert.ToInt32(umidade.Text.Trim()) > 3)
+                else if (Convert.ToDecimal(umidade.Text.Trim()) > 3M)
                  {
                     linkumidade.Visible = true;
                     this.linkumidade.LinkArea = new LinkArea(0, 0);

@@ -25,7 +25,7 @@ namespace Parametrizador.Short_Dough
                 linkresfr.Visible = true;
                 linkresfr.Text = "Digite um valor para o tempo de cozimento";
             }
-            else if (Convert.ToInt32(tempresf.Text.Trim()) == 0) 
+            else if (Convert.ToDecimal(tempresf.Text.Trim()) == 0) 
             {
                 linkresfr.Visible = true;
                 linkresfr.Text = "Digite um valor válido para o tempo de resfriamento";
@@ -34,7 +34,7 @@ namespace Parametrizador.Short_Dough
             else
             {
                 
-                if (Convert.ToInt32(tempresf.Text.Trim()) / Convert.ToInt32(tempcoz.Text.Trim()) >= 0.5 && Convert.ToInt32(tempresf.Text.Trim()) / Convert.ToInt32(tempcoz.Text.Trim()) <= 1.2)
+                if (Convert.ToDecimal(tempresf.Text.Trim()) / Convert.ToDecimal(tempcoz.Text.Trim()) >= 0.5M && Convert.ToDecimal(tempresf.Text.Trim()) / Convert.ToDecimal(tempcoz.Text.Trim()) <= 1.2M)
                 {
                     dadosrefresf.Visible = true;
                     linkresfr.Visible = true;
@@ -42,7 +42,7 @@ namespace Parametrizador.Short_Dough
                     linkresfr.LinkArea = new LinkArea(0, 0);
                     linkresfr.Links.Add(62, 6, "#"); 
                 }
-                if (Convert.ToInt32(tempresf.Text.Trim()) / Convert.ToInt32(tempcoz.Text.Trim()) == 1.5)
+                if (Convert.ToDecimal(tempresf.Text.Trim()) / Convert.ToDecimal(tempcoz.Text.Trim()) == 1.5M)
                 {
                     dadosrefresf.Visible = true;
                     linkresfr.Visible = true;
@@ -50,7 +50,7 @@ namespace Parametrizador.Short_Dough
                     linkresfr.LinkArea = new LinkArea(0, 0);
                   
                 }
-                if (Convert.ToInt32(tempresf.Text.Trim()) / Convert.ToInt32(tempcoz.Text.Trim()) > 1.5 && Convert.ToInt32(tempresf.Text.Trim()) / Convert.ToInt32(tempcoz.Text.Trim()) <= 2)
+                if (Convert.ToDecimal(tempresf.Text.Trim()) / Convert.ToDecimal(tempcoz.Text.Trim()) > 1.5M && Convert.ToDecimal(tempresf.Text.Trim()) / Convert.ToDecimal(tempcoz.Text.Trim()) <= 2)
                 {
                     dadosrefresf.Visible = true;
                     linkresfr.Visible = true;
@@ -58,7 +58,7 @@ namespace Parametrizador.Short_Dough
                     linkresfr.LinkArea = new LinkArea(0, 0);
                     linkresfr.Links.Add(62, 6, "#");
                 }
-                if (Convert.ToInt32(tempresf.Text.Trim()) / Convert.ToInt32(tempcoz.Text.Trim()) > 2)
+                if (Convert.ToDecimal(tempresf.Text.Trim()) / Convert.ToDecimal(tempcoz.Text.Trim()) > 2)
                 {
                     dadosrefresf.Visible = true;
                     linkresfr.Visible = true;
@@ -66,7 +66,7 @@ namespace Parametrizador.Short_Dough
                     linkresfr.LinkArea = new LinkArea(0, 0);
 
                 }
-                if (Convert.ToInt32(tempresf.Text.Trim()) / Convert.ToInt32(tempcoz.Text.Trim()) < 0.5)
+                if (Convert.ToDecimal(tempresf.Text.Trim()) / Convert.ToDecimal(tempcoz.Text.Trim()) < 0.5M)
                 {
                     dadosrefresf.Visible = true;
                     linkresfr.Visible = true;

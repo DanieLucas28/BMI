@@ -327,7 +327,7 @@ namespace Parametrizador.Short_Dough
             this.durezarolo.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.durezarolo.Location = new System.Drawing.Point(361, 24);
             this.durezarolo.Name = "durezarolo";
-            this.durezarolo.Size = new System.Drawing.Size(30, 27);
+            this.durezarolo.Size = new System.Drawing.Size(43, 27);
             this.durezarolo.TabIndex = 0;
             this.durezarolo.TextChanged += new System.EventHandler(this.durezarolo_TextChanged);
             // 

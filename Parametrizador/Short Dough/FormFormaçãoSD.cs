@@ -41,10 +41,10 @@ namespace Parametrizador.Short_Dough
             linkrolo.Visible = true;
             dadosrefrolo.Visible = true;
             
-            if (Int32.TryParse(durezarolo.Text.Trim(), out _))
+            if (Decimal.TryParse(durezarolo.Text.Trim(), out _))
             {
 
-                if (Convert.ToInt32(durezarolo.Text.Trim()) >= 70 && (Convert.ToInt32(durezarolo.Text.Trim()) <= 80))
+                if (Convert.ToDecimal(durezarolo.Text.Trim()) >= 70M && (Convert.ToDecimal(durezarolo.Text.Trim()) <= 80M))
                 {
                     this.linkrolo.LinkArea = new LinkArea(0, 0);
                     this.linkrolo.UseMnemonic = false;
@@ -52,14 +52,14 @@ namespace Parametrizador.Short_Dough
                     this.linkrolo.Links.Add(29, 17, "#");
                     
                 }
-                else if (Convert.ToInt32(durezarolo.Text.Trim()) > 80)
+                else if (Convert.ToDecimal(durezarolo.Text.Trim()) > 80M)
                 {
                     this.linkrolo.LinkArea = new LinkArea(0, 0);
                     this.linkrolo.UseMnemonic = false;
                     this.linkrolo.Text = "Dureza acima do indicado. Avaliar se há interferência no desmolde da massa.";
 
                 }
-                else if (Convert.ToInt32(durezarolo.Text.Trim()) < 18)
+                else if (Convert.ToDecimal(durezarolo.Text.Trim()) < 18M)
                 {
                     this.linkrolo.LinkArea = new LinkArea(0, 0);
                     this.linkrolo.UseMnemonic = false;
