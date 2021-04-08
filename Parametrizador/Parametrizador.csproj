@@ -396,5 +396,8 @@
   <ItemGroup>
     <None Include="Resources\m-dias-branco-mdb_azul.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logotiny.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -21,14 +21,16 @@ namespace Parametrizador.Short_Dough
             InitializeComponent();
 
         }
+        
         public static string tempmassateste;
         public static string fluxoaddprint;
         public static string tempo1print;
         public static string tempo2print;
         // groupbox temperatura da massa
-
+        
         private void Tempmassa_TextChanged(object sender, EventArgs e)
         {
+            
             tempmassateste = Tempmassa.Text;
             linktempmassa.Visible = true;
             dadosreftempmassa.Visible = true;

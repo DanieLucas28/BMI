@@ -679,6 +679,7 @@ namespace Parametrizador
             this.visualizarImpressãoToolStripMenuItem.Name = "visualizarImpressãoToolStripMenuItem";
             this.visualizarImpressãoToolStripMenuItem.Size = new System.Drawing.Size(228, 24);
             this.visualizarImpressãoToolStripMenuItem.Text = "Visuali&zar Impressão";
+            this.visualizarImpressãoToolStripMenuItem.Click += new System.EventHandler(this.visualizarImpressãoToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 

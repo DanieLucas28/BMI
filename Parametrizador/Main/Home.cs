@@ -6,7 +6,9 @@ using Parametrizador.Properties;
 using Parametrizador.Short_Dough;
 using System;
 using System.Drawing;
+using System.Drawing.Printing;
 using System.Runtime.InteropServices;
+using System.Windows.Documents;
 using System.Windows.Forms;
 
 namespace Parametrizador
@@ -18,7 +20,7 @@ namespace Parametrizador
         private IconButton currentBtn;
         private Panel leftBorderBtn;
         private Form currentChildForm;
-
+        public static string tipobiscoito;
 
         //Constructor
         public Home()
@@ -92,11 +94,11 @@ namespace Parametrizador
 
         public void OpenChildForm(Form childForm)
         {
-            //if (currentChildForm != null)
-            //{
+            if (currentChildForm != null)
+            {
             //open only 1 form
-            //currentChildForm.Close();
-            //}
+            currentChildForm.Close();
+            }
             currentChildForm = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
@@ -193,7 +195,7 @@ namespace Parametrizador
             WindowState = FormWindowState.Minimized;
         }
 
-        // funções dos botões centrais
+        #region funções dos botões centrais
 
         private void CCbutton_Click(object sender, EventArgs e)
         {
@@ -225,6 +227,7 @@ namespace Parametrizador
 
         private void SDbutton_Click(object sender, EventArgs e)
         {
+            tipobiscoito = "SD";
             Toppa("Short Dough", Parametrizador.Properties.Resources.sdw);
             OpenChildForm(new Short_Dough.SDMain());
             BtnResfriamentoSD.Visible =true;
@@ -233,7 +236,8 @@ namespace Parametrizador
             BtnFormaçãoSD.Visible =    true;
             BtnMisturaSD.Visible = true;
         }
-
+        #endregion
+        
         // botão home
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -265,7 +269,7 @@ namespace Parametrizador
             Toppa("Short Dough", Resources.sdw);
         }
 
-        // funções dos botões laterais
+        #region Botões laterais
 
         private void BtnMistura_Click(object sender, EventArgs e)
         {
@@ -375,12 +379,61 @@ namespace Parametrizador
                 WindowState = FormWindowState.Maximized;
         }
 
+        #endregion
+
+
+        #region Impressão
+
         private void imprimirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ImpressãoSD sf = new ImpressãoSD();
             sf.ShowDialog();
         }
-    }   
 
+        private void visualizarImpressãoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (System.Drawing.Printing.PrintDocument print = new System.Drawing.Printing.PrintDocument())
+            using (PrintPreviewDialog dialog = new PrintPreviewDialog())
+            {
+                print.PrintPage += Print_PrintPage;
+                dialog.Document = print;
+                dialog.ShowDialog();
+            }
+        }
 
+        private void Print_PrintPage(object sender, PrintPageEventArgs e)
+        {
+            Graphics g = e.Graphics;
+            Image image = Parametrizador.Properties.Resources.logotiny;
+
+          
+            using (Font font = new Font("Arial", 16))
+            {
+                g.DrawString("Relatório Biscuits Manufacturing Intelligence", new Font("Trebuchet MS", 18, FontStyle.Bold), Brushes.Black, new Point(20,50));
+                g.DrawImage(image, new Point(580, 0));
+
+            }
+            if (tipobiscoito == "SD")
+            {
+                g.DrawString("______________________________________________________________________________________________________________________________", new Font("Trebuchet MS", 14, FontStyle.Bold), Brushes.Black, new Point(0, 80));
+                Rectangle rect = new Rectangle(new Point(0, 110), new Size(5000,30));
+                e.Graphics.FillRectangle(Brushes.LightSteelBlue, rect);
+                g.DrawString("Mistura", new Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0))), Brushes.RoyalBlue, new Point(20, 110));
+                g.DrawString("Temperatura da massa: " + FormMisturaSD.tempmassateste, new Font("Trebuchet MS", 12, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0))), Brushes.Black, new Point(20, 150));
+                g.DrawString("Fluxo de adição utilizado: " + FormMisturaSD.fluxoaddprint, new Font("Trebuchet MS", 12, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0))), Brushes.Black, new Point(20, 170));
+                g.DrawString("Tempo de mistura do 1° estágio: " + FormMisturaSD.tempo1print, new Font("Trebuchet MS", 12, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0))), Brushes.Black, new Point(20, 190));
+                g.DrawString("Tempo de mistura do 2° estágio: " + FormMisturaSD.tempo2print, new Font("Trebuchet MS", 12, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0))), Brushes.Black, new Point(20, 210));
+                Rectangle rect2 = new Rectangle(new Point(0, 240), new Size(5000, 30));
+                e.Graphics.FillRectangle(Brushes.LightSteelBlue, rect2);
+                g.DrawString("Formação", new Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0))), Brushes.RoyalBlue, new Point(20, 240));
+            }
+            
+
+        }
+    }
+
+        #endregion
 }
+
+
+
