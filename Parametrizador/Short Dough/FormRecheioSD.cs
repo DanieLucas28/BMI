@@ -16,11 +16,13 @@ namespace Parametrizador.Short_Dough
         {
             InitializeComponent();
         }
-
+        public static string percentualSD;
+        public static string densidadeSD;
         private void percentual_TextChanged(object sender, EventArgs e)
         {
             if (Convert.ToDecimal(percentual.Text.Trim()) >= 23 && (Convert.ToDecimal(percentual.Text.Trim()) <= 45))
             {
+                percentualSD = percentual.Text;
                 percrecbox.Visible = true;
                 linkpercrec.Visible = true;
                 linkpercrec.Text = "Percentual de recheio de acordo com o indicado por Manley. Este parâmetro pode variar de fabricante a fabricante de acordo com o aspecto comercial desejado. Percentual de recheio de acordo com o indicado por Manley. Este parâmetro pode variar de fabricante a fabricante de acordo com o aspecto comercial desejado.";
@@ -32,6 +34,7 @@ namespace Parametrizador.Short_Dough
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+            densidadeSD = densidade.Text;
             if (Convert.ToDecimal(densidade.Text.Trim()) >= 0.75m && (Convert.ToDecimal(densidade.Text.Trim()) <= 1.15m))
             {
                 percrecbox.Visible = true;

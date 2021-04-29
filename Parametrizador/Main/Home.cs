@@ -487,7 +487,238 @@ namespace Parametrizador
                     g.DrawString(FormForneamentoSD.zona4, fonttexto, Brushes.Black, new Point(28, 425));
                     g.DrawString("4", fonttexto, Brushes.Black, new Point(32, 425));
                 }
+                if (FormForneamentoSD.zonasSD == "5")
+                {
+                    Rectangle zona = new Rectangle(new Point(20, 342), new Size(46, 22));
+                    Rectangle temp = new Rectangle(new Point(68, 342), new Size(45, 22));
+                    g.FillRectangle(Brushes.LightSteelBlue, zona);
+                    g.FillRectangle(Brushes.LightSteelBlue, temp);
+                    g.DrawString("°C", fonttexto, Brushes.Black, new Point(72, 342));
+                    g.DrawString("Zona", fonttexto, Brushes.Black, new Point(21, 342));
 
+                    Rectangle z1 = new Rectangle(new Point(21, 365), new Size(45, 20));
+                    Rectangle border = new Rectangle(new Point(20, 364), new Size(47, 22));
+                    g.FillRectangle(Brushes.Black, border);
+                    g.FillRectangle(Brushes.White, z1);
+                    Rectangle t1 = new Rectangle(new Point(67, 365), new Size(45, 20));
+                    Rectangle bordert1 = new Rectangle(new Point(66, 364), new Size(47, 22));
+                    g.FillRectangle(Brushes.Black, bordert1);
+                    g.FillRectangle(Brushes.White, t1);
+                    g.DrawString(FormForneamentoSD.zona1, fonttexto, Brushes.Black, new Point(28, 365));
+                    g.DrawString("1", fonttexto, Brushes.Black, new Point(32, 365));
+
+                    Rectangle z2 = new Rectangle(new Point(21, 385), new Size(45, 20));
+                    Rectangle border2 = new Rectangle(new Point(20, 384), new Size(47, 22));
+                    g.FillRectangle(Brushes.Black, border2);
+                    g.FillRectangle(Brushes.White, z2);
+                    Rectangle t2 = new Rectangle(new Point(67, 385), new Size(45, 20));
+                    Rectangle bordert2 = new Rectangle(new Point(66, 384), new Size(47, 22));
+                    g.FillRectangle(Brushes.Black, bordert2);
+                    g.FillRectangle(Brushes.White, t2);
+                    g.DrawString(FormForneamentoSD.zona2, fonttexto, Brushes.Black, new Point(28, 385));
+                    g.DrawString("2", fonttexto, Brushes.Black, new Point(32, 385));
+
+                    Rectangle z3 = new Rectangle(new Point(21, 405), new Size(45, 20));
+                    Rectangle border3 = new Rectangle(new Point(20, 404), new Size(47, 22));
+                    g.FillRectangle(Brushes.Black, border3);
+                    g.FillRectangle(Brushes.White, z3);
+                    Rectangle t3 = new Rectangle(new Point(67, 405), new Size(45, 20));
+                    Rectangle bordert3 = new Rectangle(new Point(66, 404), new Size(47, 22));
+                    g.FillRectangle(Brushes.Black, bordert3);
+                    g.FillRectangle(Brushes.White, t3);
+                    g.DrawString(FormForneamentoSD.zona3, fonttexto, Brushes.Black, new Point(28, 405));
+                    g.DrawString("3", fonttexto, Brushes.Black, new Point(32, 405));
+
+                    Rectangle z4 = new Rectangle(new Point(21, 425), new Size(45, 20));
+                    Rectangle border4 = new Rectangle(new Point(20, 424), new Size(47, 22));
+                    g.FillRectangle(Brushes.Black, border4);
+                    g.FillRectangle(Brushes.White, z4);
+                    Rectangle t4 = new Rectangle(new Point(67, 425), new Size(45, 20));
+                    Rectangle bordert4 = new Rectangle(new Point(66, 424), new Size(47, 22));
+                    g.FillRectangle(Brushes.Black, bordert4);
+                    g.FillRectangle(Brushes.White, t4);
+                    g.DrawString(FormForneamentoSD.zona4, fonttexto, Brushes.Black, new Point(28, 425));
+                    g.DrawString("4", fonttexto, Brushes.Black, new Point(32, 425));
+
+                    Rectangle z5 = new Rectangle(new Point(21, 445), new Size(45, 20));
+                    Rectangle border5 = new Rectangle(new Point(20, 444), new Size(47, 22));
+                    g.FillRectangle(Brushes.Black, border5);
+                    g.FillRectangle(Brushes.White, z5);
+                    Rectangle t5 = new Rectangle(new Point(67, 445), new Size(45, 20));
+                    Rectangle bordert5 = new Rectangle(new Point(66, 444), new Size(47, 22));
+                    g.FillRectangle(Brushes.Black, bordert5);
+                    g.FillRectangle(Brushes.White, t5);
+                    g.DrawString(FormForneamentoSD.zona4, fonttexto, Brushes.Black, new Point(28, 445));
+                    g.DrawString("5", fonttexto, Brushes.Black, new Point(32, 445));
+                }
+                if (FormForneamentoSD.zonasSD == "6")
+                {
+                    Rectangle zona = new Rectangle(new Point(20, 342), new Size(46, 22));
+                    Rectangle temp = new Rectangle(new Point(68, 342), new Size(45, 22));
+                    g.FillRectangle(Brushes.LightSteelBlue, zona);
+                    g.FillRectangle(Brushes.LightSteelBlue, temp);
+                    g.DrawString("°C", fonttexto, Brushes.Black, new Point(72, 342));
+                    g.DrawString("Zona", fonttexto, Brushes.Black, new Point(21, 342));
+
+                    Rectangle z1 = new Rectangle(new Point(21, 365), new Size(45, 20));
+                    Rectangle border = new Rectangle(new Point(20, 364), new Size(47, 22));
+                    g.FillRectangle(Brushes.Black, border);
+                    g.FillRectangle(Brushes.White, z1);
+                    Rectangle t1 = new Rectangle(new Point(67, 365), new Size(45, 20));
+                    Rectangle bordert1 = new Rectangle(new Point(66, 364), new Size(47, 22));
+                    g.FillRectangle(Brushes.Black, bordert1);
+                    g.FillRectangle(Brushes.White, t1);
+                    g.DrawString(FormForneamentoSD.zona1, fonttexto, Brushes.Black, new Point(28, 365));
+                    g.DrawString("1", fonttexto, Brushes.Black, new Point(32, 365));
+
+                    Rectangle z2 = new Rectangle(new Point(21, 385), new Size(45, 20));
+                    Rectangle border2 = new Rectangle(new Point(20, 384), new Size(47, 22));
+                    g.FillRectangle(Brushes.Black, border2);
+                    g.FillRectangle(Brushes.White, z2);
+                    Rectangle t2 = new Rectangle(new Point(67, 385), new Size(45, 20));
+                    Rectangle bordert2 = new Rectangle(new Point(66, 384), new Size(47, 22));
+                    g.FillRectangle(Brushes.Black, bordert2);
+                    g.FillRectangle(Brushes.White, t2);
+                    g.DrawString(FormForneamentoSD.zona2, fonttexto, Brushes.Black, new Point(28, 385));
+                    g.DrawString("2", fonttexto, Brushes.Black, new Point(32, 385));
+
+                    Rectangle z3 = new Rectangle(new Point(21, 405), new Size(45, 20));
+                    Rectangle border3 = new Rectangle(new Point(20, 404), new Size(47, 22));
+                    g.FillRectangle(Brushes.Black, border3);
+                    g.FillRectangle(Brushes.White, z3);
+                    Rectangle t3 = new Rectangle(new Point(67, 405), new Size(45, 20));
+                    Rectangle bordert3 = new Rectangle(new Point(66, 404), new Size(47, 22));
+                    g.FillRectangle(Brushes.Black, bordert3);
+                    g.FillRectangle(Brushes.White, t3);
+                    g.DrawString(FormForneamentoSD.zona3, fonttexto, Brushes.Black, new Point(28, 405));
+                    g.DrawString("3", fonttexto, Brushes.Black, new Point(32, 405));
+
+                    Rectangle z4 = new Rectangle(new Point(21, 425), new Size(45, 20));
+                    Rectangle border4 = new Rectangle(new Point(20, 424), new Size(47, 22));
+                    g.FillRectangle(Brushes.Black, border4);
+                    g.FillRectangle(Brushes.White, z4);
+                    Rectangle t4 = new Rectangle(new Point(67, 425), new Size(45, 20));
+                    Rectangle bordert4 = new Rectangle(new Point(66, 424), new Size(47, 22));
+                    g.FillRectangle(Brushes.Black, bordert4);
+                    g.FillRectangle(Brushes.White, t4);
+                    g.DrawString(FormForneamentoSD.zona4, fonttexto, Brushes.Black, new Point(28, 425));
+                    g.DrawString("4", fonttexto, Brushes.Black, new Point(32, 425));
+
+                    Rectangle z5 = new Rectangle(new Point(21, 445), new Size(45, 20));
+                    Rectangle border5 = new Rectangle(new Point(20, 444), new Size(47, 22));
+                    g.FillRectangle(Brushes.Black, border5);
+                    g.FillRectangle(Brushes.White, z5);
+                    Rectangle t5 = new Rectangle(new Point(67, 445), new Size(45, 20));
+                    Rectangle bordert5 = new Rectangle(new Point(66, 444), new Size(47, 22));
+                    g.FillRectangle(Brushes.Black, bordert5);
+                    g.FillRectangle(Brushes.White, t5);
+                    g.DrawString(FormForneamentoSD.zona4, fonttexto, Brushes.Black, new Point(28, 445));
+                    g.DrawString("5", fonttexto, Brushes.Black, new Point(32, 445));
+
+                    Rectangle z6 = new Rectangle(new Point(21, 465), new Size(45, 20));
+                    Rectangle border6 = new Rectangle(new Point(20, 464), new Size(47, 22));
+                    g.FillRectangle(Brushes.Black, border6);
+                    g.FillRectangle(Brushes.White, z6);
+                    Rectangle t6 = new Rectangle(new Point(67, 465), new Size(45, 20));
+                    Rectangle bordert6 = new Rectangle(new Point(66, 464), new Size(47, 22));
+                    g.FillRectangle(Brushes.Black, bordert6);
+                    g.FillRectangle(Brushes.White, t6);
+                    g.DrawString(FormForneamentoSD.zona4, fonttexto, Brushes.Black, new Point(28, 465));
+                    g.DrawString("6", fonttexto, Brushes.Black, new Point(32, 465));
+
+                }
+                if (FormForneamentoSD.zonasSD == "7")
+                {
+                    Rectangle zona = new Rectangle(new Point(20, 342), new Size(46, 22));
+                    Rectangle temp = new Rectangle(new Point(68, 342), new Size(45, 22));
+                    g.FillRectangle(Brushes.LightSteelBlue, zona);
+                    g.FillRectangle(Brushes.LightSteelBlue, temp);
+                    g.DrawString("°C", fonttexto, Brushes.Black, new Point(72, 342));
+                    g.DrawString("Zona", fonttexto, Brushes.Black, new Point(21, 342));
+
+                    Rectangle z1 = new Rectangle(new Point(21, 365), new Size(45, 20));
+                    Rectangle border = new Rectangle(new Point(20, 364), new Size(47, 22));
+                    g.FillRectangle(Brushes.Black, border);
+                    g.FillRectangle(Brushes.White, z1);
+                    Rectangle t1 = new Rectangle(new Point(67, 365), new Size(45, 20));
+                    Rectangle bordert1 = new Rectangle(new Point(66, 364), new Size(47, 22));
+                    g.FillRectangle(Brushes.Black, bordert1);
+                    g.FillRectangle(Brushes.White, t1);
+                    g.DrawString(FormForneamentoSD.zona1, fonttexto, Brushes.Black, new Point(74, 365));
+                    g.DrawString("1", fonttexto, Brushes.Black, new Point(32, 365));
+
+                    Rectangle z2 = new Rectangle(new Point(21, 385), new Size(45, 20));
+                    Rectangle border2 = new Rectangle(new Point(20, 384), new Size(47, 22));
+                    g.FillRectangle(Brushes.Black, border2);
+                    g.FillRectangle(Brushes.White, z2);
+                    Rectangle t2 = new Rectangle(new Point(67, 385), new Size(45, 20));
+                    Rectangle bordert2 = new Rectangle(new Point(66, 384), new Size(47, 22));
+                    g.FillRectangle(Brushes.Black, bordert2);
+                    g.FillRectangle(Brushes.White, t2);
+                    g.DrawString(FormForneamentoSD.zona2, fonttexto, Brushes.Black, new Point(74, 385));
+                    g.DrawString("2", fonttexto, Brushes.Black, new Point(32, 385));
+
+                    Rectangle z3 = new Rectangle(new Point(21, 405), new Size(45, 20));
+                    Rectangle border3 = new Rectangle(new Point(20, 404), new Size(47, 22));
+                    g.FillRectangle(Brushes.Black, border3);
+                    g.FillRectangle(Brushes.White, z3);
+                    Rectangle t3 = new Rectangle(new Point(67, 405), new Size(45, 20));
+                    Rectangle bordert3 = new Rectangle(new Point(66, 404), new Size(47, 22));
+                    g.FillRectangle(Brushes.Black, bordert3);
+                    g.FillRectangle(Brushes.White, t3);
+                    g.DrawString(FormForneamentoSD.zona3, fonttexto, Brushes.Black, new Point(74, 405));
+                    g.DrawString("3", fonttexto, Brushes.Black, new Point(32, 405));
+
+                    Rectangle z4 = new Rectangle(new Point(21, 425), new Size(45, 20));
+                    Rectangle border4 = new Rectangle(new Point(20, 424), new Size(47, 22));
+                    g.FillRectangle(Brushes.Black, border4);
+                    g.FillRectangle(Brushes.White, z4);
+                    Rectangle t4 = new Rectangle(new Point(67, 425), new Size(45, 20));
+                    Rectangle bordert4 = new Rectangle(new Point(66, 424), new Size(47, 22));
+                    g.FillRectangle(Brushes.Black, bordert4);
+                    g.FillRectangle(Brushes.White, t4);
+                    g.DrawString(FormForneamentoSD.zona4, fonttexto, Brushes.Black, new Point(74, 425));
+                    g.DrawString("4", fonttexto, Brushes.Black, new Point(32, 425));
+
+                    Rectangle z5 = new Rectangle(new Point(21, 445), new Size(45, 20));
+                    Rectangle border5 = new Rectangle(new Point(20, 444), new Size(47, 22));
+                    g.FillRectangle(Brushes.Black, border5);
+                    g.FillRectangle(Brushes.White, z5);
+                    Rectangle t5 = new Rectangle(new Point(67, 445), new Size(45, 20));
+                    Rectangle bordert5 = new Rectangle(new Point(66, 444), new Size(47, 22));
+                    g.FillRectangle(Brushes.Black, bordert5);
+                    g.FillRectangle(Brushes.White, t5);
+                    g.DrawString(FormForneamentoSD.zona5, fonttexto, Brushes.Black, new Point(74, 445));
+                    g.DrawString("5", fonttexto, Brushes.Black, new Point(32, 445));
+
+                    Rectangle z6 = new Rectangle(new Point(21, 465), new Size(45, 20));
+                    Rectangle border6 = new Rectangle(new Point(20, 464), new Size(47, 22));
+                    g.FillRectangle(Brushes.Black, border6);
+                    g.FillRectangle(Brushes.White, z6);
+                    Rectangle t6 = new Rectangle(new Point(67, 465), new Size(45, 20));
+                    Rectangle bordert6 = new Rectangle(new Point(66, 464), new Size(47, 22));
+                    g.FillRectangle(Brushes.Black, bordert6);
+                    g.FillRectangle(Brushes.White, t6);
+                    g.DrawString(FormForneamentoSD.zona6, fonttexto, Brushes.Black, new Point(74, 465));
+                    g.DrawString("6", fonttexto, Brushes.Black, new Point(32, 465));
+
+                    Rectangle z7 = new Rectangle(new Point(21, 485), new Size(45, 20));
+                    Rectangle border7 = new Rectangle(new Point(20, 484), new Size(47, 22));
+                    g.FillRectangle(Brushes.Black, border7);
+                    g.FillRectangle(Brushes.White, z7);
+                    Rectangle t7 = new Rectangle(new Point(67, 485), new Size(45, 20));
+                    Rectangle bordert7 = new Rectangle(new Point(66, 484), new Size(47, 22));
+                    g.FillRectangle(Brushes.Black, bordert7);
+                    g.FillRectangle(Brushes.White, t7);
+                    g.DrawString(FormForneamentoSD.zona7, fonttexto, Brushes.Black, new Point(74, 485));
+                    g.DrawString("7", fonttexto, Brushes.Black, new Point(32, 485));
+
+                    Rectangle rect4 = new Rectangle(new Point(0, 515), new Size(5000, 30));
+                    g.FillRectangle(Brushes.LightSteelBlue, rect4);
+                    g.DrawString("Recheio", new Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0))), Brushes.RoyalBlue, new Point(20, 515));
+                    g.DrawString("Percentual de recheio: " + FormRecheioSD.percentualSD, fonttexto, Brushes.Black, new Point(20, 545));
+                    g.DrawString("Densidade do recheio: " + FormRecheioSD.densidadeSD + " (g/cm³)", fonttexto, Brushes.Black, new Point(20, 565));
+                }
 
 
 
