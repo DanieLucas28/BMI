@@ -1,5 +1,6 @@
 ﻿ using FontAwesome.Sharp;
 using Parametrizador.Cookies;
+using Parametrizador.Cream_Cracker;
 using Parametrizador.Impressão;
 using Parametrizador.Main;
 using Parametrizador.Properties;
@@ -712,12 +713,22 @@ namespace Parametrizador
                     g.FillRectangle(Brushes.White, t7);
                     g.DrawString(FormForneamentoSD.zona7, fonttexto, Brushes.Black, new Point(74, 485));
                     g.DrawString("7", fonttexto, Brushes.Black, new Point(32, 485));
+                    g.DrawString("Tempo de cozimento: " + FormForneamentoSD.tempocozSD + " min", fonttexto, Brushes.Black, new Point(20, 510));
+                    g.DrawString("Umidade final do biscoito: " + FormForneamentoSD.umidadefinal + " %", fonttexto, Brushes.Black, new Point(20, 530));
 
-                    Rectangle rect4 = new Rectangle(new Point(0, 515), new Size(5000, 30));
+
+                    Rectangle rect4 = new Rectangle(new Point(0, 560), new Size(5000, 30));
                     g.FillRectangle(Brushes.LightSteelBlue, rect4);
-                    g.DrawString("Recheio", new Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0))), Brushes.RoyalBlue, new Point(20, 515));
-                    g.DrawString("Percentual de recheio: " + FormRecheioSD.percentualSD, fonttexto, Brushes.Black, new Point(20, 545));
-                    g.DrawString("Densidade do recheio: " + FormRecheioSD.densidadeSD + " (g/cm³)", fonttexto, Brushes.Black, new Point(20, 565));
+                    g.DrawString("Recheio", new Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0))), Brushes.RoyalBlue, new Point(20, 560));
+                    g.DrawString("Percentual de recheio: " + FormRecheioSD.percentualSD, fonttexto, Brushes.Black, new Point(20, 590));
+                    g.DrawString("Densidade do recheio: " + FormRecheioSD.densidadeSD + " (g/cm³)", fonttexto, Brushes.Black, new Point(20, 610));
+
+                    Rectangle rect5 = new Rectangle(new Point(0, 640), new Size(5000, 30));
+                    g.FillRectangle(Brushes.LightSteelBlue, rect5);
+                    g.DrawString("Resfriamento", new Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0))), Brushes.RoyalBlue, new Point(20, 640));
+                    g.DrawString("Tempo de cozimento utilizado: " + FormResfriamentoSD.coziSD + " min", fonttexto, Brushes.Black, new Point(20, 670));
+                    g.DrawString("Tempo de resfriamento utilizado: " + FormResfriamentoSD.resfriSD + " min", fonttexto, Brushes.Black, new Point(20, 690));
+
                 }
 
 

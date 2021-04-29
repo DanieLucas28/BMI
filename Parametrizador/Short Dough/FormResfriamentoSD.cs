@@ -17,9 +17,14 @@ namespace Parametrizador.Short_Dough
         {
             InitializeComponent();
         }
+        public static string coziSD;
+        public static string resfriSD;
 
         private void tempresf_TextChanged(object sender, EventArgs e)
         {
+            coziSD = tempcoz.Text;
+            resfriSD = tempresf.Text;
+
             if (tempcoz.Text.Trim() == "" && tempresf.Text.Trim() == "")
             {
                 linkresfr.Visible = true;

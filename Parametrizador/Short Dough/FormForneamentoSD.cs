@@ -45,6 +45,8 @@ namespace Parametrizador.Short_Dough
         public static string zona5;
         public static string zona6;
         public static string zona7;
+        public static string tempocozSD;
+        public static string umidadefinal;
 
         private void comboBox1_SelectedValueChanged(object sender, EventArgs e)
         {
@@ -339,6 +341,7 @@ namespace Parametrizador.Short_Dough
 
         private void Tempcoz_TextChanged(object sender, EventArgs e)
         {
+            tempocozSD = Tempcoz.Text;
             linktempcozimento.Visible = true;
             dadosreftempcozimento.Visible = true;
             if (Decimal.TryParse(Tempcoz.Text.Trim(), out _))
@@ -404,6 +407,7 @@ namespace Parametrizador.Short_Dough
 
         private void umidade_TextChanged(object sender, EventArgs e)
         {
+            umidadefinal = umidade.Text;
             linkumidade.Visible = true;
             dadosrefumidade.Visible = true;
             if (Decimal.TryParse(umidade.Text.Trim(), out _))
@@ -459,7 +463,7 @@ namespace Parametrizador.Short_Dough
             }
             else
             {
-                this.linkumidade.Text = "Digite um valor válido para a temperatura.";
+                this.linkumidade.Text = "Digite um valor válido para a umidade.";
             }
             
         }
