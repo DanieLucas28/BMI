@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -36,6 +37,15 @@ namespace Parametrizador.Short_Dough
             gráficoforno.Series["Bertolino & Braga"].Points.AddXY(z6.Text, bt6.Text);
             #endregion
         }
+        public static string zonasSD;
+        public static string zona1;
+        public static string zona2;
+        public static string zona3;
+        public static string zona4;
+        public static string zona5;
+        public static string zona6;
+        public static string zona7;
+
         private void comboBox1_SelectedValueChanged(object sender, EventArgs e)
         {
             int qtdzona = Convert.ToInt32(comboBox1.SelectedItem.ToString()) - 1;
@@ -98,6 +108,7 @@ namespace Parametrizador.Short_Dough
             }
             else if (Convert.ToDecimal(comboBox1.SelectedItem.ToString()) == 4)
             {
+                zonasSD = "4";
                 Tempforno1.Visible = true;
                 labelforno1.Visible = true;
                 tempforno2.Visible = true;
@@ -115,6 +126,7 @@ namespace Parametrizador.Short_Dough
             }
             else if (Convert.ToDecimal(comboBox1.SelectedItem.ToString()) == 5)
             {
+                zonasSD = "5";
                 Tempforno1.Visible = true;
                 labelforno1.Visible = true;
                 tempforno2.Visible = true;
@@ -132,6 +144,7 @@ namespace Parametrizador.Short_Dough
             }
             else if (Convert.ToDecimal(comboBox1.SelectedItem.ToString()) == 6)
             {
+                zonasSD = "6";
                 Tempforno1.Visible = true;
                 labelforno1.Visible = true;
                 tempforno2.Visible = true;
@@ -149,6 +162,7 @@ namespace Parametrizador.Short_Dough
             }
             else if (Convert.ToDecimal(comboBox1.SelectedItem.ToString()) == 7)
             {
+                zonasSD = "7";
                 Tempforno1.Visible = true;
                 labelforno1.Visible = true;
                 tempforno2.Visible = true;
@@ -190,6 +204,8 @@ namespace Parametrizador.Short_Dough
 
         private async void Tempforno1_TextChanged(object sender, EventArgs e)
         {
+            zona1 = Tempforno1.Text;
+
             if (tempforno2.Visible == false)
             {
                 await Task.Delay(2000);
@@ -199,13 +215,14 @@ namespace Parametrizador.Short_Dough
                 dadosrefext.Visible = true;
                 gráficoforno.Series["Utilizado"].Points.AddXY(z1.Text, Tempforno1.Text);
                 gráficoforno.Visible = true;
+                
             }
-            else { 
-            }
+           
         }
 
         private async void tempforno2_TextChanged(object sender, EventArgs e)
         {
+            zona2 = tempforno2.Text;
             if (tempforno3.Visible == false)
             {
                 await Task.Delay(2000);
@@ -216,12 +233,14 @@ namespace Parametrizador.Short_Dough
                 gráficoforno.Series["Utilizado"].Points.AddXY(z1.Text, Tempforno1.Text);
                 gráficoforno.Series["Utilizado"].Points.AddXY(z2.Text, tempforno2.Text);
                 gráficoforno.Visible = true;
+               
             }
             else { }
         }
 
         private async void tempforno3_TextChanged(object sender, EventArgs e)
         {
+            zona3 = tempforno3.Text;
             if (tempforno4.Visible == false)
             {
                 await Task.Delay(2000);
@@ -239,7 +258,7 @@ namespace Parametrizador.Short_Dough
 
         private async void tempforno4_TextChanged(object sender, EventArgs e)
         {
-            
+            zona4 = tempforno4.Text;
             if (tempforno5.Visible == false)
             {
                 await Task.Delay(2000);
@@ -258,6 +277,7 @@ namespace Parametrizador.Short_Dough
 
         private async void tempforno5_TextChanged(object sender, EventArgs e)
         {
+            zona5 = tempforno5.Text;
             if (tempforno6.Visible == false)
             {
                 await Task.Delay(2000);
@@ -277,8 +297,7 @@ namespace Parametrizador.Short_Dough
 
         private async void tempforno6_TextChanged(object sender, EventArgs e)
         {
-            
-
+            zona6 = tempforno6.Text;
             if (tempforno7.Visible == false)
             {
                 await Task.Delay(2000);
@@ -299,7 +318,7 @@ namespace Parametrizador.Short_Dough
 
         private async void tempforno7_TextChanged(object sender, EventArgs e)
         {
-
+            zona7 = tempforno7.Text;
             await Task.Delay(2000);
 
             linkforno.Visible = true;

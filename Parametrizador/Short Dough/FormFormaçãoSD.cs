@@ -16,9 +16,13 @@ namespace Parametrizador.Short_Dough
         {
             InitializeComponent();
         }
+        public static string durezaSD;
+        public static string lonaexSD;
+
 
         private void radioButtonmisturafluxo1_CheckedChanged(object sender, EventArgs e)
         {
+            lonaexSD = "Com costura";
             dadosrefext.Visible = true;
             linklona.LinkArea = new LinkArea(0, 0);
             linklona.Visible = true;
@@ -29,6 +33,7 @@ namespace Parametrizador.Short_Dough
 
         private void radioButtonlona2_CheckedChanged(object sender, EventArgs e)
         {
+            lonaexSD = "Sem fim";
             dadosrefext.Visible = true;
             linklona.LinkArea = new LinkArea(0, 0);
             linklona.Visible = true;
@@ -38,6 +43,7 @@ namespace Parametrizador.Short_Dough
 
         private void durezarolo_TextChanged(object sender, EventArgs e)
         {
+            durezaSD = durezarolo.Text;
             linkrolo.Visible = true;
             dadosrefrolo.Visible = true;
             

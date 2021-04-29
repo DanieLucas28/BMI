@@ -405,7 +405,7 @@ namespace Parametrizador
         {
             Graphics g = e.Graphics;
             Image image = Parametrizador.Properties.Resources.logotiny;
-
+            Font fonttexto = new Font("Trebuchet MS", 12, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
           
             using (Font font = new Font("Arial", 16))
             {
@@ -417,15 +417,81 @@ namespace Parametrizador
             {
                 g.DrawString("______________________________________________________________________________________________________________________________", new Font("Trebuchet MS", 14, FontStyle.Bold), Brushes.Black, new Point(0, 80));
                 Rectangle rect = new Rectangle(new Point(0, 110), new Size(5000,30));
-                e.Graphics.FillRectangle(Brushes.LightSteelBlue, rect);
+                g.FillRectangle(Brushes.LightSteelBlue, rect);
                 g.DrawString("Mistura", new Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0))), Brushes.RoyalBlue, new Point(20, 110));
-                g.DrawString("Temperatura da massa: " + FormMisturaSD.tempmassateste, new Font("Trebuchet MS", 12, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0))), Brushes.Black, new Point(20, 150));
-                g.DrawString("Fluxo de adição utilizado: " + FormMisturaSD.fluxoaddprint, new Font("Trebuchet MS", 12, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0))), Brushes.Black, new Point(20, 170));
-                g.DrawString("Tempo de mistura do 1° estágio: " + FormMisturaSD.tempo1print, new Font("Trebuchet MS", 12, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0))), Brushes.Black, new Point(20, 190));
-                g.DrawString("Tempo de mistura do 2° estágio: " + FormMisturaSD.tempo2print, new Font("Trebuchet MS", 12, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0))), Brushes.Black, new Point(20, 210));
-                Rectangle rect2 = new Rectangle(new Point(0, 240), new Size(5000, 30));
-                e.Graphics.FillRectangle(Brushes.LightSteelBlue, rect2);
-                g.DrawString("Formação", new Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0))), Brushes.RoyalBlue, new Point(20, 240));
+                g.DrawString("Temperatura da massa: " + FormMisturaSD.tempmassateste, new Font("Trebuchet MS", 12, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0))), Brushes.Black, new Point(20, 140));
+                g.DrawString("Fluxo de adição utilizado: " + FormMisturaSD.fluxoaddprint, new Font("Trebuchet MS", 12, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0))), Brushes.Black, new Point(20, 160));
+                g.DrawString("Tempo de mistura do 1° estágio: " + FormMisturaSD.tempo1print, new Font("Trebuchet MS", 12, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0))), Brushes.Black, new Point(20, 180));
+                g.DrawString("Tempo de mistura do 2° estágio: " + FormMisturaSD.tempo2print, new Font("Trebuchet MS", 12, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0))), Brushes.Black, new Point(20, 200));
+
+
+                Rectangle rect2 = new Rectangle(new Point(0, 230), new Size(5000, 30));
+                g.FillRectangle(Brushes.LightSteelBlue, rect2);
+                g.DrawString("Formação", new Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0))), Brushes.RoyalBlue, new Point(20, 230));
+                g.DrawString("Tipo de lona de extração: " + FormFormaçãoSD.lonaexSD, new Font("Trebuchet MS", 12, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0))), Brushes.Black, new Point(20, 260));
+                g.DrawString("Dureza do rolo utilizada: " + FormFormaçãoSD.durezaSD + " shores", new Font("Trebuchet MS", 12, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0))), Brushes.Black, new Point(20, 280));
+
+                Rectangle rect3 = new Rectangle(new Point(0, 310), new Size(5000, 30));
+                g.FillRectangle(Brushes.LightSteelBlue, rect3);
+                g.DrawString("Forneamento", new Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0))), Brushes.RoyalBlue, new Point(20, 310));
+                
+                if (FormForneamentoSD.zonasSD == "4") {
+                    Rectangle zona = new Rectangle(new Point(20, 342), new Size(46, 22));
+                    Rectangle temp = new Rectangle(new Point(68, 342), new Size(45, 22));
+                    g.FillRectangle(Brushes.LightSteelBlue, zona);
+                    g.FillRectangle(Brushes.LightSteelBlue, temp);
+                    g.DrawString("°C", fonttexto, Brushes.Black, new Point(72, 342));
+                    g.DrawString("Zona", fonttexto, Brushes.Black, new Point(21, 342));
+
+                    Rectangle z1 = new Rectangle(new Point(21, 365), new Size(45, 20));
+                    Rectangle border = new Rectangle(new Point(20, 364), new Size(47, 22));
+                    g.FillRectangle(Brushes.Black, border);
+                    g.FillRectangle(Brushes.White, z1);
+                    Rectangle t1 = new Rectangle(new Point(67, 365), new Size(45,20));
+                    Rectangle bordert1 = new Rectangle(new Point(66, 364), new Size(47, 22));
+                    g.FillRectangle(Brushes.Black, bordert1);
+                    g.FillRectangle(Brushes.White, t1);
+                    g.DrawString(FormForneamentoSD.zona1, fonttexto, Brushes.Black, new Point(28, 365));
+                    g.DrawString("1", fonttexto, Brushes.Black, new Point(32, 365));
+
+                    Rectangle z2 = new Rectangle(new Point(21, 385), new Size(45, 20));
+                    Rectangle border2 = new Rectangle(new Point(20, 384), new Size(47, 22));
+                    g.FillRectangle(Brushes.Black, border2);
+                    g.FillRectangle(Brushes.White, z2);                    
+                    Rectangle t2 = new Rectangle(new Point(67, 385), new Size(45, 20));
+                    Rectangle bordert2 = new Rectangle(new Point(66, 384), new Size(47, 22));
+                    g.FillRectangle(Brushes.Black, bordert2);
+                    g.FillRectangle(Brushes.White, t2);
+                    g.DrawString(FormForneamentoSD.zona2, fonttexto, Brushes.Black, new Point(28, 385));
+                    g.DrawString("2", fonttexto, Brushes.Black, new Point(32, 385));
+
+                    Rectangle z3 = new Rectangle(new Point(21, 405), new Size(45, 20));
+                    Rectangle border3 = new Rectangle(new Point(20, 404), new Size(47, 22));
+                    g.FillRectangle(Brushes.Black, border3);
+                    g.FillRectangle(Brushes.White, z3);
+                    Rectangle t3 = new Rectangle(new Point(67, 405), new Size(45, 20));
+                    Rectangle bordert3 = new Rectangle(new Point(66, 404), new Size(47, 22));
+                    g.FillRectangle(Brushes.Black, bordert3);
+                    g.FillRectangle(Brushes.White, t3);
+                    g.DrawString(FormForneamentoSD.zona3, fonttexto, Brushes.Black, new Point(28, 405));
+                    g.DrawString("3", fonttexto, Brushes.Black, new Point(32, 405));
+
+                    Rectangle z4 = new Rectangle(new Point(21, 425), new Size(45, 20));
+                    Rectangle border4 = new Rectangle(new Point(20, 424), new Size(47, 22));
+                    g.FillRectangle(Brushes.Black, border4);
+                    g.FillRectangle(Brushes.White, z4);
+                    Rectangle t4 = new Rectangle(new Point(67, 425), new Size(45, 20));
+                    Rectangle bordert4 = new Rectangle(new Point(66, 424), new Size(47, 22));
+                    g.FillRectangle(Brushes.Black, bordert4);
+                    g.FillRectangle(Brushes.White, t4);
+                    g.DrawString(FormForneamentoSD.zona4, fonttexto, Brushes.Black, new Point(28, 425));
+                    g.DrawString("4", fonttexto, Brushes.Black, new Point(32, 425));
+                }
+
+
+
+
+
             }
             
 
